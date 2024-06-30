@@ -53,4 +53,29 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
    - Roll out the LLM-powered knowledge base across the organization.
    - Provide training sessions to ensure employees are comfortable using the new system.
 
+## Studies
+
+### Evaluation of NLP Tools
+ChatRTX, GPT4All, and LM Studio Natural Language Processing (NLP) tools were evaluated with different LLMs, including:
+- Mistral 7B int4
+- Llama 2 13B int4
+- Llama 3 Instruct
+- Nous Hermes 2 Mistral DPO
+- Hermes
+- Llama 3 - 8B Instruct
+- Starling LM 7B Beta
+- Hermes 2 Pro Mistral 7B
+- OpenHermes 2.5 Mistral 7B
+
+### Practical Applications
+These tools can process a vast array of local documents and provide precise answers to specific inquiries:
+
+- **Technical Team Weekly Meeting Minutes**: By processing over 20 years of technical team weekly meeting minutes, ChatRTX can provide accurate answers regarding recent FYP (Final Year Project) presentation support arrangements. This helps new staff members understand how to support FYP presentations without prior background information.
+  
+- **Technical Team Annual Reports**: By processing over 10 years of technical team annual reports, ChatRTX can provide accurate answers about recent courses supported by the technical team.
+
+- **Network Switch Configuration Files**: By processing network switch configuration files, GPT4All can identify the correct network uplink interface and the interface connected to a particular VLAN.
+
+- **Cybersecurity Research Results**: By processing research results from HoneyNet and Pentest projects, ChatRTX and GPT4All can provide accurate answers and suggestions for honeypot deployment and tools used in penetration testing.
+
 
