@@ -78,7 +78,17 @@ These tools can process a vast array of local documents and provide precise answ
    
 - **Network Switch Configuration Files**: By processing network switch configuration files, GPT4All can identify the correct network uplink interface and the interface connected to a particular VLAN.
    <img src="./screenshot/switch.jpg"  width="1000">
-- **Cybersecurity Research Results**: By processing research results from HoneyNet and Pentest projects, ChatRTX and GPT4All can provide accurate answers and suggestions for honeypot deployment and tools used in penetration testing.
+   
+- **Research Results**: By processing research results from HoneyNet and Pentest projects, ChatRTX and GPT4All can provide accurate answers and suggestions for honeypot deployment and tools used in penetration testing.
+  
+     The screenshot below shows how GPT4All replied the inquiry of deploying Honeypots on Cloud platform
+     <img src="./screenshot/honeypot_on_cloud.jpg"  width="1000">
+     
+     The screenshot below shows how ChatRTX replied the inquiry of deploying T-Pot
+     <img src="./screenshot/T-Pot.jpg"  width="1000">
+
+     The screenshot below shows how GPT4All replied the inquiry of how Nmap can help in security audit
+     <img src="./screenshot/Nmap.jpg"  width="1000">
 
 ## Future Work
 As we continue to develop and refine the LLM-powered knowledge base, several areas for future work and enhancement have been identified:
