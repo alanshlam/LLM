@@ -88,8 +88,12 @@ These tools can process a vast array of local documents and provide precise answ
      <img src="./screenshot/T-Pot.jpg"  width="1000">
 
      The screenshot below shows how GPT4All replied the inquiry of how Nmap can help in security audit
-     <img src="./screenshot/Nmap.jpg"  width="1000">
+     <img src="./screenshot/Namp.jpg"  width="1000">
 
+      The screenshot below shows how ChatRTX suggested the honeypot for studying SSH break-ins
+     <img src="./screenshot/ssh_honeypot.jpg"  width="1000">
+
+     
 ## Future Work
 As we continue to develop and refine the LLM-powered knowledge base, several areas for future work and enhancement have been identified:
 
