@@ -19,7 +19,7 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 - **Interactive Support**: Provide instant support and answers to training-related queries, fostering a continuous learning environment.
 
 ### Research Results Archiving
-- **Knowledge Preservation**: Archive research results from the HoneyNet and Pentest projects to ensure valuable insights and findings are preserved and accessible for future reference.
+- **Knowledge Preservation**: Archive research results from the [HoneyNet](https://github.com/alanshlam/HoneyNet) and [Pentest](https://github.com/alanshlam/Pentest) projects to ensure valuable insights and findings are preserved and accessible for future reference.
 - **Enhanced Research Capabilities**: Facilitate easy retrieval and analysis of past research, aiding in the development of new projects and the continuous improvement of cybersecurity measures.
 - **Compliance and Accountability**: Ensure that research documentation meets compliance standards and provides a clear record of the organization's cybersecurity efforts and advancements.
 
