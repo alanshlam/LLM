@@ -74,9 +74,10 @@ These tools can process a vast array of local documents and provide precise answ
    <img src="./screenshot/fyp_support2.jpg" alt="FYP" width="1000">
   
 - **Technical Team Annual Reports**: By processing over 10 years of technical team annual reports, ChatRTX can provide accurate answers about recent courses supported by the technical team.
-
+   <img src="./screenshot/course_supported.jpg"  width="1000">
+   
 - **Network Switch Configuration Files**: By processing network switch configuration files, GPT4All can identify the correct network uplink interface and the interface connected to a particular VLAN.
-
+   <img src="./screenshot/switch.jpg"  width="1000">
 - **Cybersecurity Research Results**: By processing research results from HoneyNet and Pentest projects, ChatRTX and GPT4All can provide accurate answers and suggestions for honeypot deployment and tools used in penetration testing.
 
 ## Future Work
