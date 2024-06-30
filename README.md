@@ -71,6 +71,7 @@ ChatRTX, GPT4All, and LM Studio Natural Language Processing (NLP) tools were eva
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
 
 - **Technical Team Weekly Meeting Minutes**: By processing over 20 years of technical team weekly meeting minutes, ChatRTX can provide accurate answers regarding recent FYP (Final Year Project) presentation support arrangements. This helps new staff members understand how to support FYP presentations without prior background information.
+   <img src="./screenshot/fyp_support2.jpg" alt="FYP" width="1000">
   
 - **Technical Team Annual Reports**: By processing over 10 years of technical team annual reports, ChatRTX can provide accurate answers about recent courses supported by the technical team.
 
