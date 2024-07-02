@@ -84,9 +84,6 @@ These tools can process a vast array of local documents and provide precise answ
      The screenshot below shows how GPT4All replied the inquiry of deploying Honeypots on Cloud platform
      <img src="./screenshot/honeypot_on_cloud.jpg"  width="1000">
      
-     The screenshot below shows how ChatRTX replied the inquiry of deploying T-Pot
-     <img src="./screenshot/T-Pot.jpg"  width="1000">
-
      The screenshot below shows how GPT4All replied the inquiry of how Nmap can help in security audit
      <img src="./screenshot/Nmap.jpg"  width="1000">
 
