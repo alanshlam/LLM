@@ -70,6 +70,8 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, and Jan Natural Language Proces
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
 
+-**Building a Knowledge base for a lab course FAQ**: By processing over 3,000 posts from a discussion forum in a lab course, GTP4ALL can provide the accurate answer to the Nginx start-up failure problem. This can be used to build up the knowledge base for the FAQ of this lab course.
+
 - **Technical Team Weekly Meeting Minutes**: By processing over 20 years of technical team weekly meeting minutes, ChatRTX can provide accurate answers regarding recent FYP (Final Year Project) presentation support arrangements. This helps new staff members understand how to support FYP presentations without prior background information.
    <img src="./screenshot/fyp_support2.jpg" alt="FYP" width="1000">
   
