@@ -56,16 +56,16 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 ## Studies
 
 ### Evaluation of NLP Tools
-ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, and Jan Natural Language Processing (NLP) tools were evaluated with different LLMs, including:
-- Llama 3.1 8B Instruct
-- Mistral 7B int4
-- Llama 2 13B int4
+ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI and Jan Natural Language Processing (NLP) tools were evaluated with different LLMs, including:
+- Llama 2, 3.1, 3.2, 3.3
+- Deepseek-r1
+- Deepseek Coder
+- Mistral 
 - Nous Hermes 2 Mistral DPO
 - Hermes
 - Starling LM 7B Beta
 - Hermes 2 Pro Mistral 7B
 - OpenHermes 2.5 Mistral 7B
-- Deepseek Coder
   
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
