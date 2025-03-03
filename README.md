@@ -70,7 +70,7 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI and Jan Natural Lang
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
 
-- **ChatBot Web UI**: A chatbot webpage built using a Streamlit UI Python application that connects to the Open-WebUI platform, helping students to solve their lab problems. The sample code is available for download here.
+- **ChatBot Web UI**: A chatbot webpage built using a Streamlit UI Python application that connects to the Open-WebUI platform, helping students to solve their lab problems. The sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot.py).
   <img src="./screenshot/chatbot02.jpg" alt="OPEN_WebUI" width="600">
   
 - **Open-WebUI with OLLAMA at the backend**: A model based on DeepSeek-r1 LLM with knowledge base data from over 3,200 posts in a lab course discussion forum helps students to debug their lab work in Open-WebUI platform.
