@@ -1,5 +1,7 @@
 ### This folder contains the programs to faciliate knowledge base building powered by LLM
 
+**chat_bot.py**: Streamlit UI program for Chatbot accessing avaliable modles in  Open WebUI
+
 **extract_text_from_eml.py**: program to extract mail body texts from mailbox in eml format
 
 
