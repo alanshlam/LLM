@@ -70,6 +70,9 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI and Jan Natural Lang
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
 
+- **Open-WebUI with OLLAMA at the backend**: A model based on DeepSeek-r1 LLM with knowledge base data from over 3,200 posts in a lab course discussion forum helps students to debug their lab work in Open-WebUI platform.
+  <img src="./screenshot/open-webui01.jpg" alt="OPEN_WebUI" width="1000">
+
 - **Building a Knowledge base for a lab course FAQ**: By processing over 3,000 posts from a discussion forum in a lab course, GTP4ALL can provide the accurate answer to the Nginx start-up failure problem. This can be used to build up the knowledge base for the FAQ of this lab course.
    <img src="./screenshot/lab_course_FAQ.png" alt="FAQ" width="1000">
 
