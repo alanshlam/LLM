@@ -56,7 +56,7 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 ## Studies
 
 ### Evaluation of NLP Tools
-ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI and Jan Natural Language Processing (NLP) tools were evaluated with different LLMs, including:
+ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070 GPUs using different LLMs, including:
 - Llama 2, 3.1, 3.2, 3.3
 - Deepseek-r1
 - Deepseek Coder
