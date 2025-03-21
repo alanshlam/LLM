@@ -71,7 +71,7 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI, and Jan Natural Lan
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
 
-- **ChatBot Web UI with file upload, AI role, and response copy function**: This version of chatbot allow users upload document files with different format, choose AI roles, and copy response to clipboard. This version sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot_up16.py).
+- **ChatBot Web UI with file upload, AI role, and response copy function**: This version of chatbot allow users upload document files with different format, choose AI roles, and copy response to clipboard. This version sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot_up15.py).
   <img src="./screenshot/chat_upload.jpg" alt="OPEN_WebUI" width="600">
 
 - **ChatBot Web UI**: A chatbot webpage built using a Streamlit UI Python application that connects to the Open-WebUI platform, helping students to solve their lab problems. The sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot.py).
