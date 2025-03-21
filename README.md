@@ -57,6 +57,7 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 
 ### Evaluation of NLP Tools
 ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070 GPUs using different LLMs, including:
+- gemma3
 - Llama 2, 3.1, 3.2, 3.3
 - Deepseek-r1
 - Deepseek Coder
@@ -69,6 +70,9 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, Open WebUI, and Jan Natural Lan
   
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
+
+- **ChatBot Web UI with file upload, AI role, and response copy function**: This version of chatbot allow users upload document files with different format, choose AI roles, and copy response to clipboard. This version sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot_up16.py).
+  <img src="./screenshot/chat_upload.jpg" alt="OPEN_WebUI" width="600">
 
 - **ChatBot Web UI**: A chatbot webpage built using a Streamlit UI Python application that connects to the Open-WebUI platform, helping students to solve their lab problems. The sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot.py).
   <img src="./screenshot/chatbot02.jpg" alt="OPEN_WebUI" width="600">
