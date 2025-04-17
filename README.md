@@ -74,6 +74,9 @@ These tools can process a vast array of local documents and provide precise answ
 - **ChatBot Web UI with file upload, AI role, and response copy function**: This version of chatbot allow users upload document files with different format, choose AI roles, and copy response to clipboard. This version sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot_up15.py).
   <img src="./screenshot/chat_upload.jpg" alt="OPEN_WebUI" width="600">
 
+- **Weekly meeting minutes Chatbot**: A chatbot powered by a knowledge base of a technical team's weekly meeting minutes, utilizing the past two years of weekly meeting minutes, helps team members retrieve information from the past weekly meeting minutes.
+   <img src="./screenshot/EBCC_status.jpg" alt="OPEN_WebUI" width="600">
+
 - **ChatBot Web UI**: A chatbot webpage built using a Streamlit UI Python application that connects to the Open-WebUI platform, helping students to solve their lab problems. The sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot.py).
   <img src="./screenshot/chatbot02.jpg" alt="OPEN_WebUI" width="600">
 
