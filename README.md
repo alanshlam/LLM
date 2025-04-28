@@ -64,7 +64,9 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natur
 - Mistral 
 - Hermes
 - OpenHermes
-  
+
+VLLM has been run on multiple GPU nodes with Ray service to support large size LLM
+
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
 
