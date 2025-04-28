@@ -70,6 +70,9 @@ VLLM has been run on multiple GPU nodes using the Ray service to support large-s
 ### Practical Applications
 These tools can process a vast array of local documents and provide precise answers to specific inquiries:
 
+- **Extract netowrk information from network diagram**: With the help of llama3.2-vision:90b LLM, we can extract networking info from network diagrams for further processing by AI tools. The program to extract network info from network diagrams is avaliable for downnload  [here](https://github.com/alanshlam/LLM/blob/main/code/extract_network_info.py).
+  <img src="./screenshot/network_diagram_info_extract.jpg" alt="OPEN_WebUI" width="600">
+
 - **ChatBot Web UI with file upload, AI role, and response copy function**: This version of chatbot allows users upload document files with different format, choose AI roles, and copy response to clipboard. This version sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot_up15.py).
   <img src="./screenshot/chat_upload.jpg" alt="OPEN_WebUI" width="600">
 
