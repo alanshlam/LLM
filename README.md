@@ -78,6 +78,7 @@ These tools can process a vast array of local documents (including text and imag
   <img src="./screenshot/chat_upload.jpg" alt="OPEN_WebUI" width="600">
 
 - **ChatBot Web UI with web search**: This version of chatbot, which includes a web search feature, allows users to obtain updated information regardless of the LLM knowledge cutoff date. This version sample code is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/chat_bot_up15_ws.py).
+  
   <img src="./screenshot/web_search_sunset.jpg" alt="OPEN_WebUI" width="600">
   
 - **Weekly meeting minutes Chatbot**: A chatbot powered by a knowledge base of a technical team's weekly meeting minutes, utilizing the past two years of weekly meeting minutes, helps team members retrieve information from the past weekly meeting minutes.
