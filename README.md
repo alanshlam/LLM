@@ -68,7 +68,7 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natur
 VLLM has been run on multiple GPU nodes using the Ray service to support large-scale LLMs.
 
 ### Practical Applications
-These tools can process a vast array of local documents (including text and images) and provide precise answers to specific inquiries:
+These tools can process a vast array of local documents, including text and images, and provide precise answers to specific inquiries and data analysis. LLMs can also analyze, generate, or transform images. You can see demos of image generation with LLMs [here](gen_image)
 
 - **Extract Network Information from Network Diagram**: With the help of llama3.2-vision:90b LLM, we can extract networking information from network diagrams for further processing by AI tools. The program to extract network information from network diagrams is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/extract_network_info.py).
   
