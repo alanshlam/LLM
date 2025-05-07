@@ -1,5 +1,10 @@
 ### This folder contains the programs to faciliate knowledge base building powered by LLM
 
+**app_3090.py**: Image generator can be with Ghibli-Style, powered by
+black-forest-labs/FLUX.1-dev,
+openfree/flux-chatgpt-ghibli-lora, and
+flux-chatgpt-ghibli-lora.safetensors 
+
 **chat_bot_up15.py**: Streamlit UI program for building a Chatbot accessing available models in Open WebU. This version allows user upload file with differnet document format, choose AI roles, and copy response to clipborad.
 
 **chat_bot_up15_ws.py**: include the functions in chat_bot_up15.py plus web search function by duckduckgo
