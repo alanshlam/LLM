@@ -44,7 +44,7 @@ Crafting effective prompts is crucial for generating desired results.  Large Lan
 * **Add artistic details:**  "Generate a portrait in the style of Van Gogh."
 * **Optimize for specific models:**  Adjust prompts to suit the strengths of different AI models.
 
-Below is an example of how to use LLM to generate prompt for image generation.You can download below Web UI program here<br>
+Below is an example of how to use LLM to generate prompt for image generation.You can download below Web UI program [here](../code/img_prompt_server.py)<br>
 <img src="../screenshot/img__prompt_by_LLM_ComfyUI.jpg" width="800">
 
 We encourage you to explore the resources and techniques provided here to unlock the full potential of AI-powered image generation!
