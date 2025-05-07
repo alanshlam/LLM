@@ -21,6 +21,13 @@ This project provides resources for generating images in the iconic style of Stu
 * **FLUX.1-dev (black-forest-labs/FLUX.1-dev):**  A powerful model focusing on image generation and transformation.
 * **flux-chatgpt-ghibli-lora (openfree/flux-chatgpt-ghibli-lora) & flux-chatgpt-ghibli-lora.safetensors:**  A LoRA (Low-Rank Adaptation) specifically trained to infuse images with the Ghibli aesthetic.  LoRAs are smaller models that can be applied on top of a base model to achieve a specific style.
 
+Below is an example demonstrating how to generate or transform images in the Ghibli style: <br>
+ Compare the original image and transformed image<br>
+ <img src="../screenshot/original_photo02.png" alt="original" width="300"><img src="../screenshot/ghibli_style02.png" alt="tranformed" width="300">
+
+You can download below Ghibli Web UI program here<br>
+ <img src="../screenshot/ghibli02.jpg" alt="Ghibli-Sytle" width="500">
+
 ## ComfyUI Integration
 
 For advanced control and workflow customization, consider using [ComfyUI](https://github.com/comfyanonymous/ComfyUI).  ComfyUI is a modular interface for Stable Diffusion, allowing you to chain together various image processing nodes to create complex workflows. Numerous image models and workflows are available within the ComfyUI ecosystem.
