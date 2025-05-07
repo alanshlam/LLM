@@ -16,3 +16,5 @@ flux-chatgpt-ghibli-lora.safetensors
 **extract_text_from_eml.py**: program to extract mail body texts from mailbox in eml format
 
 **extract_and_group_emails.py**: Progam to extract plain text from mail body and group the output mails with same subject tilte. 
+
+**img_prompt_server.py**: Program connected to ollama LLM and ComfyUI image model to generate image 
