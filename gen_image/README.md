@@ -32,6 +32,10 @@ You can download below Ghibli Web UI program [here](../code/app_3090.py)<br>
 
 For advanced control and workflow customization, consider using [ComfyUI](https://github.com/comfyanonymous/ComfyUI).  ComfyUI is a modular interface for Stable Diffusion, allowing you to chain together various image processing nodes to create complex workflows. Numerous image models and workflows are available within the ComfyUI ecosystem.
 
+Below is an example of using ComfyUI with the Gemma 3.27B LLM and RealVisXL V5.0 to generate an image and follow up on its generation using Open WebUI:<br>
+<img src="../screenshot/img_followup_open_webUI.jpg" width="800">
+
+
 ## Prompt Engineering & LLM Assistance
 
 Crafting effective prompts is crucial for generating desired results.  Large Language Models (LLMs) can be incredibly helpful in refining your prompts, suggesting keywords, and improving overall coherence.  Consider using an LLM to:
