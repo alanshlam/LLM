@@ -25,7 +25,7 @@ Below is an example demonstrating how to generate or transform images in the Ghi
  Compare the original image and transformed image<br>
  <img src="../screenshot/original_photo02.png" alt="original" width="300"><img src="../screenshot/ghibli_style02.png" alt="tranformed" width="300">
 
-You can download below Ghibli Web UI program here<br>
+You can download below Ghibli Web UI program [here](../code/app_3090.py)<br>
  <img src="../screenshot/ghibli02.jpg" alt="Ghibli-Sytle" width="500">
 
 ## ComfyUI Integration
