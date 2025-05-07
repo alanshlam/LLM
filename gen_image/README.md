@@ -21,7 +21,7 @@ This project provides resources for generating images in the iconic style of Stu
 * **FLUX.1-dev (black-forest-labs/FLUX.1-dev):**  A powerful model focusing on image generation and transformation.
 * **flux-chatgpt-ghibli-lora (openfree/flux-chatgpt-ghibli-lora) & flux-chatgpt-ghibli-lora.safetensors:**  A LoRA (Low-Rank Adaptation) specifically trained to infuse images with the Ghibli aesthetic.  LoRAs are smaller models that can be applied on top of a base model to achieve a specific style.
 
-Below is an example demonstrating how to generate or transform images in the Ghibli style: <br>
+Below is an example demonstrating how to generate or transform images in the Ghibli style with the above resources: <br>
  Compare the original image and transformed image<br>
  <img src="../screenshot/original_photo02.png" alt="original" width="300"><img src="../screenshot/ghibli_style02.png" alt="tranformed" width="300">
 
