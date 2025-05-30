@@ -65,6 +65,8 @@ The GPU monitoring data chart below  reveals that both `qwen3:235b` (142 GB) and
 
 In short, `qwen3:235b` can run stably but slower due to its larger memory footprint straining the GPU memory, leading to more reliance on system RAM.
 
+  <img src="./screenshot/gpu_mon.png" alt="GPU monitoring" width="800">
+  
 ### Evaluation of NLP Tools
 ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070/2080 GPUs using different LLMs, including:
 - gemma3
