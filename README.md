@@ -77,7 +77,8 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natur
 - Hermes
 - OpenHermes
 
-VLLM has been run on multiple GPU nodes using the Ray service to support large-scale LLMs.
+VLLM has been run on multiple GPU nodes using the Ray service to support large-scale LLMs, such as `Qwen/Qwen2.5-VL-72B-Instruct`
+`deepseek-ai/DeepSeek-R1-Distill-Llama-70B`, and `meta-llama/Llama-3.3-70B-Instruct`.
 
 ### Practical Applications
 These tools can process a vast array of local documents, including text and images, and provide precise answers to specific inquiries and data analysis. LLMs can also analyze, generate, or transform images. With these image-based features, the knowledge base can analyze technical diagrams to extract key insights for AI processing and present information more engagingly with visual and textual elements. You can see some demos of image generation with LLMs [here](gen_image)
