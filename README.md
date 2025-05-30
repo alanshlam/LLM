@@ -78,10 +78,58 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natur
 - OpenHermes
 
 VLLM has been run on multiple GPU nodes using the Ray service to support large-scale LLMs, such as `Qwen/Qwen2.5-VL-72B-Instruct`
-`deepseek-ai/DeepSeek-R1-Distill-Llama-70B`, and `meta-llama/Llama-3.3-70B-Instruct`.
+`deepseek-ai/DeepSeek-R1-Distill-Llama-70B`, and `meta-llama/Llama-3.3-70B-Instruct`. 
+
+- **vLLM**: vLLM is a framework for efficiently serving large language models, often leveraging GPUs for high-performance inference. It uses Ray to distribute tasks across multiple nodes or GPUs, enabling scalable model serving.
+- **Ray**: Ray is a distributed computing framework that simplifies parallel and distributed task execution. In this context, vLLM uses Ray to manage multiple nodes and GPUs for tasks like model inference or fine-tuning.
+
+Below is a sample log of running VLLM Ray in the initial stage at a node. 
+
+               2025-05-28 15:26:46,828 INFO scripts.py:1047 -- Local node IP: 172.16.5.181
+               2025-05-28 15:26:47,201 SUCC scripts.py:1063 -- --------------------
+               2025-05-28 15:26:47,201 SUCC scripts.py:1064 -- Ray runtime started.
+               2025-05-28 15:26:47,201 SUCC scripts.py:1065 -- --------------------
+               2025-05-28 15:26:47,201 INFO scripts.py:1067 -- To terminate the Ray runtime, run
+               2025-05-28 15:26:47,201 INFO scripts.py:1068 --   ray stop
+               2025-05-28 15:26:48,221 INFO worker.py:1654 -- Connecting to existing Ray cluster at address: 172.16.5.183:6379...
+               2025-05-28 15:26:48,237 INFO worker.py:1841 -- Connected to Ray cluster.
+               ======== Autoscaler status: 2025-05-28 15:26:57.427462 ========
+               Node status
+               ---------------------------------------------------------------
+               Active:
+                1 node_4d1c014354e742d021974986456e9383672d2854e9f5b7c2251515fa
+                1 node_18c9cd7bf97d1f22b58eb743ec47c0787e8a5bc9a8efe8629b31f74c
+                1 node_bce9b505a8002d21a790fa6ee7474c3eacadb4c189b9ecf3c7cdcf42
+                1 node_174bf42f69f8665e1eaa12d53915e018f35491e873102c46c6989f77
+               Pending:
+                (no pending nodes)
+               Recent failures:
+                (no failures)
+               
+               Resources
+               ---------------------------------------------------------------
+               Usage:
+                0.0/64.0 CPU
+                0.0/32.0 GPU
+                0B/435.64GiB memory
+                0B/190.69GiB object_store_memory
+               
+               Demands:
+                (no resource demands)
+               import ray
+               ray.init()
+
+The above log shows the cluster has the following resources:
+
+   - **CPU**: The cluster has 64 CPU cores available
+   - **GPU**: The cluster has 32 GPUs available
+   - **Memory**: The total memory available is 435.64 GiB,
+   - **Object Store Memory**: The object store (used by Ray for sharing data between tasks) has 190.69 GiB available
+
+
 
 ### Practical Applications
-These tools can process a vast array of local documents, including text and images, and provide precise answers to specific inquiries and data analysis. LLMs can also analyze, generate, or transform images. With these image-based features, the knowledge base can analyze technical diagrams to extract key insights for AI processing and present information more engagingly with visual and textual elements. You can see some demos of image generation with LLMs [here](gen_image)
+These NLP tools can process a vast array of local documents, including text and images, and provide precise answers to specific inquiries and data analysis. LLMs can also analyze, generate, or transform images. With these image-based features, the knowledge base can analyze technical diagrams to extract key insights for AI processing and present information more engagingly with visual and textual elements. You can see some demos of image generation with LLMs [here](gen_image)
 
 - **Extract Network Information from Network Diagram**: With the help of llama3.2-vision:90b LLM, we can extract networking information from network diagrams for further processing by AI tools. The program to extract network information from network diagrams is available for download [here](https://github.com/alanshlam/LLM/blob/main/code/extract_network_info.py).
   
