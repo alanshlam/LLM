@@ -55,6 +55,16 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 
 ## Studies
 
+### LLM Performance Analysis
+
+The GPU monitoring data chart below  reveals that both `qwen3:235b` (142 GB) and `llama4:16X17b` (67 GB) ran successfully on Ollama using a system with an Intel Core Ultra 9 285K, 125 GiB RAM, and dual NVIDIA GPUs (RTX 4090 with 49 GiB and RTX 2080 Ti with 11 GiB). The `llama4:16X17b` model showed a sharp GPU utilization spike during its initial run, while `qwen3:235b` exhibited sustained higher memory usage and slower performance (235 seconds per task) due to its larger size, likely offloading to the system's 125 GiB RAM. Despite the GPUs' combined 60 GiB memory being insufficient, no crashes occurred, indicating stability supported by ample RAM and swap space. The slower speed of `qwen3:235b` highlights the memory constraint impact on efficiency. `qwen3:235b` (142 GB) ran successfully in Ollama without crashing, though it was slower than `llama4:16X17b` (67 GB). 
+
+- **Performance Comparison:** During the rerun and translation tasks (both taking 235 seconds), `qwen3:235b` showed higher GPU Memory Utilization compared to `llama4:16X17b`’s first run, reflecting its larger size. The GPU Utilization for `qwen3:235b` was also slightly higher but more sustained, indicating heavier resource demands.
+- **Stability:** No crashes occurred, likely due to the system’s 125 GiB RAM and swap space (6.7 GiB free) compensating for the GPUs’ limited memory (49 GiB on RTX 4090 + 11 GiB on RTX 2080 Ti).
+- **Speed Difference:** The slower performance of `qwen3:235b` is observed due to its size (142 GB vs. 67 GB), which likely caused more offloading to system RAM, increasing latency.
+
+In short, `qwen3:235b` can run stably but slower due to its larger memory footprint straining the GPU memory, leading to more reliance on system RAM.
+
 ### Evaluation of NLP Tools
 ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070/2080 GPUs using different LLMs, including:
 - gemma3
