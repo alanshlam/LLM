@@ -85,44 +85,45 @@ VLLM has been run on multiple GPU nodes using the Ray service to support large-s
 
 Below is a sample log of running VLLM Ray in the initial stage at a node. 
 
-               2025-05-28 15:26:46,828 INFO scripts.py:1047 -- Local node IP: 172.16.5.181
-               2025-05-28 15:26:47,201 SUCC scripts.py:1063 -- --------------------
-               2025-05-28 15:26:47,201 SUCC scripts.py:1064 -- Ray runtime started.
-               2025-05-28 15:26:47,201 SUCC scripts.py:1065 -- --------------------
-               2025-05-28 15:26:47,201 INFO scripts.py:1067 -- To terminate the Ray runtime, run
-               2025-05-28 15:26:47,201 INFO scripts.py:1068 --   ray stop
-               2025-05-28 15:26:48,221 INFO worker.py:1654 -- Connecting to existing Ray cluster at address: 172.16.5.183:6379...
-               2025-05-28 15:26:48,237 INFO worker.py:1841 -- Connected to Ray cluster.
-               ======== Autoscaler status: 2025-05-28 15:26:57.427462 ========
-               Node status
-               ---------------------------------------------------------------
-               Active:
-                1 node_4d1c014354e742d021974986456e9383672d2854e9f5b7c2251515fa
-                1 node_18c9cd7bf97d1f22b58eb743ec47c0787e8a5bc9a8efe8629b31f74c
-                1 node_bce9b505a8002d21a790fa6ee7474c3eacadb4c189b9ecf3c7cdcf42
-                1 node_174bf42f69f8665e1eaa12d53915e018f35491e873102c46c6989f77
-               Pending:
-                (no pending nodes)
-               Recent failures:
-                (no failures)
-               
-               Resources
-               ---------------------------------------------------------------
-               Usage:
-                0.0/64.0 CPU
-                0.0/32.0 GPU
-                0B/435.64GiB memory
-                0B/190.69GiB object_store_memory
-               
-               Demands:
-                (no resource demands)
-               import ray
-               ray.init()
+            2025-06-01 11:41:18,017 INFO scripts.py:1047 -- Local node IP: 172.16.5.182
+            2025-06-01 11:41:20,181 SUCC scripts.py:1063 -- --------------------
+            2025-06-01 11:41:20,181 SUCC scripts.py:1064 -- Ray runtime started.
+            2025-06-01 11:41:20,181 SUCC scripts.py:1065 -- --------------------
+            2025-06-01 11:41:20,181 INFO scripts.py:1067 -- To terminate the Ray runtime, run
+            2025-06-01 11:41:20,181 INFO scripts.py:1068 --   ray stop
+            2025-06-01 11:41:21,162 INFO worker.py:1654 -- Connecting to existing Ray cluster at address: 172.16.5.183:6379...
+            2025-06-01 11:41:21,179 INFO worker.py:1841 -- Connected to Ray cluster.
+            ======== Autoscaler status: 2025-06-01 11:45:36.295144 ========
+            Node status
+            ---------------------------------------------------------------
+            Active:
+             1 node_ad17ceece6a118995d13250efc20d9b06051b76b1acebfd62e353156
+             1 node_fb1ef9886cef99ce2368d4fa8f2e9016c6cfa02073577fe3c4fcea50
+             1 node_a49746d30be4d155d95cdb2e2d73e94d4846a2b8025e0f86b589f4da
+             1 node_257c373b7451fea606ef2f025e8067cd436c43ea1e1326bc9b399abb
+            Pending:
+             (no pending nodes)
+            Recent failures:
+             (no failures)
+            
+            Resources
+            ---------------------------------------------------------------
+            Usage:
+             0.0/64.0 CPU
+             32.0/32.0 GPU (32.0 used of 32.0 reserved in placement groups)
+             0B/435.63GiB memory
+             0B/190.69GiB object_store_memory
+            
+            Demands:
+             (no resource demands)
+            import ray
+            ray.init()
+
 
 The above log shows the cluster has the following resources:
 
    - **CPU**: The cluster has 64 CPU cores available
-   - **GPU**: The cluster has 32 GPUs available
+   - **GPU**: The cluster has 32 GPUs and all of them have been used
    - **Memory**: The total memory available is 435.64 GiB,
    - **Object Store Memory**: The object store (used by Ray for sharing data between tasks) has 190.69 GiB available
 
