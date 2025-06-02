@@ -121,21 +121,20 @@ The above log shows the cluster has the following resources:
 
 The above mentioned LLMs are running stably across the four nodes using vLLM and Ray, with all 32 GPUs allocated and no cluster failures. GPU memory usage is efficient (~64–66% of 11GB VRAM), and system memory is underutilized, confirming a GPU-bound workload.
 
-Below chart and table illustrate the GPU utilization across nodes, here’s a bar chart comparing the utilization of each GPU on each node. This highlights the lower utilization of GPU 0 and the variation across nodes. The lower utilization of GPU 0 is likely due to vLLM or Ray assigning it a specialized role, such as orchestration, communication, or lighter compute tasks in the tensor parallelism pipeline. This is a common pattern in distributed frameworks where one GPU handles coordination or I/O, reducing its compute load.
+Below chart and table illustrate the GPU utilization across nodes, here’s a bar chart comparing the utilization of each GPU on each node. For the r20804 node, there are two snapshot of data at 23:13:29 and 23:13:42 respectively. This highlights the lower utilization of GPU 0 and the variation across nodes. The lower utilization of GPU 0 is likely due to vLLM or Ray assigning it a specialized role, such as orchestration, communication, or lighter compute tasks in the tensor parallelism pipeline. This is a common pattern in distributed frameworks where one GPU handles coordination or I/O, reducing its compute load.
 
 <img src="./screenshot/vllm_chart.png" alt="VLLM Chart" width="1000">
 
-| GPU Index | r20801 | r20802 | r20803 | r20804 |
-|-----------|--------|--------|--------|--------|
-| GPU 0     | 9%     | 10%    | 10%    | 12%    |
-| GPU 1     | 46%    | 49%    | 50%    | 50%    |
-| GPU 2     | 48%    | 51%    | 53%    | 49%    |
-| GPU 3     | 49%    | 53%    | 47%    | 50%    |
-| GPU 4     | 48%    | 57%    | 52%    | 42%    |
-| GPU 5     | 48%    | 52%    | 49%    | 52%    |
-| GPU 6     | 50%    | 55%    | 44%    | 47%    |
-| GPU 7     | 46%    | 48%    | 47%    | 49%    |
-
+| GPU Index | r20801 | r20802 | r20803 | r20804 (23:13:29) | r20804 (23:13:42) |
+|-----------|--------|--------|--------|-------------------|-------------------|
+| GPU 0     | 9%     | 10%    | 10%    | 12%               | 10%               |
+| GPU 1     | 46%    | 49%    | 50%    | 50%               | 42%               |
+| GPU 2     | 48%    | 51%    | 53%    | 49%               | 40%               |
+| GPU 3     | 49%    | 53%    | 47%    | 50%               | 44%               |
+| GPU 4     | 48%    | 57%    | 52%    | 42%               | 45%               |
+| GPU 5     | 48%    | 52%    | 49%    | 52%               | 44%               |
+| GPU 6     | 50%    | 55%    | 44%    | 47%               | 40%               |
+| GPU 7     | 46%    | 48%    | 47%    | 49%               | 40%               |
 
 
 ### Evaluation of NLP Tools
