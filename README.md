@@ -67,7 +67,7 @@ In short, `qwen3:235b` can run stably but slower due to its larger memory footpr
 
   <img src="./screenshot/gpu_mon.png" alt="GPU monitoring" width="1000">
 
-### LLM Performance Analysis on VLLM Cluster with RTX 2080 with 11 GiB
+### Distributed LLM Performance Analysis on VLLM Cluster with RTX 2080 with 11 GiB
 
 VLLM has been run on multiple GPU nodes using the Ray service to support large-scale LLMs, such as `Qwen/Qwen2.5-VL-72B-Instruct`
 `deepseek-ai/DeepSeek-R1-Distill-Llama-70B`, and `meta-llama/Llama-3.3-70B-Instruct`. 
@@ -136,6 +136,28 @@ Below chart and table illustrate the GPU utilization across nodes, here’s a ba
 | GPU 6     | 50%    | 55%    | 44%    | 47%               | 40%               |
 | GPU 7     | 46%    | 48%    | 47%    | 49%               | 40%               |
 
+Below is a bar chart and table showing VRAM utilization (%) for each GPU across the nodes. The chart uses distinct colors for each node and snapshot, with labels for GPU indices (0–7) and utilization percentages.
+
+<img src="./screenshot/vllm_vram_chart.png" alt="VLLM Chart" width="1000">
+
+| GPU Index | r20801 | r20802 | r20803 | r20804 (23:13:29) | r20804 (23:13:42) |
+|-----------|--------|--------|--------|-------------------|-------------------|
+| GPU 0     | 65.88% | 66.15% | 63.92% | 63.92%            | 63.92%            |
+| GPU 1     | 65.81% | 66.12% | 63.92% | 63.92%            | 63.92%            |
+| GPU 2     | 65.81% | 66.12% | 63.92% | 63.92%            | 63.92%            |
+| GPU 3     | 65.81% | 66.12% | 63.92% | 63.92%            | 63.92%            |
+| GPU 4     | 65.81% | 66.12% | 63.92% | 63.92%            | 63.92%            |
+| GPU 5     | 65.81% | 66.12% | 63.92% | 63.92%            | 63.92%            |
+| GPU 6     | 65.81% | 66.12% | 63.92% | 63.92%            | 63.92%            |
+| GPU 7     | 65.81% | 66.12% | 63.92% | 63.92%            | 63.92%            |
+
+
+#### Observations
+- **Uniformity**: VRAM utilization is highly consistent within each node, with r20801 (~65.8%), r20802 (~66.1%), and r20803/r20804 (~63.9%) showing slight variations. This suggests vLLM’s tensor parallelism evenly distributes the model’s memory footprint across GPUs.
+- **Efficiency**: Utilization is around 63.9–66.1% of the 11GB VRAM, indicating efficient memory management for the 70B model, likely due to quantization or optimization techniques in vLLM.
+- **Node Differences**: r20802 uses slightly more VRAM (~66.1%) than r20803/r20804 (~63.9%), possibly due to differences in model sharding or minor variations in workload allocation.
+
+This chart visually highlights the consistent VRAM usage across GPUs and nodes, with slight differences between nodes that may warrant further investigation for optimization.
 
 ### Evaluation of NLP Tools
 ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070/2080 GPUs using different LLMs, including:
