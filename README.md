@@ -55,7 +55,7 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 
 ## Studies
 
-### LLM Performance Analysis
+### LLM Performance Analysis on RTX 4090 with 49 GiB and RTX 2080 Ti with 11 GiB
 
 The GPU monitoring data chart below  reveals that both `qwen3:235b` (142 GB) and `llama4:16X17b` (67 GB) ran successfully on Ollama using a system with an Intel Core Ultra 9 285K, 125 GiB RAM, and dual NVIDIA GPUs (RTX 4090 with 49 GiB and RTX 2080 Ti with 11 GiB). The `llama4:16X17b` model showed a sharp GPU utilization spike during its initial run, while `qwen3:235b` exhibited sustained higher memory usage and slower performance (235 seconds per task) due to its larger size, likely offloading to the system's 125 GiB RAM. Despite the GPUs' combined 60 GiB memory being insufficient, no crashes occurred, indicating stability supported by ample RAM and swap space. The slower speed of `qwen3:235b` highlights the memory constraint impact on efficiency. `qwen3:235b` (142 GB) ran successfully in Ollama without crashing, though it was slower than `llama4:16X17b` (67 GB). 
 
@@ -66,16 +66,8 @@ The GPU monitoring data chart below  reveals that both `qwen3:235b` (142 GB) and
 In short, `qwen3:235b` can run stably but slower due to its larger memory footprint straining the GPU memory, leading to more reliance on system RAM.
 
   <img src="./screenshot/gpu_mon.png" alt="GPU monitoring" width="1000">
-  
-### Evaluation of NLP Tools
-ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070/2080 GPUs using different LLMs, including:
-- gemma3
-- Llama 2, 3.1, 3.2, 3.3, 4
-- Deepseek-r1
-- Qwen
-- Mistral 
-- Hermes
-- OpenHermes
+
+### LLM Performance Analysis on VLLM Cluster with RTX 2080 with 11 GiB
 
 VLLM has been run on multiple GPU nodes using the Ray service to support large-scale LLMs, such as `Qwen/Qwen2.5-VL-72B-Instruct`
 `deepseek-ai/DeepSeek-R1-Distill-Llama-70B`, and `meta-llama/Llama-3.3-70B-Instruct`. 
@@ -126,6 +118,18 @@ The above log shows the cluster has the following resources:
    - **GPU**: The cluster has 32 GPUs and all of them have been used
    - **Memory**: The total memory available is 435.64 GiB,
    - **Object Store Memory**: The object store (used by Ray for sharing data between tasks) has 190.69 GiB available
+
+
+
+### Evaluation of NLP Tools
+ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070/2080 GPUs using different LLMs, including:
+- gemma3
+- Llama 2, 3.1, 3.2, 3.3, 4
+- Deepseek-r1
+- Qwen
+- Mistral 
+- Hermes
+- OpenHermes
 
 
 
