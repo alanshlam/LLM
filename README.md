@@ -119,7 +119,25 @@ The above log shows the cluster has the following resources:
    - **Memory**: The total memory available is 435.64 GiB,
    - **Object Store Memory**: The object store (used by Ray for sharing data between tasks) has 190.69 GiB available
 
-The above mentioned LLMs are running stably across the four nodes using vLLM and Ray, with all 32 GPUs allocated and no cluster failures. GPU memory usage is efficient (~64–66% of 11GB VRAM), and system memory is underutilized, confirming a GPU-bound workload.
+Once the cluster formed by ray is available, the following vllm command will run meta-llama/Llama-3.3-70B-Instruct across four nodes with eight RTX 2080 GPU each.
+
+            python -m vllm.entrypoints.openai.api_server \
+              --model meta-llama/Llama-3.3-70B-Instruct \
+              --tensor-parallel-size 8 \
+              --pipeline-parallel-size 4 \
+              --host 0.0.0.0 \
+              --gpu-memory-utilization 0.9 \
+              --port 8088 \
+              --api-key [the api key] \
+              --dtype half \
+              --max-model-len 16384 \
+              --max-num-seqs 512 \
+              --enforce-eager \
+              --distributed-executor-backend ray
+
+This command sets up an efficient distributed inference server for the Llama-3.3-70B-Instruct model using vLLM and Ray, leveraging tensor and pipeline parallelism across 4 nodes with 8 GPUs each. The FP16 data type and high sequence/batch limits optimize memory and throughput, while Ray ensures stable resource management.
+
+The above mentioned meta-llama/Llama-3.3-70B-Instruct is running stably across the four nodes using vLLM and Ray, with all 32 GPUs allocated and no cluster failures. GPU memory usage is efficient (~64–66% of 11GB VRAM), and system memory is underutilized, confirming a GPU-bound workload.
 
 Below chart and table illustrate the GPU utilization across nodes, here’s a bar chart comparing the utilization of each GPU on each node. This highlights the lower utilization of GPU 0 and the variation across nodes. The lower utilization of GPU 0 is likely due to vLLM or Ray assigning it a specialized role, such as orchestration, communication, or lighter compute tasks in the tensor parallelism pipeline. This is a common pattern in distributed frameworks where one GPU handles coordination or I/O, reducing its compute load.
 
