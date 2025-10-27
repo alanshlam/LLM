@@ -55,6 +55,77 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 
 ## Studies
 
+### 🧠 Private AI Knowledge Base — Offline LLM Deployment
+
+This project demonstrates how to **build a private, self-hosted AI knowledge base** using locally deployed **LLMs**.  
+The system is designed to operate **entirely offline**, providing a secure and privacy-preserving environment for information retrieval and intelligent assistance.
+
+---
+
+#### 🔍 Overview
+
+The knowledge base is constructed from **3,000 discussion posts** collected from a lab course forum.  
+It enables students and researchers to query the knowledge base in natural language and receive **AI-generated responses** that help solve lab-related problems or clarify course concepts.
+
+---
+
+#### 🎯 Objectives
+
+- Establish a **local AI environment** capable of running LLMs without internet access  
+- Build an **intelligent knowledge retrieval system** from existing educational data  
+- Enhance **student learning and self-support** through automated responses  
+- Ensure **data privacy, transparency, and control** by avoiding cloud-based dependencies  
+
+---
+
+#### ⚙️ Key Features
+
+- 🧩 **Offline LLM deployment** (no external API required)  
+- 📚 **Custom knowledge base** built from structured and unstructured forum data  
+- 🔎 **Contextual search and response generation**  
+- 📈 **Scalable architecture** adaptable to other domains beyond education  
+
+---
+
+#### 🧠 Technologies Used
+
+- **Python**  
+- **Vector database / embedding models**  
+- **Local LLM inference frameworks** (e.g., *Ollama*, *VLLM*, *Open WebUi*, *ComfyUI*)  
+- **Document ingestion and indexing scripts**
+
+---
+
+#### 📚 Educational Application
+
+This project serves as a practical example for courses or research projects involving:
+
+- AI-assisted learning systems  
+- Information retrieval and NLP applications  
+- Knowledge management in education  
+- Privacy-preserving AI deployments  
+
+---
+
+#### 🎥 Demonstration
+
+A complete walkthrough video is available on YouTube:  
+👉 [Watch the video here](https://youtu.be/_WR7NESzr-Y) 
+
+---
+
+#### 💬 Feedback & Collaboration
+
+Suggestions for improvement and alternative approaches are welcome.  
+Please feel free to **open an issue** or **submit a pull request** if you’d like to contribute.
+
+
+
+##### 🏷️ Tags
+`AI` `LLM` `KnowledgeBase` `OfflineAI` `EducationTechnology` `SelfHostedAI` `OpenSourceAI`
+
+
+---
 ### LLM Performance Analysis on RTX 4090 with 49 GiB and RTX 2080 Ti with 11 GiB
 
 The GPU monitoring data chart below  reveals that both `qwen3:235b` (142 GB) and `llama4:16X17b` (67 GB) ran successfully on Ollama using a system with an Intel Core Ultra 9 285K, 125 GiB RAM, and dual NVIDIA GPUs (RTX 4090 with 49 GiB and RTX 2080 Ti with 11 GiB). The `llama4:16X17b` model showed a sharp GPU utilization spike during its initial run, while `qwen3:235b` exhibited sustained higher memory usage and slower performance (235 seconds per task) due to its larger size, likely offloading to the system's 125 GiB RAM. Despite the GPUs' combined 60 GiB memory being insufficient, no crashes occurred, indicating stability supported by ample RAM and swap space. The slower speed of `qwen3:235b` highlights the memory constraint impact on efficiency. `qwen3:235b` (142 GB) ran successfully in Ollama without crashing, though it was slower than `llama4:16X17b` (67 GB). 
