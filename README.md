@@ -110,7 +110,8 @@ This project serves as a practical example for courses or research projects invo
 #### 🎥 Demonstration
 
 A complete walkthrough video is available on YouTube:  
-👉 [Watch the video here](https://youtu.be/_WR7NESzr-Y) 
+👉 Watch the video here
+  [<img src="./screenshot/cover4.png" width="600">](https://youtu.be/_WR7NESzr-Y) 
 
 ---
 
