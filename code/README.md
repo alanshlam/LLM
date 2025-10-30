@@ -17,4 +17,7 @@ flux-chatgpt-ghibli-lora.safetensors
 
 **extract_and_group_emails.py**: Progam to extract plain text from mail body and group the output mails with same subject tilte. 
 
-**img_prompt_server.py**: Program connected to ollama LLM and ComfyUI image model to generate image 
+**img_prompt_server.py**: Program connected to ollama LLM and ComfyUI image model to generate image. The program helps you: ✅ Understand how LLMs create image prompts for AI art generation
+✅ Compare prompts from different LLMs and study their effects
+✅ Review detailed image metadata and generation parameters from ComfyUI
+✅ Learn how prompt wording changes the artistic outcome
