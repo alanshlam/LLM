@@ -90,7 +90,7 @@ A complete walkthrough video is available on YouTube:
 [<img src="./screenshot/network_extract.png" width="600">](https://youtu.be/TvwQNb7WoRg) 
 
 ---
-The python code can be download at https://github.com/alanshlam/LLM/blob/main/code/extract_network_info.py
+The python code and some sample outputs can be download at https://github.com/alanshlam/LLM/blob/main/code/extract_network_info
 
 #### 💬 Feedback & Collaboration
 
