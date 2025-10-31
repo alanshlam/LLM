@@ -11,7 +11,7 @@ flux-chatgpt-ghibli-lora.safetensors
 
 **chat_bot.py**: Streamlit UI program for building a Chatbot accessing available models in Open WebU
 
-**extract_network_info.py**: Extract network information from network diagram in the network_diagrams folder by using llama3.2-vision:90b in Ollama.
+**extract_network_info.py**: Extract network information from network diagram in the network_diagrams folder by using vision llm in Ollama, such as llama3.2-vision:11b,llama3.2-vision:90b,qwen3-vl:32b ...etc.
 
 **extract_text_from_eml.py**: program to extract mail body texts from mailbox in eml format
 
