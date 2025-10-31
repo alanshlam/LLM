@@ -18,5 +18,7 @@ uvicorn server:app --host 127.0.0.1 --port 9000 --log-level debug
 <img src="./regenerated_image_sample (5).png" width="600">
 <img src="./regenerated_image_sample (6).png" width="600">
 <img src="./regenerated_image_sample (7).png" width="600">
+<img src="./regenerated_image_sample (8).png" width="600">
+
 
 
