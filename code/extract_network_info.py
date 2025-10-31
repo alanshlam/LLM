@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 # Configuration
-OLLAMA_ENDPOINT = "http://localhost:11438/api/chat"
+OLLAMA_ENDPOINT = "http://localhost:11434/api/chat"
 MODEL = "llama3.2-vision:90b"
 INPUT_FOLDER = "network_diagrams"  # Folder containing network diagram images
 OUTPUT_FOLDER = "network_info"      # Folder to save extracted info
