@@ -55,6 +55,53 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 
 ## Studies
 
+### 🧠 Build AI Knowledge Base from Network Diagrams using Vision LLM
+
+This project demonstrates how to use **Vision Large Language Models (Vision LLMs)** to automatically extract structured information from **network diagrams** — helping you convert visual data into **well-formatted text files** for building your **private AI knowledge base**.
+
+---
+
+#### 📖 Overview
+
+In traditional AI knowledge base setups, most data sources come from **documents**, **photos**, or **diagrams** in text-based formats.  
+But what if you have **hundreds of network topology diagrams** that contain valuable information about your infrastructure?
+
+This project provides a Python-based workflow to:
+- 📂 Process a large collection of network diagrams automatically  
+- 🧩 Use Vision LLMs to analyze and describe each diagram  
+- 📝 Extract structured text representations of the network connections, components, and topology  
+- ⚙️ Prepare the extracted text data for inclusion in your private AI knowledge base  
+
+---
+
+#### 🧰 Features
+
+- ✅ Batch process multiple network diagrams automatically  
+- 🧠 Integrate Vision LLM models for semantic understanding  
+- 📝 Output well-formatted text summaries for knowledge base ingestion  
+- 🔄 Extendable to any diagram type — not limited to network topologies  
+- 💬 Fully open source for experimentation and customization  
+
+#### 🎥 Demonstration
+
+A complete walkthrough video is available on YouTube:  
+👉 Watch the video here
+
+[<img src="./screenshot/network_extract.png" width="600">](https://youtu.be/TvwQNb7WoRg) 
+
+---
+The python code can be download at https://github.com/alanshlam/LLM/blob/main/code/extract_network_info.py
+
+#### 💬 Feedback & Collaboration
+
+Suggestions for improvement and alternative approaches are welcome.  
+Please feel free to **open an issue** or **submit a pull request** if you’d like to contribute.
+
+🏷️ Tags
+
+AI LLM VisionLLM KnowledgeBase  Automation NetworkDiagrams alanshlam
+
+---
 ### 🧠 Private AI Knowledge Base — Offline LLM Deployment
 
 This project demonstrates how to **build a private, self-hosted AI knowledge base** using locally deployed **LLMs**.  
