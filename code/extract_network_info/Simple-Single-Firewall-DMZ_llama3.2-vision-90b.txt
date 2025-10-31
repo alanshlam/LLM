@@ -1,0 +1,35 @@
+**Network Components**
+
+*   Internet
+*   Public Web Server
+*   DNS Server
+*   DMZ
+*   Border Router with IP Filters
+*   Mail Server
+*   Extranet Server
+*   Firewall
+*   Intranet
+
+**Connections**
+
+*   Internet → Border Router with IP Filters
+*   Border Router with IP Filters → Public Web Server
+*   Border Router with IP Filters → DNS Server
+*   Border Router with IP Filters → DMZ
+*   DMZ → Mail Server
+*   DMZ → Extranet Server
+*   Mail Server → Firewall
+*   Extranet Server → Firewall
+*   Firewall → Intranet
+
+**IP Addresses / Subnets**
+
+*   Not visible in the diagram
+
+**Protocols / Services**
+
+*   Not explicitly mentioned in the diagram, but likely includes HTTP (for web server), DNS (for DNS server), SMTP (for mail server), and other common protocols
+
+**Labels / Annotations**
+
+*   The diagram does not include any explicit labels or annotations beyond the component names.
