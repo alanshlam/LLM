@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfyUI Image-to-Image</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-4 max-w-4xl">
+        <h1 class="text-3xl font-bold text-center mb-6">ComfyUI Image-to-Image</h1>
+
+        <!-- Tabs -->
+        <div class="flex border-b border-gray-200 mb-6">
+            <button id="tab-prompt" class="px-4 py-2 font-medium text-indigo-600 border-b-2 border-indigo-600">Text-to-Image</button>
+            <button id="tab-upload" class="px-4 py-2 font-medium text-gray-600 hover:text-indigo-600">Image-to-Image</button>
+        </div>
+
+        <!-- Text-to-Image Form -->
+        <div id="prompt-form-container" class="bg-white p-6 rounded-lg shadow-md">
+            <form id="image-form" class="space-y-4">
+                <div>
+                    <label for="positive_prompt" class="block text-sm font-medium text-gray-700">Positive Prompt</label>
+                    <textarea id="positive_prompt" name="positive_prompt" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g., A serene lake at sunset"></textarea>
+                </div>
+                <div>
+                    <label for="negative_prompt" class="block text-sm font-medium text-gray-700">Negative Prompt (Optional)</label>
+                    <textarea id="negative_prompt" name="negative_prompt" rows="2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g., no boats"></textarea>
+                </div>
+                <div>
+                    <label for="ckpt_name" class="block text-sm font-medium text-gray-700">Checkpoint Model</label>
+                    <select id="ckpt_name" name="ckpt_name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="">Select a model</option>
+                    </select>
+                </div>
+                <div class="flex items-center">
+                    <input id="use_ollama" type="checkbox" name="use_ollama" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                    <label for="use_ollama" class="ml-2 block text-sm text-gray-900">Use Ollama for Prompt Enhancement</label>
+                </div>
+                <div id="ollama_model_container" class="hidden">
+                    <label for="ollama_model" class="block text-sm font-medium text-gray-700">Ollama Model</label>
+                    <select id="ollama_model" name="ollama_model" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="">Select an Ollama model</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit-prompt-button" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Generate from Text</button>
+            </form>
+        </div>
+
+        <!-- Image-to-Image Form -->
+        <div id="upload-form-container" class="bg-white p-6 rounded-lg shadow-md hidden">
+            <form id="upload-form" class="space-y-4">
+                <div>
+                    <label for="upload_image" class="block text-sm font-medium text-gray-700">Upload Image</label>
+                    <input type="file" id="upload_image" name="file" accept="image/*" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100" required>
+                    <p class="mt-2 text-xs text-gray-500">Upload an image to analyze and generate a similar one</p>
+                </div>
+                <div id="image-preview" class="mt-4 hidden">
+                    <p class="text-sm font-medium text-gray-700 mb-2">Preview:</p>
+                    <img id="preview-img" class="max-w-full h-auto rounded-md shadow-sm" />
+                </div>
+                <div>
+                    <label for="ckpt_name_upload" class="block text-sm font-medium text-gray-700">Checkpoint Model</label>
+                    <select id="ckpt_name_upload" name="ckpt_name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="">Select a model</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="negative_prompt_upload" class="block text-sm font-medium text-gray-700">Negative Prompt (Optional)</label>
+                    <textarea id="negative_prompt_upload" name="negative_prompt" rows="2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g., blurry, low quality"></textarea>
+                </div>
+                <button type="submit" id="submit-upload-button" class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Analyze & Generate Similar Image</button>
+            </form>
+        </div>
+
+        <!-- Loading -->
+        <div id="loading" class="mt-6 text-gray-600 hidden flex items-center justify-center">
+            <svg class="animate-spin h-6 w-6 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span id="loading-text">Processing...</span>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="mt-8 hidden">
+            <h2 class="text-2xl font-bold mb-4">Result</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div id="original-image-container" class="hidden">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Original Image</h3>
+                    <img id="original-image" class="w-full h-auto rounded-md shadow-md" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Generated Image</h3>
+                    <div id="generated-images" class="grid grid-cols-1 gap-4"></div>
+                </div>
+            </div>
+            <div class="mt-6 space-y-4">
+                <div>
+                    <button id="toggle-suggested-prompt" class="text-green-600 hover:text-green-800 font-semibold">Show Suggested Prompt</button>
+                    <div id="suggested_prompt" class="bg-gray-50 p-4 rounded-md hidden mt-2"></div>
+                </div>
+                <div>
+                    <button id="toggle-follow-up" class="text-green-600 hover:text-green-800 font-semibold">Show Analysis & Suggestions</button>
+                    <div id="follow_up" class="bg-gray-50 p-4 rounded-md hidden mt-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History -->
+        <div id="history" class="mt-10">
+            <h2 class="text-2xl font-bold mb-4">History</h2>
+            <div id="history-entries" class="space-y-6"></div>
+        </div>
+
+        <!-- Error -->
+        <div id="error" class="mt-4 text-red-600 hidden"></div>
+    </div>
+
+    <script>
+        const API_BASE_URL = '';
+        let history = [];
+
+        /* ──────────────────────────────  TABS  ────────────────────────────── */
+        document.getElementById('tab-prompt').addEventListener('click', () => {
+            document.getElementById('prompt-form-container').classList.remove('hidden');
+            document.getElementById('upload-form-container').classList.add('hidden');
+            document.getElementById('tab-prompt').classList.add('text-indigo-600', 'border-indigo-600');
+            document.getElementById('tab-prompt').classList.remove('text-gray-600');
+            document.getElementById('tab-upload').classList.remove('text-indigo-600', 'border-indigo-600');
+            document.getElementById('tab-upload').classList.add('text-gray-600');
+        });
+
+        document.getElementById('tab-upload').addEventListener('click', () => {
+            document.getElementById('upload-form-container').classList.remove('hidden');
+            document.getElementById('prompt-form-container').classList.add('hidden');
+            document.getElementById('tab-upload').classList.add('text-indigo-600', 'border-indigo-600');
+            document.getElementById('tab-upload').classList.remove('text-gray-600');
+            document.getElementById('tab-prompt').classList.remove('text-indigo-600', 'border-indigo-600');
+            document.getElementById('tab-prompt').classList.add('text-gray-600');
+        });
+
+        /* ───────────────────────  IMAGE PREVIEW  ─────────────────────── */
+        document.getElementById('upload_image').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById('preview-img');
+                    preview.src = e.target.result;
+                    document.getElementById('image-preview').classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        /* ───────────────────────  CHECKPOINTS  ─────────────────────── */
+        async function fetchCheckpoints(selectId) {
+            try {
+                const response = await fetch(`${API_BASE_URL}/checkpoints`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                const select = document.getElementById(selectId);
+                data.checkpoints.forEach(model => {
+                    const option = document.createElement('option');
+                    option.value = model;
+                    option.textContent = model;
+                    select.appendChild(option);
+                });
+            } catch (error) {
+                showError(`Failed to load models: ${error.message}`);
+            }
+        }
+
+        /* ───────────────────────  OLLAMA MODELS  ─────────────────────── */
+        async function fetchOllamaModels() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/ollama_models`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                const select = document.getElementById('ollama_model');
+                select.innerHTML = '<option value="">Select an Ollama model</option>';
+                data.models.forEach(model => {
+                    const option = document.createElement('option');
+                    option.value = model;
+                    option.textContent = model;
+                    select.appendChild(option);
+                });
+                document.getElementById('ollama_model_container').classList.remove('hidden');
+            } catch (error) {
+                console.error('Ollama models error:', error);
+                document.getElementById('ollama_model_container').classList.add('hidden');
+            }
+        }
+
+        document.getElementById('use_ollama').addEventListener('change', function() {
+            if (this.checked) fetchOllamaModels();
+            else document.getElementById('ollama_model_container').classList.add('hidden');
+        });
+
+        /* ───────────────────────  TEXT-TO-IMAGE  ─────────────────────── */
+        document.getElementById('image-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            clearError();
+            showLoading('Generating from text...');
+            const formData = new FormData(this);
+            const payload = {
+                positive_prompt: formData.get('positive_prompt'),
+                negative_prompt: formData.get('negative_prompt'),
+                ckpt_name: formData.get('ckpt_name'),
+                use_ollama: formData.get('use_ollama') === 'on',
+                ollama_model: formData.get('ollama_model') || undefined
+            };
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/run`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (!response.ok) throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+                const data = await response.json();
+                displayResult(data, 'text');
+            } catch (error) {
+                showError(`Generation failed: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        });
+
+        /* ───────────────────────  IMAGE-TO-IMAGE  ─────────────────────── */
+        document.getElementById('upload-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            clearError();
+            const file = document.getElementById('upload_image').files[0];
+            if (!file) return showError("Please upload an image.");
+
+            showLoading('Analyzing with qwen3-vl:32b and generating...');
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('ckpt_name', document.getElementById('ckpt_name_upload').value);
+            formData.append('negative_prompt', document.getElementById('negative_prompt_upload').value);
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/analyze_and_generate`, {
+                    method: 'POST',
+                    body: formData
+                });
+                if (!response.ok) throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+                const data = await response.json();
+                displayResult(data, 'image', file);
+            } catch (error) {
+                showError(`Failed: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        });
+
+        /* ───────────────────────  DISPLAY RESULT  ─────────────────────── */
+        function displayResult(data, mode, originalFile = null) {
+            const resultsDiv            = document.getElementById('results');
+            const suggestedPromptDiv    = document.getElementById('suggested_prompt');
+            const followUpDiv           = document.getElementById('follow_up');
+            const generatedImagesDiv    = document.getElementById('generated-images');
+            const originalImageContainer= document.getElementById('original-image-container');
+            const originalImage         = document.getElementById('original-image');
+
+            /* ---- clear previous ---- */
+            generatedImagesDiv.innerHTML = '';
+            suggestedPromptDiv.innerHTML = '';
+            followUpDiv.innerHTML        = '';
+
+            /* ---- original image (only for img2img) ---- */
+            if (mode === 'image' && originalFile) {
+                const reader = new FileReader();
+                reader.onload = e => {
+                    originalImage.src = e.target.result;
+                    originalImageContainer.classList.remove('hidden');
+                };
+                reader.readAsDataURL(originalFile);
+            } else {
+                originalImageContainer.classList.add('hidden');
+            }
+
+            /* ---- generated images (ALWAYS show) ---- */
+            if (data.result && data.result.length > 0) {
+                data.result.forEach((img, i) => {
+                    const container = document.createElement('div');
+                    container.className = 'relative';
+                    const image = document.createElement('img');
+                    image.src = `data:${img.format};base64,${img.data}`;
+                    image.className = 'w-full h-auto rounded-md shadow-md';
+                    const downloadBtn = document.createElement('button');
+                    downloadBtn.textContent = 'Download';
+                    downloadBtn.className = 'absolute bottom-2 right-2 bg-green-600 text-white py-1 px-3 rounded-md text-sm hover:bg-green-700';
+                    downloadBtn.onclick = () => {
+                        const a = document.createElement('a');
+                        a.href = image.src;
+                        a.download = `generated_${Date.now()}_${i + 1}.png`;
+                        a.click();
+                    };
+                    container.appendChild(image);
+                    container.appendChild(downloadBtn);
+                    generatedImagesDiv.appendChild(container);
+                });
+            } else {
+                generatedImagesDiv.innerHTML = '<p class="text-gray-500">No image generated.</p>';
+            }
+
+            /* ---- suggested / enhanced prompt ---- */
+            const promptText = data.suggested_prompt || data.enhanced_prompt || '';
+            const promptP = document.createElement('p');
+            promptP.className = 'font-mono text-sm break-words';
+            promptP.textContent = promptText || 'No prompt available.';
+            suggestedPromptDiv.appendChild(promptP);
+
+            /* ---- LLM analysis (follow-up) ---- */
+            const followUpText = data.follow_up || 'No analysis available.';
+            const followP = document.createElement('p');
+            followP.className = 'whitespace-pre-wrap';
+            followP.textContent = followUpText;
+            followUpDiv.appendChild(followP);
+
+            /* ---- history ---- */
+            history.unshift({
+                timestamp: new Date().toISOString(),
+                mode,
+                suggested_prompt: promptText,
+                follow_up: followUpText,
+                images: data.result || [],
+                original_image: mode === 'image' ? URL.createObjectURL(originalFile) : null
+            });
+            renderHistory();
+
+            /* ---- show section ---- */
+            resultsDiv.classList.remove('hidden');
+
+            /* ---- toggle buttons ---- */
+            document.getElementById('toggle-suggested-prompt').onclick = () => toggleSection('suggested_prompt', 'toggle-suggested-prompt');
+            document.getElementById('toggle-follow-up').onclick        = () => toggleSection('follow_up', 'toggle-follow-up');
+        }
+
+        function toggleSection(contentId, buttonId) {
+            const content = document.getElementById(contentId);
+            const button  = document.getElementById(buttonId);
+            content.classList.toggle('hidden');
+            const isHidden = content.classList.contains('hidden');
+            button.textContent = isHidden
+                ? `Show ${contentId.includes('prompt') ? 'Suggested Prompt' : 'Analysis & Suggestions'}`
+                : 'Hide';
+        }
+
+        /* ───────────────────────  HISTORY  ─────────────────────── */
+        function renderHistory() {
+            const container = document.getElementById('history-entries');
+            container.innerHTML = '';
+            history.slice(0, 10).forEach((entry, i) => {
+                const div = document.createElement('div');
+                div.className = 'bg-white p-4 rounded-md shadow-md';
+                const time = new Date(entry.timestamp).toLocaleString();
+                div.innerHTML = `
+                    <h3 class="text-lg font-semibold">${entry.mode === 'image' ? 'Image-to-Image' : 'Text-to-Image'} #${history.length - i} <span class="text-sm text-gray-500">(${time})</span></h3>
+                    ${entry.original_image ? `<img src="${entry.original_image}" class="mt-2 w-full max-w-xs h-auto rounded-md" />` : ''}
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3"></div>
+                `;
+                const imgGrid = div.querySelector('.grid');
+                entry.images.forEach((img, idx) => {
+                    const c = document.createElement('div');
+                    c.className = 'relative';
+                    const im = document.createElement('img');
+                    im.src = `data:${img.format};base64,${img.data}`;
+                    im.className = 'w-full h-auto rounded-md';
+                    const dl = document.createElement('button');
+                    dl.textContent = 'DL';
+                    dl.className = 'absolute bottom-1 right-1 bg-green-600 text-white text-xs px-2 py-1 rounded';
+                    dl.onclick = () => {
+                        const a = document.createElement('a');
+                        a.href = im.src;
+                        a.download = `hist_${i}_${idx}.png`;
+                        a.click();
+                    };
+                    c.appendChild(im);
+                    c.appendChild(dl);
+                    imgGrid.appendChild(c);
+                });
+                container.appendChild(div);
+            });
+        }
+
+        /* ───────────────────────  UI HELPERS  ─────────────────────── */
+        function showLoading(text) {
+            document.getElementById('loading-text').textContent = text;
+            document.getElementById('loading').classList.remove('hidden');
+            document.querySelectorAll('button[type="submit"]').forEach(b => b.disabled = true);
+        }
+        function hideLoading() {
+            document.getElementById('loading').classList.add('hidden');
+            document.querySelectorAll('button[type="submit"]').forEach(b => b.disabled = false);
+        }
+        function showError(msg) {
+            const el = document.getElementById('error');
+            el.textContent = msg;
+            el.classList.remove('hidden');
+        }
+        function clearError() {
+            document.getElementById('error').classList.add('hidden');
+        }
+
+        /* ───────────────────────  INIT  ─────────────────────── */
+        fetchCheckpoints('ckpt_name');
+        fetchCheckpoints('ckpt_name_upload');
+        checkOllamaHealth();
+
+        async function checkOllamaHealth() {
+            try {
+                const res = await fetch(`${API_BASE_URL}/ollama_health`);
+                if (res.ok && document.getElementById('use_ollama').checked) {
+                    fetchOllamaModels();
+                }
+            } catch (e) {}
+        }
+    </script>
+</body>
+</html>
+
+
