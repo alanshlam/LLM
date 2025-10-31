@@ -1,97 +1,178 @@
+#!/usr/bin/env python3
+# extract_network_info_multi_model.py
+
 import os
 import base64
-import requests
 import json
+import argparse
 from pathlib import Path
 
-# Configuration
-OLLAMA_ENDPOINT = "http://localhost:11434/api/chat"
-MODEL = "llama3.2-vision:90b"
-INPUT_FOLDER = "network_diagrams"  # Folder containing network diagram images
-OUTPUT_FOLDER = "network_info"      # Folder to save extracted info
-ALLOWED_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.bmp'}
+import requests
 
-# Prompt for extracting network diagram information
+# --------------------------------------------------------------------------- #
+# Configuration
+# --------------------------------------------------------------------------- #
+OLLAMA_ENDPOINT = "http://localhost:11434/api/chat"
+
+# Supported models (display name → Ollama tag)
+SUPPORTED_MODELS = {
+    "llama3.2-vision:11b": "llama3.2-vision:11b",
+    "llama3.2-vision:90b": "llama3.2-vision:90b",
+    "qwen3-vl:32b":        "qwen3-vl:32b",
+    "gemma3:27b":          "gemma3:27b",
+}
+
+INPUT_FOLDER   = "network_diagrams"   # put your images here
+OUTPUT_FOLDER  = "network_info"       # extracted text files go here
+ALLOWED_EXT    = {".png", ".jpg", ".jpeg", ".bmp"}
+
+# Prompt that is sent to every model
 SYSTEM_PROMPT = """
-Analyze the network diagram and extract the following information in a structured format:
-1. Network components (e.g., routers, switches, servers, firewalls)
-2. Connections between components (e.g., Router1 -> Switch1)
-3. IP addresses or subnets (if visible)
-4. Protocols or services (if indicated)
-5. Any labels or annotations
-Provide the output in a clear, structured text format.
+Analyze the network diagram and extract the following information in a structured, easy-to-read format:
+
+1. **Network components** (routers, switches, firewalls, servers, etc.)
+2. **Connections** (e.g., Router1 → Switch1)
+3. **IP addresses / subnets** (if visible)
+4. **Protocols / services** (if indicated)
+5. **Labels / annotations**
+
+Return the result as plain text, using markdown headers and bullet points where appropriate.
 """
 
-def encode_image_to_base64(image_path):
-    """Convert an image file to a base64 encoded string."""
+# --------------------------------------------------------------------------- #
+# Helper functions
+# --------------------------------------------------------------------------- #
+def encode_image(image_path: Path) -> str | None:
+    """Read an image file and return its base64 representation."""
     try:
-        with open(image_path, "rb") as image_file:
-            return base64.b64encode(image_file.read()).decode('utf-8')
+        return base64.b64encode(image_path.read_bytes()).decode("utf-8")
     except Exception as e:
-        print(f"Error encoding image {image_path}: {e}")
+        print(f"Error encoding {image_path.name}: {e}")
         return None
 
-def extract_info(image_path):
-    """Extract information from a network diagram using Llama 3.2 Vision."""
-    base64_image = encode_image_to_base64(image_path)
-    if not base64_image:
-        return None
 
+def query_ollama(model: str, b64_image: str) -> str | None:
+    """Send the image + prompt to Ollama and return the model's reply."""
     payload = {
-        "model": MODEL,
+        "model": model,
         "stream": False,
         "messages": [
             {
                 "role": "user",
                 "content": SYSTEM_PROMPT,
-                "images": [base64_image]
+                "images": [b64_image],
             }
-        ]
+        ],
     }
 
     try:
-        response = requests.post(
+        resp = requests.post(
             OLLAMA_ENDPOINT,
             json=payload,
             headers={"Content-Type": "application/json"},
-            timeout=60
+            timeout=120,
         )
-        response.raise_for_status()
-        return response.json().get('message', {}).get('content', 'No response received')
+        resp.raise_for_status()
+        data = resp.json()
+        return data.get("message", {}).get("content", "No response")
     except requests.RequestException as e:
-        print(f"Error processing {image_path}: {e}")
+        print(f"Request error for model {model}: {e}")
         return None
 
-def save_to_file(content, output_path):
-    """Save extracted information to a text file."""
+
+def save_output(content: str, out_path: Path):
+    """Write the extracted text to disk."""
     try:
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-        print(f"Saved extracted info to {output_path}")
+        out_path.write_text(content, encoding="utf-8")
+        print(f"Saved → {out_path}")
     except Exception as e:
-        print(f"Error saving to {output_path}: {e}")
+        print(f"Failed to write {out_path}: {e}")
+
+
+# --------------------------------------------------------------------------- #
+# Main processing
+# --------------------------------------------------------------------------- #
+def process_folder(model_tag: str):
+    input_path = Path(INPUT_FOLDER)
+    output_path = Path(OUTPUT_FOLDER)
+    output_path.mkdir(exist_ok=True)
+
+    if not input_path.is_dir():
+        raise FileNotFoundError(f"Input folder '{INPUT_FOLDER}' not found.")
+
+    images = [
+        p for p in input_path.iterdir()
+        if p.suffix.lower() in ALLOWED_EXT and p.is_file()
+    ]
+
+    if not images:
+        print("No supported images found in the input folder.")
+        return
+
+    print(f"Using model: **{model_tag}**")
+    print(f"Found {len(images)} image(s) to process.\n")
+
+    for img_path in images:
+        print(f"Processing {img_path.name} …")
+        b64 = encode_image(img_path)
+        if not b64:
+            continue
+
+        extracted = query_ollama(model_tag, b64)
+        if extracted is None:
+            print(f"Skipping {img_path.name} (model error).")
+            continue
+
+        # Build output filename:  original_stem + _ + model_tag + .txt
+        safe_model_name = model_tag.replace(":", "-")   # avoid colons in filenames
+        out_name = f"{img_path.stem}_{safe_model_name}.txt"
+        out_file = output_path / out_name
+
+        save_output(extracted, out_file)
+
+
+# --------------------------------------------------------------------------- #
+# CLI
+# --------------------------------------------------------------------------- #
+def build_cli():
+    parser = argparse.ArgumentParser(
+        description="Extract network-diagram information using a chosen Ollama vision model."
+    )
+    parser.add_argument(
+        "-m",
+        "--model",
+        choices=list(SUPPORTED_MODELS.keys()),
+        required=True,
+        help="Vision model to use (required).",
+    )
+    parser.add_argument(
+        "-i",
+        "--input",
+        default=INPUT_FOLDER,
+        help=f"Folder containing diagram images (default: {INPUT_FOLDER})",
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        default=OUTPUT_FOLDER,
+        help=f"Folder for extracted text files (default: {OUTPUT_FOLDER})",
+    )
+    return parser
+
 
 def main():
-    # Create output folder if it doesn't exist
-    Path(OUTPUT_FOLDER).mkdir(exist_ok=True)
+    parser = build_cli()
+    args = parser.parse_args()
 
-    # Process each image in the input folder
-    for filename in os.listdir(INPUT_FOLDER):
-        file_path = os.path.join(INPUT_FOLDER, filename)
-        if Path(file_path).suffix.lower() in ALLOWED_EXTENSIONS:
-            print(f"Processing {filename}...")
-            
-            # Extract information
-            extracted_info = extract_info(file_path)
-            if extracted_info:
-                # Save to output file (same name as image but with .txt extension)
-                output_filename = Path(filename).stem + '.txt'
-                output_path = os.path.join(OUTPUT_FOLDER, output_filename)
-                save_to_file(extracted_info, output_path)
-            else:
-                print(f"Failed to extract info from {filename}")
+    global INPUT_FOLDER, OUTPUT_FOLDER
+    INPUT_FOLDER = args.input
+    OUTPUT_FOLDER = args.output
+
+    chosen_model = SUPPORTED_MODELS[args.model]
+
+    process_folder(chosen_model)
+
 
 if __name__ == "__main__":
     main()
-
 
