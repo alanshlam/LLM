@@ -59,7 +59,7 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 
 This project demonstrates how to use **Vision Large Language Models (Vision LLMs)** to automatically extract structured information from **network diagrams** — helping you convert visual data into **well-formatted text files** for building your **private AI knowledge base**.
 
----
+
 
 #### 📖 Overview
 
@@ -72,7 +72,7 @@ This project provides a Python-based workflow to:
 - 📝 Extract structured text representations of the network connections, components, and topology  
 - ⚙️ Prepare the extracted text data for inclusion in your private AI knowledge base  
 
----
+
 
 #### 🧰 Features
 
@@ -89,7 +89,7 @@ A complete walkthrough video is available on YouTube:
 
 [<img src="./screenshot/network_extract.png" width="600">](https://youtu.be/TvwQNb7WoRg) 
 
----
+
 The python code and some sample outputs can be download at https://github.com/alanshlam/LLM/blob/main/code/extract_network_info
 
 #### 💬 Feedback & Collaboration
@@ -107,14 +107,14 @@ Please feel free to **open an issue** or **submit a pull request** if you’d li
 This project demonstrates how to **build a private, self-hosted AI knowledge base** using locally deployed **LLMs**.  
 The system is designed to operate **entirely offline**, providing a secure and privacy-preserving environment for information retrieval and intelligent assistance.
 
----
+
 
 #### 🔍 Overview
 
 The knowledge base is constructed from **3,000 discussion posts** collected from a lab course forum.  
 It enables students and researchers to query the knowledge base in natural language and receive **AI-generated responses** that help solve lab-related problems or clarify course concepts.
 
----
+
 
 #### 🎯 Objectives
 
@@ -123,7 +123,7 @@ It enables students and researchers to query the knowledge base in natural langu
 - Enhance **student learning and self-support** through automated responses  
 - Ensure **data privacy, transparency, and control** by avoiding cloud-based dependencies  
 
----
+
 
 #### ⚙️ Key Features
 
@@ -132,7 +132,7 @@ It enables students and researchers to query the knowledge base in natural langu
 - 🔎 **Contextual search and response generation**  
 - 📈 **Scalable architecture** adaptable to other domains beyond education  
 
----
+
 
 #### 🧠 Technologies Used
 
@@ -141,7 +141,6 @@ It enables students and researchers to query the knowledge base in natural langu
 - **Local LLM inference frameworks** (e.g., *Ollama*, *VLLM*, *Open WebUi*, *ComfyUI*)  
 - **Document ingestion and indexing scripts**
 
----
 
 #### 📚 Educational Application
 
@@ -152,7 +151,7 @@ This project serves as a practical example for courses or research projects invo
 - Knowledge management in education  
 - Privacy-preserving AI deployments  
 
----
+
 
 #### 🎥 Demonstration
 
@@ -160,7 +159,7 @@ A complete walkthrough video is available on YouTube:
 👉 Watch the video here
   [<img src="./screenshot/cover4.png" width="600">](https://youtu.be/_WR7NESzr-Y) 
 
----
+
 
 #### 💬 Feedback & Collaboration
 
@@ -295,6 +294,7 @@ Below is a bar chart and table showing VRAM utilization (%) for each GPU across 
 
 This chart visually highlights the consistent VRAM usage across GPUs and nodes, with slight differences between nodes that may warrant further investigation for optimization.
 
+---
 ### Evaluation of NLP Tools
 ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natural Language Processing (NLP) tools were evaluated on various servers equipped with NVIDIA Tesla V100 and NVIDIA GeForce RTX 4090/3090/4070/2080 GPUs using different LLMs, including:
 - gemma3
@@ -304,8 +304,7 @@ ChatRTX, GPT4All, LM Studio, AnythingLLM, Ollma, VLLM, Open WebUI, and Jan Natur
 - Mistral 
 - Hermes
 - OpenHermes
-
-
+... etc.
 
 ### Practical Applications
 These NLP tools can process a vast array of local documents, including text and images, and provide precise answers to specific inquiries and data analysis. LLMs can also analyze, generate, or transform images. With these image-based features, the knowledge base can analyze technical diagrams to extract key insights for AI processing and present information more engagingly with visual and textual elements. You can see some demos of image generation with LLMs [here](gen_image)
@@ -355,7 +354,7 @@ These NLP tools can process a vast array of local documents, including text and 
 
      The screenshot below shows how ChatRTX suggested which honeypots for studying SSH break-ins
      <img src="./screenshot/ssh_honeypot.jpg" width="1000">
-  
+---
 ## Future Work
 As we continue to develop and refine the LLM-powered knowledge base, several areas for future work and enhancement have been identified:
 
