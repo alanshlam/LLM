@@ -63,7 +63,7 @@ This project demonstrates how to use **Vision Large Language Models (Vision LLMs
 
 #### 📖 Overview
 
-In traditional AI knowledge base setups, most data sources come from **documents**, **photos**, or **diagrams** in text-based formats.  
+In traditional AI knowledge base setups, most data sources come from **documents** in text-based formats.  
 But what if you have **hundreds of network topology diagrams** that contain valuable information about your infrastructure?
 
 This project provides a Python-based workflow to:
