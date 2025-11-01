@@ -13,7 +13,7 @@ Image generation can be accomplished using various AI models and platforms. Here
 * **Stable Diffusion:**  A powerful open-source text-to-image model known for its flexibility and customizability.
 * **Midjourney:** A popular AI art generator accessible via Discord, known for its aesthetically pleasing results.
 * **DALL-E:** An AI system from OpenAI that creates realistic images and art from a description in natural language.
-
+---
 ## Achieving Specific Styles: Ghibli Inspiration
 
 This project provides resources for generating images in the iconic style of Studio Ghibli!  Here's how:
@@ -28,6 +28,7 @@ Below is an example demonstrating how to generate or transform images in the Ghi
 You can download below Ghibli Web UI program [here](../code/app_3090.py)<br>
  <img src="../screenshot/ghibli02.jpg" alt="Ghibli-Sytle" width="500">
 
+---
 ## ComfyUI Integration
 
 For advanced control and workflow customization, consider using [ComfyUI](https://github.com/comfyanonymous/ComfyUI).  ComfyUI is a modular interface for Stable Diffusion, allowing you to chain together various image processing nodes to create complex workflows. Numerous image models and workflows are available within the ComfyUI ecosystem.
@@ -35,7 +36,7 @@ For advanced control and workflow customization, consider using [ComfyUI](https:
 Below is an example of using ComfyUI with the Gemma 3.27B LLM and RealVisXL V5.0 to generate an image and follow up on its generation using Open WebUI:<br>
 <img src="../screenshot/img_followup_open_webUI.jpg" width="800">
 
-
+---
 ## Prompt Engineering & LLM Assistance
 
 Crafting effective prompts is crucial for generating desired results.  Large Language Models (LLMs) can be incredibly helpful in refining your prompts, suggesting keywords, and improving overall coherence.  Consider using an LLM to:
