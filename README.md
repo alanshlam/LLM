@@ -99,7 +99,7 @@ Please feel free to **open an issue** or **submit a pull request** if you’d li
 
 🏷️ Tags
 
-AI LLM VisionLLM KnowledgeBase  Automation NetworkDiagrams alanshlam
+`AI` `LLM` `VisionLLM KnowledgeBase`  `Automation` `NetworkDiagrams` `alanshlam`
 
 ---
 ### 🧠 Private AI Knowledge Base — Offline LLM Deployment
