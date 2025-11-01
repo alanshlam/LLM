@@ -41,7 +41,7 @@ Instead, this project focuses on **AI prompt analysis and understanding**.
 2. Start the web application by uvicorn server:app --host 127.0.0.1 --port 9000 --log-level debug
 
 ### 🎥 **Watch its  full demo on my YouTube:**  
-👉 
+👉 [<img src="../screenshot/image_gen_c.png" width="600">](https://youtu.be/H4k98hE2Idw) 
 
 
 
