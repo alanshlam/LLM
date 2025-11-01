@@ -14,6 +14,76 @@ Image generation can be accomplished using various AI models and platforms. Here
 * **Midjourney:** A popular AI art generator accessible via Discord, known for its aesthetically pleasing results.
 * **DALL-E:** An AI system from OpenAI that creates realistic images and art from a description in natural language.
 ---
+### 🧠 LLM Image Prompt Analyzer and Regenerator for ComfyUI
+
+This project extends my previous web application that studies how Large Language Models (LLMs) generate image prompts from text. In this new version, you can **upload an image**, let a **vision-capable LLM** analyze it, generate a **descriptive image prompt**, and then **regenerate a similar image** using **ComfyUI**.
+
+#### 🚀 Features
+
+- 🖼️ **Upload any image** for analysis  
+- 🤖 **Vision LLM integration** — automatically generates a detailed image prompt  
+- 🎨 **ComfyUI regeneration** — creates a new image based on the LLM’s prompt  
+- 🔍 **Side-by-side comparison** of the original and regenerated images  
+- 🧩 **Interactive study tool** to explore how LLMs interpret and recreate visual content  
+
+
+#### 🎯 Purpose
+
+This tool is designed for:
+- AI researchers and developers exploring **multimodal LLMs**
+- **Prompt engineers** studying how AI perceives and describes images
+- Enthusiasts who want to understand how **AI vision** and **ComfyUI** work together  
+
+It helps you visualize the connection between **visual understanding** and **text-to-image generation**.
+#### ⚠️ Disclaimer
+
+This project is created **for research and educational purposes** —  
+to study how **vision-capable Large Language Models (LLMs)** analyze images and generate descriptive prompts.
+
+It is **not designed for image editing, morphing, or enhancement**.  
+There are many specialized tools and models that focus on artistic or style-based image transformation.  
+Instead, this project focuses on **understanding AI perception** —  
+how LLMs interpret visual content and translate it into textual prompts that can regenerate similar images in **ComfyUI**.
+
+
+#### 📺 Demo Video
+
+🎥 **Watch the full demo on my YouTube Channel:**  
+👉 
+
+In the video, you’ll see how the web app:
+1. Analyzes an uploaded image using a vision LLM  
+2. Suggests a descriptive image prompt  
+3. Uses the prompt to regenerate a similar image in ComfyUI  
+4. Displays both images for comparison  
+
+#### 📦 Source code and regenerated image samples on GitHub:
+You can download the source code,htlm file,and nginx config file of this web application and view some regenerated images samples at 
+[https://github.com/alanshlam/LLM/tree/main/code/txt_img2img](https://github.com/alanshlam/LLM/tree/main/code/txt_img2img)
+
+
+#### 🧰 Technologies Used
+
+- Python / FastAPI (for backend)  
+- Vision-capable LLM (e.g., llama3.2-vision:11b,llama3.2-vision:90b,qwen3-vl:32b model)  
+- ComfyUI (for image regeneration)  
+- HTML / JS frontend  
+
+
+#### 🏗️ Future Improvements
+
+- Add support for multiple LLMs for prompt comparison  
+- Provide visual explanations (bounding boxes or captions)  
+- Integrate prompt refinement controls  
+- Enable batch image analysis  
+
+
+#### 🔖 License
+
+This project is released under the **MIT License** — feel free to explore, modify, and improve it.  
+
+
+---
 ## 🧠 LLM Image Prompt Analysis Tool for ComfyUI
 
 This project demonstrates how **Large Language Models (LLMs)** generate **image prompts** for **ComfyUI** image generation.  
