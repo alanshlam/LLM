@@ -49,7 +49,7 @@ how LLMs interpret visual content and translate it into textual prompts that can
 #### 📺 Demo Video
 
 🎥 **Watch the full demo on my YouTube Channel:**  
-👉 
+👉 [<img src="../screenshot/regenerated_image.png" width="600">](https://youtu.be/H4k98hE2Idw) 
 
 In the video, you’ll see how the web app:
 1. Analyzes an uploaded image using a vision LLM  
