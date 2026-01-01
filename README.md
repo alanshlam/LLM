@@ -62,7 +62,7 @@ This project demonstrates how to build and use a **local AI terminal** powered b
 
 Unlike cloud-based AI services, this solution runs **entirely on your own machine**, ensuring **full data privacy, offline capability, and zero ongoing costs**.
 
----
+
 
 #### 🎯 Key Capabilities
 
@@ -229,6 +229,9 @@ aider --model ollama/gemma3:27b
 🎥 **Watch the full demonstration on YouTube**
 Learn how the AI terminal processes internal data and builds webpages using local LLMs.
 
+👉 Watch the video below 
+[<img src="./screenshot/pai-term.png" width="600">](https://youtu.be/XtYFND7r_Bo) 
+
 
 
 #### 💬 Contributions & Feedback
@@ -274,7 +277,7 @@ This project provides a Python-based workflow to:
 #### 🎥 Demonstration
 
 A complete walkthrough video is available on YouTube:  
-👉 Watch the video here
+👉 Watch the video below
 
 [<img src="./screenshot/network_extract.png" width="600">](https://youtu.be/TvwQNb7WoRg) 
 
