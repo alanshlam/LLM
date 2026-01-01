@@ -105,7 +105,7 @@ If privacy, control, and local execution matter more than cloud convenience, thi
 #### 🧰 Architecture Overview
 
 * **Self-Developed Python AI Terminal**
-  Orchestrates local AI workflows, file processing, and web generation.
+  Orchestrates local AI workflows, file processing, and web generation. You can download the AI Terminal Python program [here](https://github.com/alanshlam/LLM/blob/main/code/super_agent.py)
 
 * **Ollama**
   Runs large language models locally with full control over execution.
