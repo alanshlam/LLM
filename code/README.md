@@ -21,3 +21,5 @@ flux-chatgpt-ghibli-lora.safetensors
 ✅ Compare prompts from different LLMs and study their effects
 ✅ Review detailed image metadata and generation parameters from ComfyUI
 ✅ Learn how prompt wording changes the artistic outcome
+
+**super_agent.py**: Private AI terminal using ollama local LLMs  
