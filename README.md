@@ -229,7 +229,7 @@ aider --model ollama/gemma3:27b
 🎥 **Watch the full demonstration on YouTube**
 Learn how the AI terminal processes internal data and builds webpages using local LLMs.
 
-👉 Watch the video below 
+👉 Watch the video below   
 [<img src="./screenshot/pai-term.png" width="600">](https://youtu.be/XtYFND7r_Bo) 
 
 
