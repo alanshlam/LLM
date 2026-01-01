@@ -113,7 +113,7 @@ If privacy, control, and local execution matter more than cloud convenience, thi
 * **Aider-Chat / Open-Interpreter**
   Enables AI-assisted reasoning, scripting, and workflow automation directly in the terminal.
 
-#### Sample files
+#### 📜 Sample files
 
 * **[Prompt for analysing Malware Traffic](https://alanshlam.github.io/aterm/p/pcap_prompt.txt)**  
    Prompt for instructing LLM to analyse Malware Traffic and generate analysis report. 
