@@ -163,4 +163,4 @@ In this project, the AI agent successfully automated the following tasks locally
 *   **Use a Sandbox:** Never run an AI agent (local or cloud) directly on your primary OS with full admin privileges. Use a Docker container, a Virtual Machine (VM), or a dedicated development environment (like VS Code Dev Containers).
 *   **Review Commands:** Never set the tool to "auto-approve" commands. Always read the shell command the AI wants to run before hitting `Enter`.
 *   **Model Capability Constraints:** Be aware that local models via Ollama may occasionally struggle with the complex "tool-use" (function calling) syntax that Claude Code expects. This may lead to more errors or unpredictable behavior compared to using the official cloud API.
-```
+
