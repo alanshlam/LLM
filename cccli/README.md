@@ -107,8 +107,8 @@ In this project, the AI agent successfully automated the following tasks locally
 
 > 💬 `"please debug the program @task_manager.py and fix the bug in this program, save the new version of the program into a file"`
 
-📄 *[Link to the bug program](code/web_setup.md)*    
-📄 *[Link to the fixed program](code/nginx_debug.md)*    
+📄 *[Link to the bug program](code/task_manager.py)*    
+📄 *[Link to the fixed program](code/task_manager_fixed.py)*    
 
 ### 🌐 3. Web Server Setup & Debugging
 ✅ Set up Apache/Nginx, resolve port conflicts, find root causes, and deploy.
@@ -130,7 +130,7 @@ In this project, the AI agent successfully automated the following tasks locally
 
 > 💬 `"Create a Python monitoring script called monitor.py. It needs to do three things: 1. Load configuration variables from a .env file. 2. Check if the web service and mail service are up by examining if the 80, 443, and 25 ports are open. 3. If either service fails or times out, trigger a function that sends a POST request to the Telegram Bot API (https://api.telegram.org/bot<TOKEN>/sendMessage) to alert me."`
 
-📄 *[Link to the Monitoring Script](code/monitory.py)*
+📄 *[Link to the Monitoring Script](code/monitor.py)*
 
 ### 🕵️‍♂️ 5. Cybersecurity & Honeypot Analysis
 ✅ Analyze hacker keystrokes and get actionable security recommendations.
