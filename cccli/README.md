@@ -96,29 +96,29 @@ While I used `qwen3-coder-next:q8_0` for the demo, you can use other local LLMs 
 In this project, the AI agent successfully automated the following tasks locally. Below are the actual prompts used in the demo.
 
 ### 📁 1. Private File Management
-✅ Organize personal emails, translate, and summarize highly sensitive private data without internet exposure.
+✅ Organize personal emails, translate, and summarize highly sensitive private data without internet exposure.  
 
-> 💬 `"please extract all email from bob in the demo.mbox and save it to bob.mbox"`
-> 💬 `"please re-organize @mess/ folder by moving different type files into organized folders"`
-> 💬 `"please build a file index of the @mess folder and save it to a file. The index file lists all files with their file size in the folder and sort the largest file size at the top."`
+> 💬 `"please extract all email from bob in the demo.mbox and save it to bob.mbox"`  
+> 💬 `"please re-organize @mess/ folder by moving different type files into organized folders"`  
+> 💬 `"please build a file index of the @mess folder and save it to a file. The index file lists all files with their file size in the folder and sort the largest file size at the top."`  
 
 ### 💻 2. Coding & Debugging
 ✅ Debug and fix code automatically with corrective comments.
 
-> 💬 `"please debug the program @task_manager.py and fix the bug in this program, save the new version of the program into a file"`
+> 💬 `"please debug the program @task_manager.py and fix the bug in this program, save the new version of the program into a file"`  
 
 📄 *[Link to the bug program](code/task_manager.py)*    
 📄 *[Link to the fixed program](code/task_manager_fixed.py)*    
 
 ### 🌐 3. Web Server Setup & Debugging
-✅ Set up Apache/Nginx, resolve port conflicts, find root causes, and deploy.
+✅ Set up Apache/Nginx, resolve port conflicts, find root causes, and deploy.  
 
-> 💬 `"please setup apache web server at this host"`
-> 💬 `"please setup nginx server at this host"`
-> 💬 `"please make apache start up with taking up 8080 port"`
-> 💬 `"please make apache2 to listen 443 port as well"`
-> 💬 `"please save the setup steps and tune up steps in a file as lab manual for students"`
-> 💬 `"nginx cannot start up now, please debug it"`
+> 💬 `"please setup apache web server at this host"`  
+> 💬 `"please setup nginx server at this host"`  
+> 💬 `"please make apache start up with taking up 8080 port"`  
+> 💬 `"please make apache2 to listen 443 port as well"`  
+> 💬 `"please save the setup steps and tune up steps in a file as lab manual for students"`  
+> 💬 `"nginx cannot start up now, please debug it"`  
 > 💬 `"Please save how you debug and fix it in a file as lab manual for students"`
 
 📄 *[Link to the Web server setup Lab Manual Document](code/web_setup.md)*    
@@ -128,9 +128,12 @@ In this project, the AI agent successfully automated the following tasks locally
 ### 🚨 4. Automated Alerting
 ✅ Build a critical service monitor that triggers a Telegram bot if a service crashes.
 
-> 💬 `"Create a Python monitoring script called monitor.py. It needs to do three things: 1. Load configuration variables from a .env file. 2. Check if the web service and mail service are up by examining if the 80, 443, and 25 ports are open. 3. If either service fails or times out, trigger a function that sends a POST request to the Telegram Bot API (https://api.telegram.org/bot<TOKEN>/sendMessage) to alert me."`
+> 💬 `"Create a Python monitoring script called monitor.py. It needs to do three things:
+> 1. Load configuration variables from a .env file.  
+> 2. Check if the web service and mail service are up by examining if the 80, 443, and 25 ports are open.  
+> 3. If either service fails or times out, trigger a function that sends a POST request to the Telegram Bot API (https://api.telegram.org/bot<TOKEN>/sendMessage) to alert me."`  
 
-📄 *[Link to the Monitoring Script](code/monitor.py)*
+📄 *[Link to the Monitoring Script](code/monitor.py)*  
 
 ### 🕵️‍♂️ 5. Cybersecurity & Honeypot Analysis
 ✅ Analyze hacker keystrokes and get actionable security recommendations.
