@@ -5,7 +5,7 @@
 # 🕵️‍♂️ Claude Code CLI + Ollama: Private Local AI Agent
 **A complete guide, security protocol, and prompt library for building a 100% offline, private AI assistant.**
 
-[![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](INSERT_YOUR_YOUTUBE_LINK_HERE)
+[![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/mKXO0ZvdW6E)
 
 Welcome to the companion repository for my YouTube tutorial! In this project, I demonstrate how to use Anthropic's Claude Code CLI safely routed to a **Local LLM via Ollama**. This allows you to completely automate system tasks, analyze cybersecurity logs, and debug code without sending sensitive data to the cloud.
 
