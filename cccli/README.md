@@ -105,7 +105,10 @@ In this project, the AI agent successfully automated the following tasks locally
 ### 💻 2. Coding & Debugging
 ✅ Debug and fix code automatically with corrective comments.
 
-> 💬 `"please debug the program @../task_manager.py and fix the bug in this program, save the new version of the program into a file"`
+> 💬 `"please debug the program @task_manager.py and fix the bug in this program, save the new version of the program into a file"`
+
+📄 *[Link to the bug program](code/web_setup.md)*    
+📄 *[Link to the fixed program](code/nginx_debug.md)*    
 
 ### 🌐 3. Web Server Setup & Debugging
 ✅ Set up Apache/Nginx, resolve port conflicts, find root causes, and deploy.
@@ -118,14 +121,16 @@ In this project, the AI agent successfully automated the following tasks locally
 > 💬 `"nginx cannot start up now, please debug it"`
 > 💬 `"Please save how you debug and fix it in a file as lab manual for students"`
 
-📄 *[Link to the Lab Manual Document](INSERT_LINK_HERE)*
+📄 *[Link to the Web server setup Lab Manual Document](code/web_setup.md)*    
+📄 *[Link to the Web server debuge Lab Manual Document](code/nginx_debug.md)*    
+
 
 ### 🚨 4. Automated Alerting
 ✅ Build a critical service monitor that triggers a Telegram bot if a service crashes.
 
 > 💬 `"Create a Python monitoring script called monitor.py. It needs to do three things: 1. Load configuration variables from a .env file. 2. Check if the web service and mail service are up by examining if the 80, 443, and 25 ports are open. 3. If either service fails or times out, trigger a function that sends a POST request to the Telegram Bot API (https://api.telegram.org/bot<TOKEN>/sendMessage) to alert me."`
 
-📄 *[Link to the Monitoring Script](INSERT_LINK_HERE)*
+📄 *[Link to the Monitoring Script](code/monitory.py)*
 
 ### 🕵️‍♂️ 5. Cybersecurity & Honeypot Analysis
 ✅ Analyze hacker keystrokes and get actionable security recommendations.
@@ -133,7 +138,7 @@ In this project, the AI agent successfully automated the following tasks locally
 > 💬 `"you are the security expert, please analyse the keystroke log file s1 and give your recommendation of your findings"`
 > 💬 `"please save your findings to a file"`
 
-📄 *[Link to the Findings Report](INSERT_LINK_HERE)*
+📄 *[Link to the Findings Report](code/security_analysis.md)*
 
 ### 🦠 6. Malware Tracking
 ✅ Track Antivirus (AV) vendor detections for malware downloaded to the honeypot.
@@ -142,7 +147,7 @@ In this project, the AI agent successfully automated the following tasks locally
 > 💬 `"please submit the hash of the file b12ba38dd1de68e22e910873be32aa13661f43fcc4ba3b1521695c107edd201e to VirusTotal with the VirusTotal API key and compare the return result in vt_reports/ to see if there is any updating"`
 > 💬 `"please save your findings to a file"`
 
-📄 *[Link to the Malware Report](INSERT_LINK_HERE)*
+📄 *[Link to the Malware Report](code/VT_Report_Comparison_2026-04-01.md)*
 
 ---
 
