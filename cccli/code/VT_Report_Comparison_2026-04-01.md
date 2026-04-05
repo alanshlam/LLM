@@ -22,42 +22,42 @@ COMPARISON BETWEEN LOCAL REPORT AND VIRUSTOTAL API
 | Suspicious | 0            | 0            | No change |
 | Undetected | 30           | 30           | No change |
 
---- Malicious Detections (35 vendors) ---
-[*] Lionic               : Trojan.Linux.Miner.4!c
-[*] Elastic              : Linux.Generic.Threat
-[*] MicroWorld-eScan     : Application.Generic.4495641
-[*] ClamAV               : Unix.Trojan.Miner-9993889-0
-[*] CTX                  : elf.trojan.generic
-[*] ALYac                : Application.Generic.4495641
-[*] Zillya               : Trojan.252279.Linux.1
-[*] huorong              : Trojan/Linux.Agent.ca
-[*] Symantec             : Trojan.Gen.NPE
-[*] ESET-NOD32           : Linux/CoinMiner.ABF trojan
-[*] Avast                : ELF:Agent-CXA [Trj]
-[*] Cynet                : Malicious (score: 99)
-[*] Kaspersky            : HEUR:Trojan.Linux.Miner.gen
-[*] BitDefender          : Application.Generic.4495641
-[*] Tencent              : Risktool.Linux.Miner.ck
-[*] Sophos               : Mal/Generic-S
-[*] F-Secure             : Exploit.EXP/ELF.Coinminer.A
-[*] DrWeb                : Linux.Siggen.8622
-[*] VIPRE                : Application.Generic.4495641
-[*] Emsisoft             : Application.Generic.4495641 (B)
-[*] Ikarus               : Trojan.Linux.Generic
-[*] GData                : Application.Generic.4495641
-[*] Jiangmin             : Trojan.Linux.dsm
-[*] Avira                : EXP/ELF.Coinminer.A
-[*] Antiy-AVL            : Trojan/Linux.Multiverze
-[*] Microsoft            : Trojan:Linux/Multiverze!rfn
-[*] Arcabit              : Application.Generic.D449919
-[*] Google               : Detected
-[*] AhnLab-V3            : CoinMiner/Linux.Agent.30304472
-[*] VBA32                : Trojan.Linux.Agent
-[*] Rising               : HackTool.NBMiner/Linux!1.E357 (CLASSIC)
-[*] SentinelOne          : Static AI - Malicious ELF
-[*] Fortinet             : Adware/Miner
-[*] AVG                  : ELF:Agent-CXA [Trj]
-[*] alibabacloud         : Miner:Linux/CoinMiner.JUO
+--- Malicious Detections (35 vendors) ---  
+[*] Lionic               : Trojan.Linux.Miner.4!c  
+[*] Elastic              : Linux.Generic.Threat  
+[*] MicroWorld-eScan     : Application.Generic.4495641  
+[*] ClamAV               : Unix.Trojan.Miner-9993889-0  
+[*] CTX                  : elf.trojan.generic  
+[*] ALYac                : Application.Generic.4495641  
+[*] Zillya               : Trojan.252279.Linux.1  
+[*] huorong              : Trojan/Linux.Agent.ca  
+[*] Symantec             : Trojan.Gen.NPE  
+[*] ESET-NOD32           : Linux/CoinMiner.ABF trojan  
+[*] Avast                : ELF:Agent-CXA [Trj]  
+[*] Cynet                : Malicious (score: 99)  
+[*] Kaspersky            : HEUR:Trojan.Linux.Miner.gen  
+[*] BitDefender          : Application.Generic.4495641  
+[*] Tencent              : Risktool.Linux.Miner.ck  
+[*] Sophos               : Mal/Generic-S   
+[*] F-Secure             : Exploit.EXP/ELF.Coinminer.A  
+[*] DrWeb                : Linux.Siggen.8622  
+[*] VIPRE                : Application.Generic.4495641  
+[*] Emsisoft             : Application.Generic.4495641 (B)  
+[*] Ikarus               : Trojan.Linux.Generic  
+[*] GData                : Application.Generic.4495641  
+[*] Jiangmin             : Trojan.Linux.dsm  
+[*] Avira                : EXP/ELF.Coinminer.A   
+[*] Antiy-AVL            : Trojan/Linux.Multiverze  
+[*] Microsoft            : Trojan:Linux/Multiverze!rfn  
+[*] Arcabit              : Application.Generic.D449919  
+[*] Google               : Detected  
+[*] AhnLab-V3            : CoinMiner/Linux.Agent.30304472  
+[*] VBA32                : Trojan.Linux.Agent  
+[*] Rising               : HackTool.NBMiner/Linux!1.E357 (CLASSIC)  
+[*] SentinelOne          : Static AI - Malicious ELF  
+[*] Fortinet             : Adware/Miner  
+[*] AVG                  : ELF:Agent-CXA [Trj]  
+[*] alibabacloud         : Miner:Linux/CoinMiner.JUO  
 
 ========================================================================================
  SUMMARY
