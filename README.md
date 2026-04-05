@@ -55,6 +55,12 @@ The objective of this project is to develop an advanced, AI-driven knowledge bas
 
 ## Studies
 
+### 🚀 Private Local AI Agent (Claude Code + Ollama)**  
+
+Stop leaking your sensitive data, source code, and security logs to the cloud. I've built a complete workflow that integrates the Claude Code CLI with local Ollama models to create a powerful, 100% offline AI assistant. This project demonstrates how to securely automate DevOps tasks, debug complex code, organize private files, and perform advanced cybersecurity threat intel (like honeypot and malware analysis) right on your local machine.  
+[🔗 **Explore the Private AI Agent Repository here**](cccli)
+
+---
 
 ### 🔐 Privacy-First AI Terminal with Local LLMs (Ollama + Aider-Chat)
 
