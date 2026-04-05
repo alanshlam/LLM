@@ -56,6 +56,10 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 # Verify installation
 claude --version
+
+# Update Claude
+claude update
+
 ```
 
 ### 2. Verify Ollama Connection
