@@ -87,9 +87,9 @@ While I used `qwen3-coder-next:q8_0` for the demo, you can use other local LLMs 
 
 | Use Case | Recommended Model | Strength | VRAM Usage |
 | :--- | :--- | :--- | :--- |
-| **Primary Coding/Logic** | `qwen2.5-coder:32b` | High speed, high accuracy | Low (~20GB) |
+| **Primary Coding/Logic** | `qwen2.5-coder` | High speed, high accuracy | Low (~20GB) |
 | **Complex Architecture** | `deepseek-coder-v2` | State-of-the-art coding | Medium/High |
-| **System Setup/DevOps** | `llama3.1:70b` | Tool use & OS knowledge | High (~40-50GB) |
+| **System Setup/DevOps** | `llama3.1` | Tool use & OS knowledge |Medium/High |
 | **Refactoring & Clean Code** | `gpt-oss` | superior local speed | Low (~13GB) |
 | **Complex prototypes** | `glm-4` | Tool integration | Medium/High |
 
