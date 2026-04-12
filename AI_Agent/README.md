@@ -130,9 +130,8 @@ To tell the Python script *where* to send the message, you need your personal Te
 3. It will immediately reply with your personal ID number (a string of numbers like `123456789`). **Copy this ID**. 
    *(This is your `TELEGRAM_CHAT_ID`)*
 
----
 
-### 💻 Add it to your `.env` File
+#### 💻 Add it to your `.env` File
 Now, open the `.env` file in the same folder as your Python script and paste those two values at the very top:
 
 ```env
