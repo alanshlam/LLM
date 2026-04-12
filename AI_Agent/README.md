@@ -111,7 +111,7 @@ pip install requests openai-whisper python-dotenv  ddgs
 ```
 ### 4. Create your Local Data Files 
 Create the following dummy files in the same directory as the script so the AI has private data to analyze: schedule.md (List your daily meetings)
-* <a href=code/"tasks.md" target="_blank"> tasks.md </a> (List your chores)
+* <a href="code/tasks.md" target="_blank"> tasks.md </a> (List your chores)
 * [tasks.md](code/tasks.md) (List your chores)
 * [expenses.csv](code/expenses.csv) (Headers: Date,Category,Amount,Description)
 * [inbox.mbox](code/inbox.mbox) (A standard text-based mailbox file)
