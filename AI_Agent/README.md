@@ -104,9 +104,42 @@ Create the following dummy files in the same directory as the script so the AI h
 * expenses.csv (Headers: Date,Category,Amount,Description)
 * inbox.mbox (A standard text-based mailbox file)
 
-### 5. Telegram Bot Setup  
+### 5. 📱 Telegram Bot Setup  
+It takes less than 3 minutes to complete and requires no coding.
+
 1. Message @BotFather on Telegram and send /newbot to get your TELEGRAM_TOKEN.
 2. Message @userinfobot on Telegram to get your personal TELEGRAM_CHAT_ID.
+
+**Phase 1: Create the Bot & Get the Token**
+1. Open the Telegram app and search for **@BotFather** (look for the official blue verification checkmark).
+2. Click **Start** and send the command: `/newbot`
+3. Give your bot a display name (e.g., *My Sovereign Agent*).
+4. Give your bot a unique username that ends in "bot" (e.g., *jason_agent_bot*).
+5. BotFather will reply with a long string of characters. **Copy this HTTP API Token**. 
+   *(⚠️ Keep this secret! This is your `TELEGRAM_TOKEN`)*
+
+**Phase 2: Activate the Bot**
+1. Search for your newly created bot’s username in Telegram.
+2. Click **Start** (or send it a quick "Hello" message). 
+   *(Note: Bots cannot initiate conversations. You must message it first so it has permission to message you later).*
+
+**Phase 3: Get Your Chat ID**
+To tell the Python script *where* to send the message, you need your personal Telegram ID.
+1. In Telegram, search for the bot: **@userinfobot** (or @GetIDs Bot).
+2. Click **Start**.
+3. It will immediately reply with your personal ID number (a string of numbers like `123456789`). **Copy this ID**. 
+   *(This is your `TELEGRAM_CHAT_ID`)*
+
+---
+
+### 💻 Add it to your `.env` File
+Now, open the `.env` file in the same folder as your Python script and paste those two values at the very top:
+
+```env
+# --- REQUIRED TELEGRAM SETTINGS ---
+TELEGRAM_TOKEN="1234567890:ABCdefGhIJKlmNoPQRstuVWXyz"
+TELEGRAM_CHAT_ID="123456789"
+```
 
 ### 6. Environment Configuration
 Create a .env file in the root directory:
