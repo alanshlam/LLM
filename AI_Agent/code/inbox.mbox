@@ -1,0 +1,241 @@
+From alice@example.com Sun Mar 01 09:00:00 2026
+Date: Sun, 01 Mar 2026 09:00:00 +0000
+From: Alice <alice@example.com>
+Subject: Project Update: Phase 1
+Message-ID: <0@demo.example.com>
+Status: O
+Content-Length: 63
+Lines: 2
+
+This is the body for message 1.
+Topic: Project Update: Phase 1
+
+From bob@work.com Mon Mar 02 10:00:00 2026
+Date: Mon, 02 Mar 2026 10:00:00 +0000
+From: Bob <bob@work.com>
+Subject: Lunch meeting?
+Message-ID: <1@demo.example.com>
+Status: RO
+Content-Length: 54
+Lines: 2
+
+This is the body for message 2.
+Topic: Lunch meeting?
+
+From sysadmin@corp.net Tue Mar 03 11:00:00 2026
+Date: Tue, 03 Mar 2026 11:00:00 +0000
+From: Sysadmin <sysadmin@corp.net>
+Subject: Server Maintenance
+Message-ID: <2@demo.example.com>
+Status: O
+Content-Length: 58
+Lines: 2
+
+This is the body for message 3.
+Topic: Server Maintenance
+
+From charlie@gmail.com Wed Mar 04 12:00:00 2026
+Date: Wed, 04 Mar 2026 12:00:00 +0000
+From: Charlie <charlie@gmail.com>
+Subject: Quick question
+Message-ID: <3@demo.example.com>
+Status: O
+Content-Length: 54
+Lines: 2
+
+This is the body for message 4.
+Topic: Quick question
+
+From hr@company.org Thu Mar 05 13:00:00 2026
+Date: Thu, 05 Mar 2026 13:00:00 +0000
+From: Hr <hr@company.org>
+Subject: Vacation Request
+Message-ID: <4@demo.example.com>
+Status: O
+Content-Length: 56
+Lines: 2
+
+This is the body for message 5.
+Topic: Vacation Request
+
+From manager@office.com Fri Mar 06 09:00:00 2026
+Date: Fri, 06 Mar 2026 09:00:00 +0000
+From: Manager <manager@office.com>
+Subject: Weekly Sync
+Message-ID: <5@demo.example.com>
+Status: RO
+Content-Length: 51
+Lines: 2
+
+This is the body for message 6.
+Topic: Weekly Sync
+
+From alice@example.com Sat Mar 07 10:00:00 2026
+Date: Sat, 07 Mar 2026 10:00:00 +0000
+From: Alice <alice@example.com>
+Subject: Happy Birthday!
+Message-ID: <6@demo.example.com>
+Status: O
+Content-Length: 55
+Lines: 2
+
+This is the body for message 7.
+Topic: Happy Birthday!
+
+From bob@work.com Sun Mar 08 11:00:00 2026
+Date: Sun, 08 Mar 2026 11:00:00 +0000
+From: Bob <bob@work.com>
+Subject: New Policy Update
+Message-ID: <7@demo.example.com>
+Status: O
+Content-Length: 57
+Lines: 2
+
+This is the body for message 8.
+Topic: New Policy Update
+
+From sysadmin@corp.net Mon Mar 09 12:00:00 2026
+Date: Mon, 09 Mar 2026 12:00:00 +0000
+From: Sysadmin <sysadmin@corp.net>
+Subject: Invoice #4920
+Message-ID: <8@demo.example.com>
+Status: O
+Content-Length: 53
+Lines: 2
+
+This is the body for message 9.
+Topic: Invoice #4920
+
+From charlie@gmail.com Tue Mar 10 13:00:00 2026
+Date: Tue, 10 Mar 2026 13:00:00 +0000
+From: Charlie <charlie@gmail.com>
+Subject: Welcome to the team!
+Message-ID: <9@demo.example.com>
+Status: RO
+Content-Length: 61
+Lines: 2
+
+This is the body for message 10.
+Topic: Welcome to the team!
+
+From hr@company.org Wed Mar 11 09:00:00 2026
+Date: Wed, 11 Mar 2026 09:00:00 +0000
+From: Hr <hr@company.org>
+Subject: Bug Report: UI layout
+Message-ID: <10@demo.example.com>
+Status: O
+Content-Length: 62
+Lines: 2
+
+This is the body for message 11.
+Topic: Bug Report: UI layout
+
+From manager@office.com Thu Mar 12 10:00:00 2026
+Date: Thu, 12 Mar 2026 10:00:00 +0000
+From: Manager <manager@office.com>
+Subject: Draft Proposal
+Message-ID: <11@demo.example.com>
+Status: O
+Content-Length: 55
+Lines: 2
+
+This is the body for message 12.
+Topic: Draft Proposal
+
+From alice@example.com Fri Mar 13 11:00:00 2026
+Date: Fri, 13 Mar 2026 11:00:00 +0000
+From: Alice <alice@example.com>
+Subject: Coffee break
+Message-ID: <12@demo.example.com>
+Status: O
+Content-Length: 53
+Lines: 2
+
+This is the body for message 13.
+Topic: Coffee break
+
+From bob@work.com Sat Mar 14 12:00:00 2026
+Date: Sat, 14 Mar 2026 12:00:00 +0000
+From: Bob <bob@work.com>
+Subject: Important: Security Alert
+Message-ID: <13@demo.example.com>
+Status: O
+Content-Length: 66
+Lines: 2
+
+This is the body for message 14.
+Topic: Important: Security Alert
+
+From sysadmin@corp.net Sun Mar 15 13:00:00 2026
+Date: Sun, 15 Mar 2026 13:00:00 +0000
+From: Sysadmin <sysadmin@corp.net>
+Subject: Holiday Party
+Message-ID: <14@demo.example.com>
+Status: O
+Content-Length: 54
+Lines: 2
+
+This is the body for message 15.
+Topic: Holiday Party
+
+From charlie@gmail.com Mon Mar 16 09:00:00 2026
+Date: Mon, 16 Mar 2026 09:00:00 +0000
+From: Charlie <charlie@gmail.com>
+Subject: Meeting Minutes
+Message-ID: <15@demo.example.com>
+Status: O
+Content-Length: 56
+Lines: 2
+
+This is the body for message 16.
+Topic: Meeting Minutes
+
+From hr@company.org Tue Mar 17 10:00:00 2026
+Date: Tue, 17 Mar 2026 10:00:00 +0000
+From: Hr <hr@company.org>
+Subject: Rescheduling our call
+Message-ID: <16@demo.example.com>
+Status: O
+Content-Length: 62
+Lines: 2
+
+This is the body for message 17.
+Topic: Rescheduling our call
+
+From manager@office.com Wed Mar 18 11:00:00 2026
+Date: Wed, 18 Mar 2026 11:00:00 +0000
+From: Manager <manager@office.com>
+Subject: Feedback requested
+Message-ID: <17@demo.example.com>
+Status: O
+Content-Length: 59
+Lines: 2
+
+This is the body for message 18.
+Topic: Feedback requested
+
+From alice@example.com Thu Mar 19 12:00:00 2026
+Date: Thu, 19 Mar 2026 12:00:00 +0000
+From: Alice <alice@example.com>
+Subject: Great job on the presentation
+Message-ID: <18@demo.example.com>
+Status: O
+Content-Length: 70
+Lines: 2
+
+This is the body for message 19.
+Topic: Great job on the presentation
+
+From bob@work.com Fri Mar 20 13:00:00 2026
+Date: Fri, 20 Mar 2026 13:00:00 +0000
+From: Bob <bob@work.com>
+Subject: Reminder: Timesheets due
+Message-ID: <19@demo.example.com>
+Status: O
+Content-Length: 66
+Lines: 3
+
+This is the body for message 20.
+Topic: Reminder: Timesheets due
+
+
