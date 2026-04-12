@@ -65,7 +65,18 @@ graph TD
     style Output fill:#1e293b,stroke:#cbd5e1,stroke-width:2px,color:#fff
 
 ```
+--- 
+## Infographic of the Sovereign Agent
+
+<div style="height: 200px; overflow-y: scroll;">
+  <img src="code/AI_agent_infograhp.jpg" width="80%"><br>
+ 
+</div>
+
+
 ---  
+
+
 
 ## 💡 Insight: The Era of the Local Personal Agent (Featuring Gemma)
 
