@@ -69,7 +69,7 @@ graph TD
 ## Infographic of the Sovereign Agent
 
 <div style="height: 200px; overflow-y: scroll;">
-  <img src="code/AI_agent_infograhp.jpg" width="80%"><br>
+  <img src="code/AI_agent_infograhp.jpg" width="100%"><br>
  
 </div>
 
@@ -111,9 +111,9 @@ pip install requests openai-whisper python-dotenv  ddgs
 ```
 ### 4. Create your Local Data Files 
 Create the following dummy files in the same directory as the script so the AI has private data to analyze: schedule.md (List your daily meetings)
-* tasks.md (List your chores)
-* expenses.csv (Headers: Date,Category,Amount,Description)
-* inbox.mbox (A standard text-based mailbox file)
+* [tasks.md](code/tasks.md) (List your chores)
+* [expenses.csv](code/expenses.csv) (Headers: Date,Category,Amount,Description)
+* [inbox.mbox](code/inbox.mbox) (A standard text-based mailbox file)
 
 ### 5. 📱 Telegram Bot Setup  
 It takes less than 3 minutes to complete and requires no coding.
@@ -152,7 +152,7 @@ TELEGRAM_CHAT_ID="123456789"
 ```
 
 ### 6. Environment Configuration
-Create a .env file in the root directory:
+Create a [.env](.env_sample) file in the root directory:
 
 ```env 
 # --- REQUIRED TELEGRAM SETTINGS ---
