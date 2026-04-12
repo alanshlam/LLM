@@ -15,7 +15,7 @@
 [💡 Insight: The Era of the Local Personal Agent (Featuring Gemma)](#-insight-the-era-of-the-local-personal-agent-featuring-gemma)  
 [🚀 Setup & Installation](#-setup--installation)  
 
-
+You can download the [Sovereign Agent here] (code/ai_agent.py)
 ---
 
 ## ✨ Key Features
