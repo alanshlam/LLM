@@ -8,6 +8,14 @@
 
 **The catch?** Your private data never leaves your computer. 
 
+# Table of content 
+[✨ Key Features](#-key-features)  
+[🏗️ System Architecture](#%EF%B8%8F-system-architecture)  
+[Infographic of the Sovereign Agent](#infographic-of-the-sovereign-agent)
+[💡 Insight: The Era of the Local Personal Agent (Featuring Gemma)](#-insight-the-era-of-the-local-personal-agent-featuring-gemma)
+[🚀 Setup & Installation](#-setup--installation)
+
+
 ---
 
 ## ✨ Key Features
