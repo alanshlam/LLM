@@ -26,7 +26,7 @@
 *   👂 **Audio AI (Whisper):** Downloads the latest daily news podcast (.mp3) and transcribes the spoken audio into text locally.
 *   📱 **Secure Push Delivery:** Formats the final intelligence briefing into an elegant, mobile-friendly HTML message delivered via a private Telegram bot.
 
-You can download the [Sovereign Agent here] (code/ai_agent.py)
+You can download the [Sovereign Agent here](code/ai_agent.py)
 
 ---
 
