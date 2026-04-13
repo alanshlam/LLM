@@ -6,7 +6,7 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 |----------|----------------|---------------|-------------------|
 | [**Sovereign Agent**](AI_Dashboard.md) | Reads local `.mbox` emails, `.csv` finances, `.md` schedules, live weather, traffic‑camera snapshots, and a daily news podcast; compiles a concise briefing and pushes it to a private Telegram bot. | Python 3.8+, **Gemma‑4 31B** (Ollama), **LLaVA/qwen3‑vl** (vision), **Whisper** (audio). | **100 % local privacy** – no data ever leaves your computer. |
 | [**Private Video Agent**](AI_video.md)| Extracts frames, transcribes audio, and performs deterministic “needle‑in‑a‑haystack” searches across video files, all on‑premise. | **Gemma‑4 31B** (or Gemma‑431B) via Ollama, **Claude‑Code CLI**, **ffprobe/ffmpeg**, **Whisper**. | **Zero data leakage** – the model, video files, and tooling stay behind your firewall. |
-| [**Claude Code CLI + Ollama**](../cccli) | Routes Anthropic’s Claude Code CLI to a locally‑hosted LLM, allowing fully offline automation of system tasks, code debugging, web‑server setup, cybersecurity log analysis, and other sensitive operations. | Claude Code CLI, Ollama (e.g., `qwen3‑coder‑next:q8_0` or other recommended models), environment‑variable routing, standard OS tools (apache,nginx,lsof -Pi,ss -tulpn, etc.) | Delivers a **completely private, sandboxable AI assistant** that never contacts external APIs, protecting credentials and confidential data while still offering powerful tool‑use capabilities.|
+| [**Claude Code CLI + Ollama**](../cccli) [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/mKXO0ZvdW6E) | Routes Anthropic’s Claude Code CLI to a locally‑hosted LLM, allowing fully offline automation of system tasks, code debugging, web‑server setup, cybersecurity log analysis, and other sensitive operations. | Claude Code CLI, Ollama (e.g., `qwen3‑coder‑next:q8_0` or other recommended models), environment‑variable routing, standard OS tools (apache,nginx,lsof -Pi,ss -tulpn, etc.) | Delivers a **completely private, sandboxable AI assistant** that never contacts external APIs, protecting credentials and confidential data while still offering powerful tool‑use capabilities.|
 
 ## ✨ Key Features (at a glance)  
 **🔒 Local‑only processing** for all  agents.  
@@ -26,7 +26,7 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 🚫 Zero Data Leakage – everything runs on an air‑gapped workstation (no external API calls).   
 📈 256 K‑token Context Window – lets the model keep the full transcript + visual cues in memory. 
 
-### 🤖 [Claude Code CLI + Ollama agent](../cccli)   
+### 🤖 [Claude Code CLI + Ollama agent](../cccli)  [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/mKXO0ZvdW6E) 
 ✅ **100 % offline, private AI assistant** – all reasoning, tool‑use, and data processing stay on the local machine; no data is sent to the cloud [3].  
 🛠️ **Claude Code CLI routed to a local LLM via Ollama** – the CLI is tricked into using a locally hosted model (e.g., `qwen3‑coder‑next:q8_0`) instead of Anthropic’s cloud endpoint [3].  
 📂 **Automates system‑level tasks** – file management, code debugging, web‑server setup, service monitoring, and more, all driven by natural‑language prompts [3].  
@@ -82,6 +82,7 @@ Stop leaking your sensitive data, source code, and security logs to the cloud. I
 ```
 Open an issue or email `alanlam28@gmail.com`.
 
+---
 
 # 🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard
 
