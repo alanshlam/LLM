@@ -44,6 +44,9 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 
 --- 
 
+
+---
+
 ## 📂 Repository Layout  
 
 ```
@@ -72,6 +75,11 @@ Open an issue or email `alanlam28@gmail.com`.
 This study demonstrates how to turn **Gemma‑4 31B** into a fully **air‑gapped, private AI agent** powered by the **Claude Code CLI** 🚀. By running the entire stack locally (via Ollama) you can analyze sensitive video and technical data with **zero data leakage** 🚫☁️, keeping everything behind your firewall 🏠. The agent leverages native tool‑use proficiency (ffprobe, ffmpeg, Whisper) 🛠️, deep “Thinking Mode” chain‑of‑thought verification 🧠, and a massive 256 K‑token context window 📚 to perform multimodal video reasoning and needle‑in‑a‑haystack searches 🕵️‍♀️—all at $0 API cost 💰.  
 
 ---
+
+# 🚀 Private Local AI Agent (Claude Code + Ollama)
+Stop leaking your sensitive data, source code, and security logs to the cloud. I've built a complete workflow that integrates the Claude Code CLI with local Ollama models to create a powerful, 100% offline AI assistant. This project demonstrates how to securely automate DevOps tasks, debug complex code, organize private files, and perform advanced cybersecurity threat intel (like honeypot and malware analysis) right on your local machine.
+
+---  
 
 # 🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard
 
