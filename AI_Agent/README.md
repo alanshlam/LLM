@@ -10,14 +10,14 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 ## ✨ Key Features (at a glance)  
 **🔒 Local‑only processing** for both agents.  
 
-🤖 Sovereign Agent 
+### 🤖 Sovereign Agent 
     🔒 **100 % Local Privacy** – processes .mbox, .csv, and .md files on‑device only.  
     🧠 **Contextual Reasoning** – (Gemma4) instead of simple retrieval. the LLM reasons about weather, finance, and schedule (e.g., suggests moving an outdoor lunch indoors if rain is forecast).    
     👁️ **Vision AI** (LLaVA/gemma4:e4b/qwen3‑vl:32) for analyzing live CCTV snapshots; 
     👂 **Audio AI** – Whisper transcribes daily news podcasts locally.  
     📱 **Secure Push Delivery** – HTML‑styled briefing sent via a private Telegram bot.
 
-Private AI Video Agent 
+### 🤖 Private AI Video Agent 
     📸 **Frame Extraction & Visual Analysis** – ffprobe/ffmpeg sample key frames, then image analysis by Gemma4:32b.  
     🔊 **Audio‑to‑Text** – Whisper transcribes video audio for multimodal sync.  
     🎞️ **Video analysis** - Video frame and transcript analysis by Gemma4:32b
