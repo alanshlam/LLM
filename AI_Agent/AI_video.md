@@ -151,16 +151,6 @@ Hosting **Gemma‑4 31B** locally and pairing it with the **Claude Code CLI*
 
 The result is a **second brain** that is both *private* and *powerful*—ideal for enterprises, research labs, or any workflow that demands strict data confidentiality.  
 
-
----  
-
-## 🙋 Contributing  
-
-1. Fork the repo.  
-2. Create a feature branch (`git checkout -b feat/…`).  
-3. Ensure all new scripts follow the same CLI conventions.  
-4. Open a pull request with a clear description of the added functionality.  
-
 ---  
 
 ## 📞 Contact  
