@@ -29,4 +29,4 @@ The goal was to determine which video file in the directory contains the scene d
     - The frames from [`ch20.mp4`](https://youtube.com/shorts/3GgwvXgxnKY)  did not match the scene.
 
 ## 🎯 Conclusion
-Based on the visual comparison of extracted frames, the image `unknown.jpg` is a scene from the video file [**`ch10.mp4`**](https://youtube.com/shorts/VhvibOIA6wI).
+Based on the visual comparison of extracted frames, the image [`unknown.jpg`](unknown.jpg) is a scene from the video file [**`ch10.mp4`**](https://youtube.com/shorts/VhvibOIA6wI).
