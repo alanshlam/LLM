@@ -6,9 +6,10 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 |----------|----------------|---------------|-------------------|
 | **Sovereign Agent** | Reads local `.mbox` emails, `.csv` finances, `.md` schedules, live weather, traffic‑camera snapshots, and a daily news podcast; compiles a concise briefing and pushes it to a private Telegram bot. | Python 3.8+, **Gemma‑4 31B** (Ollama), **LLaVA/qwen3‑vl** (vision), **Whisper** (audio). | **100 % local privacy** – no data ever leaves your computer. |
 | **Private Video Agent** | Extracts frames, transcribes audio, and performs deterministic “needle‑in‑a‑haystack” searches across video files, all on‑premise. | **Gemma‑4 31B** (or Gemma‑431B) via Ollama, **Claude‑Code CLI**, **ffprobe/ffmpeg**, **Whisper**. | **Zero data leakage** – the model, video files, and tooling stay behind your firewall. |
+| **Claude Code CLI + Ollama** | Routes Anthropic’s Claude Code CLI to a locally‑hosted LLM, allowing fully offline automation of system tasks, code debugging, web‑server setup, cybersecurity log analysis, and other sensitive operations. | Claude Code CLI, Ollama (e.g., `qwen3‑coder‑next:q8_0` or other recommended models), environment‑variable routing, standard OS tools (apache,nginx,lsof -Pi,ss -tulpn, etc.) | Delivers a **completely private, sandboxable AI assistant** that never contacts external APIs, protecting credentials and confidential data while still offering powerful tool‑use capabilities.|
 
 ## ✨ Key Features (at a glance)  
-**🔒 Local‑only processing** for both agents.  
+**🔒 Local‑only processing** for all  agents.  
 
 ### 🤖 Sovereign Agent 
 🔒 **100 % Local Privacy** – processes .mbox, .csv, and .md files on‑device only.   
@@ -25,7 +26,23 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 🚫 Zero Data Leakage – everything runs on an air‑gapped workstation (no external API calls).   
 📈 256 K‑token Context Window – lets the model keep the full transcript + visual cues in memory. 
 
+### 🤖 Claude Code CLI + Ollama agent   
+✅ **100 % offline, private AI assistant** – all reasoning, tool‑use, and data processing stay on the local machine; no data is sent to the cloud [3].  
+🛠️ **Claude Code CLI routed to a local LLM via Ollama** – the CLI is tricked into using a locally hosted model (e.g., `qwen3‑coder‑next:q8_0`) instead of Anthropic’s cloud endpoint [3].  
+📂 **Automates system‑level tasks** – file management, code debugging, web‑server setup, service monitoring, and more, all driven by natural‑language prompts [3].  
+🔐 **Secure by design** – includes a critical security advisory about a known source‑leak version and step‑by‑step checks for compromised NPM packages, Linux malware artifacts, and poisoned dependencies.  
+🤖 **Broad capability set** (demo prompts)  
+  - Private file organization & indexing  
+  - Automatic code debugging & fixing  
+  - Web‑server provisioning & troubleshooting (Apache/Nginx)  
+  - Service‑health monitoring with Telegram alerts  
+  - Cyber‑security log analysis and honeypot reporting  
+  - Malware hash submission to VirusTotal.  
+- 🧠 **Recommended local LLMs** for different workloads (coding, architecture, DevOps, refactoring, prototypes).  
+- 🛡️ **Safety recommendations** – run inside a sandbox/VM, always review generated shell commands, and be aware of occasional tool‑use syntax mismatches with local models.
+
 --- 
+
 ## 📂 Repository Layout  
 
 ```
