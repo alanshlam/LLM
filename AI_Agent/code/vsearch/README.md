@@ -1,1 +1,1 @@
-Video Search Sample
+Video Search Sample data and walkthrough
