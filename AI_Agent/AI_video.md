@@ -72,7 +72,7 @@ Analyze the provided video using these steps:
 3. Track any changes in the environment or subject position between the middle and end of the clip.
 4. Compare the visual state of the final frame to the first frame.
 5. Output a step-by-step breakdown of the actions performed.
-6. Transcribe the spoken dialogue in this video by whisper: /data/staff/shlam/.local/bin/whisper [vidoe file]  --model base --output_dir .
+6. Transcribe the spoken dialogue in this video by whisper: whisper [vidoe file]  --model base --output_dir .
 7. Perform a step-by-step multimodal analysis of this video clip:
    - Visual-Audio Sync: Match the spoken dialogue to the specific actions in the frames.
    - Temporal Reasoning: Identify the exact frame number where the "intake valve" mentioned in the transcript becomes the focus of the shot.
