@@ -7,17 +7,17 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 | **Sovereign Agent** | Reads local `.mbox` emails, `.csv` finances, `.md` schedules, live weather, traffic‑camera snapshots, and a daily news podcast; compiles a concise briefing and pushes it to a private Telegram bot. | Python 3.8+, **Gemma‑4 31B** (Ollama), **LLaVA/qwen3‑vl** (vision), **Whisper** (audio). | **100 % local privacy** – no data ever leaves your computer [1]. |
 | **Private Video Agent** | Extracts frames, transcribes audio, and performs deterministic “needle‑in‑a‑haystack” searches across video files, all on‑premise. | **Gemma‑4 31B** (or Gemma‑431B) via Ollama, **Claude‑Code CLI**, **ffprobe/ffmpeg**, **Whisper**. | **Zero data leakage** – the model, video files, and tooling stay behind your firewall [2]. |
 
-## ✨ Key Features (at a glance)  
+✨ Key Features (at a glance)  
 **🔒 Local‑only processing** for both agents.  
 
-### 🤖 Sovereign Agent 
+## 🤖 Sovereign Agent 
     🔒 **100 % Local Privacy** – processes .mbox, .csv, and .md files on‑device only.  
     🧠 **Contextual Reasoning** – (Gemma4) instead of simple retrieval. the LLM reasons about weather, finance, and schedule (e.g., suggests moving an outdoor lunch indoors if rain is forecast).    
     👁️ **Vision AI** (LLaVA/gemma4:e4b/qwen3‑vl:32) for analyzing live CCTV snapshots; 
     👂 **Audio AI** – Whisper transcribes daily news podcasts locally.  
     📱 **Secure Push Delivery** – HTML‑styled briefing sent via a private Telegram bot.
 
-### 🤖 Private AI Video Agent 
+## 🤖 Private AI Video Agent 
     📸 **Frame Extraction & Visual Analysis** – ffprobe/ffmpeg sample key frames, then image analysis by Gemma4:32b.  
     🔊 **Audio‑to‑Text** – Whisper transcribes video audio for multimodal sync.  
     🎞️ **Video analysis** - Video frame and transcript analysis by Gemma4:32b
