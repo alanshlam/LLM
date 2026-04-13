@@ -24,7 +24,6 @@ The core use‑case is **multimodal video reasoning**: extract frames, sync them
 | Cost | $ per‑token API fees | $0 API cost after the hardware is provisioned |
 | Security | Potential for inadvertent leaks | Complete isolation behind your firewall |  
 
-*These advantages are highlighted in the original study* [1][2].  
 
 ---  
 
@@ -43,8 +42,9 @@ The core use‑case is **multimodal video reasoning**: extract frames, sync them
 ## 🚀 Quick Setup  
 
 ```bash
-# 1️⃣ Install Ollama (https://ollama.com) and pull Gemma‑4 31B
+# 1️⃣ Install Ollama (https://ollama.com) and pull Gemma‑4 31B and gemma4:e4b 
 ollama pull gemma4:31b
+ollama pull gemma4:e4b 
 
 # 2️⃣ Run the model locally (default port 11434)
 ollama serve &
@@ -124,21 +124,25 @@ The resulting `.txt` file is parsed; the agent aligns keywords with the frame ti
 
 ### 3️⃣ Needle‑in‑a‑Haystack Search  
 
-When asked “Which video contains the image `frame_0003.jpg`?”, the agent performs:  
 
-1. **Directory mapping** – `ls -F` discovers candidate files (`ch1.mp4`, `ch21.mp4`).  
+
+When asked “Which video contains the image `unknown.jpg`?”, the agent performs:  
+
+1. **Directory mapping** – `ls -F` discovers candidate files (`ch10.mp4`, `ch20.mp4`).  
 2. **Exact‑frame extraction** – calculates the needed frame index and runs:  
 
+
 ```bash
-ffmpeg -i ch1.mp4 -vf "select=eq(n\,3)" -vframes 1 ch1_frame3.jpg
-ffmpeg -i ch21.mp4 -vf "select=eq(n\,3)" -vframes 1 ch21_frame3.jpg
+ffmpeg -i [video_file] -vf "fps=1/5" frame_[video_id]_%03d.jpg
 ```  
 
 3. **Semantic comparison** – pixel‑to‑description matching against the target image.  
 
-4. **Verification & reporting** – confirms `ch21.mp4` as the match.  
+4. **Verification & reporting** – confirms `ch10.mp4` as the match.  
 
 *All steps and the underlying reasoning are documented in the case‑study *  
+See [how the AI identify the video file] (code/vsearch/Video_identification_process.md)  
+See [The AI workflow ] (code/vsearch/video_search_walkthrough.txt)
 
 ---  
 
