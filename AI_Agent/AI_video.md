@@ -138,9 +138,10 @@ ffmpeg -i [video_file] -vf "fps=1/5" frame_[video_id]_%03d.jpg
 
 3. **Semantic comparison** – pixel‑to‑description matching against the target image.  
 
-4. **Verification & reporting** – confirms `ch10.mp4` as the match.  
+4. **Verification & reporting** – confirms `ch10.mp4` as the match.
 
-*All steps and the underlying reasoning are documented in the case‑study *  
+**All steps and the underlying reasoning are documented in the case‑study**
+
 See [how the AI identify the video file](code/vsearch/Video_identification_process.md)  
 See [The AI workflow ](code/vsearch/video_search_walkthrough.txt)
 
