@@ -1,4 +1,35 @@
+# 📂 Personal AI Agent Study Folder – Overview  
 
+This folder is a **study hub for personal AI agents** – a place to explore, build, and experiment with privacy‑first, zero‑cloud assistants such as the **Sovereign Agent** and the **Private Video Agent**.  
+
+| 🤖 Agent | ✨ What it does | 🛠️ Tech stack | 🔐 Why it matters |
+|----------|----------------|---------------|-------------------|
+| **Sovereign Agent** | Reads local `.mbox` emails, `.csv` finances, `.md` schedules, live weather, traffic‑camera snapshots, and a daily news podcast; compiles a concise briefing and pushes it to a private Telegram bot. | Python 3.8+, **Gemma‑4 31B** (Ollama), **LLaVA/qwen3‑vl** (vision), **Whisper** (audio). | **100 % local privacy** – no data ever leaves your computer [1]. |
+| **Private Video Agent** | Extracts frames, transcribes audio, and performs deterministic “needle‑in‑a‑haystack” searches across video files, all on‑premise. | **Gemma‑4 31B** (or Gemma‑431B) via Ollama, **Claude‑Code CLI**, **ffprobe/ffmpeg**, **Whisper**. | **Zero data leakage** – the model, video files, and tooling stay behind your firewall [2]. |
+
+## ✨ Key Features (at a glance)  
+- **🔒 Local‑only processing** for both agents.  
+- **🧠 Contextual reasoning** (Gemma) instead of simple retrieval.  
+- **👁️ Vision** (LLaVA) for traffic snapshots; **👂 Audio** (Whisper) for podcasts.  
+- **📱 Secure delivery** via Telegram (Sovereign) or CLI output (Video).  
+
+
+## 📂 Repository Layout  
+
+```
+├─ README.md                ← You are here
+├─ ai_agent.py              ← Sovereign orchestrator
+├─ agent_prompt.md          ← Video‑agent prompt
+├─ scripts/
+│   ├─ extract_frames.sh
+│   ├─ transcribe.sh
+│   └─ needle_search.sh
+├─ examples/                ← Sample videos
+├─ .env / .env_sample
+└─ LICENSE
+```
+
+Open an issue or email `alanlam28@gmail.com`.
 
 # [🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard](AI_Dashboard.md)
 🚀📂✨ **The Sovereign Agent** – a privacy‑first, zero‑cloud personal AI dashboard that **🔒 processes your local 📧 .mbox emails, 📊 expenses.csv finances, 📅 schedule.md calendars, ☁️ live weather APIs, 🚦 traffic‑camera snapshots, and 🎙️ news podcasts** entirely on‑device, then compiles a concise, mobile‑friendly briefing and delivers it straight to your 📲 Telegram inbox — all while keeping your data 100 % local and never sending anything to external services.
