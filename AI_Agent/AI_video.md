@@ -30,13 +30,13 @@ The core use‑case is **multimodal video reasoning**: extract frames, sync them
 
 ## 🛠️ Tech Stack  
 
-| Component | Role | Source |
-|-----------|------|--------|
-| **Gemma‑4 31B** (via Ollama) | Local reasoning engine, native tool‑use proficiency | [1] |
-| **Claude Code CLI** | Agentic framework that can invoke shell commands and read files | [1][2] |
-| **ffprobe / ffmpeg** | Video metadata extraction, frame sampling, selective frame extraction | [1][3] |
-| **OpenAI Whisper (base)** | Audio‑to‑text transcription for multimodal sync | [1][3] |
-| **Ollama** | Serves the model locally on a standard workstation | [2] |
+| Component | Role |
+|-----------|------|
+| **Gemma‑4 31B** (via Ollama) | Local reasoning engine, native tool‑use proficiency | 
+| **Claude Code CLI** | Agentic framework that can invoke shell commands and read files |
+| **ffprobe / ffmpeg** | Video metadata extraction, frame sampling, selective frame extraction |
+| **OpenAI Whisper (base)** | Audio‑to‑text transcription for multimodal sync | 
+| **Ollama** | Serves the model locally on a standard workstation | 
 
 ---  
 
@@ -58,7 +58,7 @@ export CLAUDE_MODEL="gemma4:31b"
 claude-code "list files in the current directory"
 ```
 
-*The configuration steps are described in the “Quick Configuration” section of the second source* [2].  
+
 
 ---  
 
@@ -96,7 +96,7 @@ Analyze the provided video using these steps:
 7. Synthesize a concise explanation of the demonstration outcome.
 ```
 
-*The prompt is taken directly from the first source* [1] and forms the backbone of the agent’s reasoning.  
+ 
 
 ---  
 
@@ -138,7 +138,7 @@ ffmpeg -i ch21.mp4 -vf "select=eq(n\,3)" -vframes 1 ch21_frame3.jpg
 
 4. **Verification & reporting** – confirms `ch21.mp4` as the match.  
 
-*All steps and the underlying reasoning are documented in the case‑study sections of sources* [1][3].  
+*All steps and the underlying reasoning are documented in the case‑study *  
 
 ---  
 
@@ -146,11 +146,11 @@ ffmpeg -i ch21.mp4 -vf "select=eq(n\,3)" -vframes 1 ch21_frame3.jpg
 
 | Metric | Observation |
 |--------|-------------|
-| **Tool‑Use Accuracy** | Gemma‑4 formats ffmpeg and Whisper CLI flags correctly on the first try (no retries) | [1] |
-| **Logical Verification** | The model double‑checks command syntax in “Thinking Mode” before execution | [3] |
-| **Multimodal Alignment** | Successfully matched the spoken term “intake valve” to the exact frame where it appears | [3] |
-| **Search Success Rate** | 100 % accurate identification of the correct video in the needle‑in‑haystack test | [3] |
-| **Resource Efficiency** | By extracting only critical frames, the agent conserves context‑window space and reduces compute time | [3] |
+| **Tool‑Use Accuracy** | Gemma‑4 formats ffmpeg and Whisper CLI flags correctly on the first try (no retries) | 
+| **Logical Verification** | The model double‑checks command syntax in “Thinking Mode” before execution | 
+| **Multimodal Alignment** | Successfully matched the spoken term “intake valve” to the exact frame where it appears | 
+| **Search Success Rate** | 100 % accurate identification of the correct video in the needle‑in‑haystack test | 
+| **Resource Efficiency** | By extracting only critical frames, the agent conserves context‑window space and reduces compute time | 
 
 ---  
 
@@ -166,9 +166,7 @@ The result is a **second brain** that is both *private* and *powerful*—ideal f
 
 ---  
 
-## 📄 License  
-
-The code in this repository is released under the **Apache 2.0 License**, matching the licensing of Gemma‑4 31B.  
+ 
 
 ---  
 
@@ -183,8 +181,7 @@ The code in this repository is released under the **Apache 2.0 License**, matc
 
 ## 📞 Contact  
 
-For questions, issues, or collaboration proposals, please open an issue or contact the maintainer at `your.email@example.com`.  
+For questions, issues, or collaboration proposals, please open an issue or contact the maintainer at `alanlam28@gmail.com`.  
 
 ---  
 
-*All content above consolidates and enriches the original documentation from the three source files* [1][2][3].
