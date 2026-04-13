@@ -1,3 +1,9 @@
+
+# [🛡️ Private AI Agent – Secure Video Analysis & Search with Gemma‑4 31B & Claude Code CLI](AI_video.md)  
+This study demonstrates how to turn **Gemma‑4 31B** into a fully **air‑gapped, private AI agent** powered by the **Claude Code CLI** 🚀. By running the entire stack locally (via Ollama) you can analyze sensitive video and technical data with **zero data leakage** 🚫☁️, keeping everything behind your firewall 🏠. The agent leverages native tool‑use proficiency (ffprobe, ffmpeg, Whisper) 🛠️, deep “Thinking Mode” chain‑of‑thought verification 🧠, and a massive 256 K‑token context window 📚 to perform multimodal video reasoning and needle‑in‑a‑haystack searches 🕵️‍♀️—all at $0 API cost 💰.  
+
+
+
 # 🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
