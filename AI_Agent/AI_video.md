@@ -1,4 +1,4 @@
-# Private AI Agent – Secure Video Analysis & Search with Gemma‑4 31B & Claude Code CLI  
+# Private AI Agent – Secure Video Analysis & Search with Gemma4:31B & Claude Code CLI  
 
 **A fully‑air‑gapped, locally‑hosted AI agent that can extract frames, transcribe audio, and autonomously locate visual “needles” in a haystack of video files – all without a single byte leaving your firewall.**  
 
@@ -6,7 +6,7 @@
 
 ## 📖 Overview  
 
-This repository demonstrates how to turn the **Gemma‑4 31B** model into a private, tool‑using agent powered by the **Claude Code CLI**.  
+This repository demonstrates how to turn the **Gemma4:31B** model into a private, tool‑using agent powered by the **Claude Code CLI**.  
 - **Zero data leakage** – the model, the data, and all CLI tools run on‑premise.  
 - **Full sovereignty** – you own the model weights, the execution logs, and the results.  
 - **High‑efficiency reasoning** – 31 B parameters + a 256 K (or 128 K) context window let the agent keep the whole transcript and visual cues in memory while orchestrating external tools.  
