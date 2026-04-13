@@ -38,8 +38,8 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
   - Service‑health monitoring with Telegram alerts  
   - Cyber‑security log analysis and honeypot reporting  
   - Malware hash submission to VirusTotal.  
-- 🧠 **Recommended local LLMs** for different workloads (coding, architecture, DevOps, refactoring, prototypes).  
-- 🛡️ **Safety recommendations** – run inside a sandbox/VM, always review generated shell commands, and be aware of occasional tool‑use syntax mismatches with local models.
+🧠 **Recommended local LLMs** for different workloads (coding, architecture, DevOps, refactoring, prototypes).  
+🛡️ **Safety recommendations** – run inside a sandbox/VM, always review generated shell commands, and be aware of occasional tool‑use syntax mismatches with local models.
 
 --- 
 
