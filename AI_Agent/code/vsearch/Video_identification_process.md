@@ -10,7 +10,7 @@ The goal was to determine which video file in the directory contains the scene d
 
 2. 🕵️ **Directory Inspection**:
     - I listed the files in the working directory using `ls -F` to identify potential candidate video files.
-    - **Found files**: [`ch10.mp4`](https://youtube.com/shorts/VhvibOIA6wI), `ch20.mp4`, and [`unknown.jpg`](unknown.jpg).
+    - **Found files**: [`ch10.mp4`](https://youtube.com/shorts/VhvibOIA6wI), [`ch20.mp4`](https://youtube.com/shorts/3GgwvXgxnKY), and [`unknown.jpg`](unknown.jpg).
 
 3. ⛏️ **Frame Extraction**:
     - To inspect the visual content of the videos without watching them in real-time, I used `ffmpeg` to extract representative frames.
@@ -19,9 +19,9 @@ The goal was to determine which video file in the directory contains the scene d
 
 4.  ⚖️ **Visual Comparison**:
     - I reviewed the extracted frames:
-        - `frame_ch10_001.jpg`
-        - `frame_ch20_001.jpg`
-        - `frame_ch20_002.jpg`
+        - [`frame_ch10_001.jpg`](frame_ch10_001.jpg)
+        - [`frame_ch20_001.jpg`](frame_ch20_001.jpg)
+        - [`frame_ch20_002.jpg`](frame_ch20_002.jpg)
     - I compared these frames against the original `unknown.jpg`.
 
 5. 🆔 **Identification**:
@@ -29,4 +29,4 @@ The goal was to determine which video file in the directory contains the scene d
     - The frames from `ch20.mp4` did not match the scene.
 
 ## 🎯 Conclusion
-Based on the visual comparison of extracted frames, the image `unknown.jpg` is a scene from the video file **`ch10.mp4`**.
+Based on the visual comparison of extracted frames, the image `unknown.jpg` is a scene from the video file [**`ch10.mp4`**](https://youtube.com/shorts/VhvibOIA6wI).
