@@ -59,26 +59,9 @@ claude  "list files in the current directory"
 ```
 
 
-
 ---  
 
-## 📂 Repository Layout  
-
-```
-├─ README.md                ← This document
-├─ agent_prompt.md          ← Multimodal reasoning prompt (see below)
-├─ scripts/
-│   ├─ extract_frames.sh    ← Helper for ffprobe + ffmpeg extraction
-│   ├─ transcribe.sh        ← Wrapper around Whisper
-│   └─ needle_search.sh     ← Autonomous search routine
-└─ examples/
-    ├─ ch1.mp4
-    └─ ch21.mp4
-```
-
----  
-
-## 🧠 Agent Prompt (Multimodal Reasoning)  
+## 🧠 Agent Prompt for video analysis (Multimodal Reasoning)  
 
 ```
 Analyze the provided video using these steps:
@@ -96,7 +79,6 @@ Analyze the provided video using these steps:
 7. Synthesize a concise explanation of the demonstration outcome.
 ```
 
- 
 
 ---  
 
@@ -143,7 +125,7 @@ ffmpeg -i [video_file] -vf "fps=1/5" frame_[video_id]_%03d.jpg
 **All steps and the underlying reasoning are documented in the case‑study**
 
 See [how the AI identify the video file](code/vsearch/Video_identification_process.md)  
-See [The AI workflow ](code/vsearch/video_search_walkthrough.txt)
+See [the complete AI walkthrough in video search](code/vsearch/video_search_walkthrough.txt)
 
 ---  
 
