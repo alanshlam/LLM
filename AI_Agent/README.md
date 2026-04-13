@@ -42,10 +42,23 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 🧠 **Recommended local LLMs** for different workloads (coding, architecture, DevOps, refactoring, prototypes).     
 🛡️ **Safety recommendations** – run inside a sandbox/VM, always review generated shell commands, and be aware of occasional tool‑use syntax mismatches with local models.  
 
---- 
-
 
 ---
+
+# [🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard](AI_Dashboard.md)
+🚀📂✨ **The Sovereign Agent** – a privacy‑first, zero‑cloud personal AI dashboard that **🔒 processes your local 📧 .mbox emails, 📊 expenses.csv finances, 📅 schedule.md calendars, ☁️ live weather APIs, 🚦 traffic‑camera snapshots, and 🎙️ news podcasts** entirely on‑device, then compiles a concise, mobile‑friendly briefing and delivers it straight to your 📲 Telegram inbox — all while keeping your data 100 % local and never sending anything to external services.
+
+--- 
+
+# [🛡️ Private AI Agent – Secure Video Analysis & Search with Gemma‑4 31B & Claude Code CLI](AI_video.md)  
+This study demonstrates how to turn **Gemma‑4 31B** into a fully **air‑gapped, private AI agent** powered by the **Claude Code CLI** 🚀. By running the entire stack locally (via Ollama) you can analyze sensitive video and technical data with **zero data leakage** 🚫☁️, keeping everything behind your firewall 🏠. The agent leverages native tool‑use proficiency (ffprobe, ffmpeg, Whisper) 🛠️, deep “Thinking Mode” chain‑of‑thought verification 🧠, and a massive 256 K‑token context window 📚 to perform multimodal video reasoning and needle‑in‑a‑haystack searches 🕵️‍♀️—all at $0 API cost 💰.  
+
+---
+
+# [🚀 Private Local AI Agent (Claude Code + Ollama)](../cccli)
+Stop leaking your sensitive data, source code, and security logs to the cloud. I've built a complete workflow that integrates the Claude Code CLI with local Ollama models to create a powerful, 100% offline AI assistant. This project demonstrates how to securely automate DevOps tasks, debug complex code, organize private files, and perform advanced cybersecurity threat intel (like honeypot and malware analysis) right on your local machine.
+
+---  
 
 ## 📂 Repository Layout  
 
@@ -61,25 +74,8 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 ├─ .env / .env_sample
 └─ LICENSE
 ```
-
 Open an issue or email `alanlam28@gmail.com`.
 
----
-
-# [🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard](AI_Dashboard.md)
-🚀📂✨ **The Sovereign Agent** – a privacy‑first, zero‑cloud personal AI dashboard that **🔒 processes your local 📧 .mbox emails, 📊 expenses.csv finances, 📅 schedule.md calendars, ☁️ live weather APIs, 🚦 traffic‑camera snapshots, and 🎙️ news podcasts** entirely on‑device, then compiles a concise, mobile‑friendly briefing and delivers it straight to your 📲 Telegram inbox — all while keeping your data 100 % local and never sending anything to external services.
-
---- 
-
-# [🛡️ Private AI Agent – Secure Video Analysis & Search with Gemma‑4 31B & Claude Code CLI](AI_video.md)  
-This study demonstrates how to turn **Gemma‑4 31B** into a fully **air‑gapped, private AI agent** powered by the **Claude Code CLI** 🚀. By running the entire stack locally (via Ollama) you can analyze sensitive video and technical data with **zero data leakage** 🚫☁️, keeping everything behind your firewall 🏠. The agent leverages native tool‑use proficiency (ffprobe, ffmpeg, Whisper) 🛠️, deep “Thinking Mode” chain‑of‑thought verification 🧠, and a massive 256 K‑token context window 📚 to perform multimodal video reasoning and needle‑in‑a‑haystack searches 🕵️‍♀️—all at $0 API cost 💰.  
-
----
-
-# 🚀 Private Local AI Agent (Claude Code + Ollama)
-Stop leaking your sensitive data, source code, and security logs to the cloud. I've built a complete workflow that integrates the Claude Code CLI with local Ollama models to create a powerful, 100% offline AI assistant. This project demonstrates how to securely automate DevOps tasks, debug complex code, organize private files, and perform advanced cybersecurity threat intel (like honeypot and malware analysis) right on your local machine.
-
----  
 
 # 🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard
 
