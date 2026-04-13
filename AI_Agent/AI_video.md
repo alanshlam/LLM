@@ -55,7 +55,7 @@ export CLAUDE_API_BASE="http://127.0.0.1:11434/v1"
 export CLAUDE_MODEL="gemma4:31b"
 
 # 4️⃣ Verify the agent can run a simple command
-claude-code "list files in the current directory"
+claude  "list files in the current directory"
 ```
 
 
