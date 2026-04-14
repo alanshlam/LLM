@@ -85,7 +85,7 @@ graph TD
 ## 🖼️Infographic of the Sovereign Agent
 
 <div style="height: 200px; overflow-y: scroll;">
-  <img src="code/AI_agent_infograhp.jpg" width="100%"><br>
+  <img src="code/AI_agent_infograph.jpg" width="100%"><br>
  
 </div>
 
