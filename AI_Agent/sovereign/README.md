@@ -34,9 +34,9 @@ Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition
 *   👂 **Audio AI (Whisper):** Downloads the latest daily news podcast (.mp3) and transcribes the spoken audio into text locally.
 *   📱 **Secure Push Delivery:** Formats the final intelligence briefing into an elegant, mobile-friendly HTML message delivered via a private Telegram bot.
 
-You can download the source code of the  [Sovereign Agent here](code/ai_agent.py)
+### You can download the source code of the  [Sovereign Agent here](code/ai_agent.py)
 
-Below is a sample output on TG 
+## Below is a sample output on TG 
 
 <ul>  
 📱 THE SOVEREIGN AGENT
@@ -216,22 +216,68 @@ TELEGRAM_CHAT_ID="123456789"
 ```
 
 ### 6. Environment Configuration
-Create a [.env](.env_sample) file in the root directory:
+Create a [.env](.env_sample) file in the directory:
 
 ```env 
 # --- REQUIRED TELEGRAM SETTINGS ---
-TELEGRAM_TOKEN="your_bot_token_here"
-TELEGRAM_CHAT_ID="your_chat_id_here"
+TELEGRAM_TOKEN=[Your_TG_TOKEN]
+TELEGRAM_CHAT_ID=[Your_CHAT_ID]
+
+# --- LOCAL MAILBOX PATH ---
+# Provide the absolute or relative path to your .mbox file
+MBOX_PATH="inbox.mbox"
 
 # --- LOCAL PRIVATE DATA PATHS ---
-MBOX_PATH="inbox.mbox"
 SCHEDULE_PATH="schedule.md"
 TASKS_PATH="tasks.md"
 EXPENSES_PATH="expenses.csv"
 
-# --- OLLAMA LOCAL MODELS ---
-OLLAMA_VISION_MODEL="llava"
-OLLAMA_SUMMARY_MODEL="gemma4:31b"
+
+# --- CCTV TRAFFIC SETTINGS ---
+CCTV_IMAGE_URL=https://tdcctv.data.one.gov.hk/TC001F.JPG
+CCTV_NAME="HK TM-CLK Tunnel TM-CLK Tunnel Southern Portal"
+
+
+# The vision model used to analyze the CCTV image (e.g., llava, bakllava, qwen3-vl:32b,gemma4:e4b)
+OLLAMA_VISION_MODEL=gemma4:e4b
+
+# The text model used to summarize the news articles (e.g. gpt-oss:120b, llama3, mistral, gemma4:31b, qwen3-coder-next:q8_0 )
+OLLAMA_SUMMARY_MODEL=gemma4:31b
+
+
+# ==========================================
+# 🤖 AI NEWS FEED ALTERNATIVES
+# ==========================================
+
+# TechCrunch AI (Default)
+AI_FEED_URL="https://techcrunch.com/category/artificial-intelligence/feed/"
+
+# VentureBeat AI (Excellent for enterprise AI & LLM news)
+# AI_FEED_URL="https://venturebeat.com/category/ai/feed/"
+
+# Wired - Artificial Intelligence (More mainstream/cultural impact)
+# AI_FEED_URL="https://www.wired.com/feed/category/artificial-intelligence/latest/rss"
+
+# The Verge - AI (Good mix of consumer tech and AI)
+# AI_FEED_URL="https://www.theverge.com/rss/artificial-intelligence/index.xml"
+
+
+# ==========================================
+# 🛡️ CYBERSECURITY NEWS FEED ALTERNATIVES
+# ==========================================
+
+# The Hacker News (Default)
+CYBER_FEED_URL="https://feeds.feedburner.com/TheHackersNews"
+
+# BleepingComputer (Great for malware, ransomware, and practical IT alerts)
+# CYBER_FEED_URL="https://www.bleepingcomputer.com/feed/"
+
+# Krebs on Security (In-depth investigative cybersecurity journalism)
+# CYBER_FEED_URL="https://krebsonsecurity.com/feed/"
+
+# Dark Reading (Enterprise cybersecurity news)
+# CYBER_FEED_URL="https://www.darkreading.com/rss.xml"
+#
 
 ```
 ### Run it daily in the morning
