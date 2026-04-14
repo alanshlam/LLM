@@ -40,9 +40,10 @@ Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition
 
 <ul>  
 📱 THE SOVEREIGN AGENT  
+   
 Your Zero-Cloud Daily Dashboard  
 
-🌍 PUBLIC RADAR   
+🌍 PUBLIC RADAR    
 💹 NVDA: $189.31 (📈 +0.56)   
 ☁️ New York: 17.7°C | London: 7.0°C | Hong Kong: 27.6°C   
 🚗 HK TM-CLK Tunnel TM-CLK Tunnel Southern Portal: Traffic flow is moderate, showing steady but uncongested movement across all visible lanes. [Cam](https://tdcctv.data.one.gov.hk/TC001F.JPG)   
@@ -178,6 +179,7 @@ Create the following dummy files in the same directory as the script so the AI h
 * [tasks.md](code/tasks.md) (List your chores)
 * [expenses.csv](code/expenses.csv) (Headers: Date,Category,Amount,Description)
 * [inbox.mbox](code/inbox.mbox) (A standard text-based mailbox file)
+* [schedule.md](code/schedule.md) (Your schedule)
 
 ### 5. 📱 Telegram Bot Setup  
 It takes less than 3 minutes to complete and requires no coding.
