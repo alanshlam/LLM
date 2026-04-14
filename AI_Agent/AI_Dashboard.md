@@ -1,10 +1,16 @@
-# 🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard
+# 🤖 The Sovereign Agent : Your Zero-Cloud Private AI Assistant
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black.svg)](https://ollama.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
+Welcome to **The Sovereign Agent**—a fully autonomous, locally-hosted AI executive assistant. 
+
+In an era where every calendar event, financial transaction, and sensitive corporate email is routinely fed into third-party cloud APIs, this project asks a simple question: **What if your AI was completely yours?**
+
 **The Sovereign Agent** is a privacy-first, multimodal AI assistant built entirely with Python and local open-source models. It acts as an elite executive assistant that reads your emails, checks your bank spending, cross-references your daily schedule with live weather, looks at local traffic cameras, listens to the morning news—and compiles it all into a single Telegram message before you wake up.
+
+Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition (OpenAI Whisper), this Python agent acts as a private reasoning engine. It digests your daily life, reads your emails, listens to the news, and pushes a highly condensed, actionable dashboard directly to your phone—with **zero risk of data leakage.**
 
 **The catch?** Your private data never leaves your computer. 
 
@@ -20,8 +26,11 @@
 
 ## ✨ Key Features
 
-*   🔒 **100% Local Privacy:** Processes local `.mbox` (emails), `.csv` (finances), and `.md` (schedules) files strictly on-device. No data is sent to OpenAI, Google, or Anthropic.
+*   🔒 **100% Local Privacy (Zero-Cloud Processing):** Your `.mbox` emails, `.csv` expenses, and `.md` daily schedules are parsed and reasoned over *strictly* on your local machine. No API keys to OpenAI, Anthropic, or Google are required for the AI logic. No data is sent to OpenAI, Google, or Anthropic.
 *   🧠 **Contextual Reasoning:** The AI doesn't just retrieve data; it *reasons* about it. (e.g., It will warn you to move an outdoor lunch indoors if the live weather API reports rain).
+*   **🧠 Intelligent Email Triage:** Instead of just summarizing, the agent uses **Gemma-4** to understand context. It can filter out marketing spam, recognize a casual lunch update, and instantly flag a critical message from your CEO or an expiring AWS certificate alert.
+*    **👀 Vision-Powered Traffic Intel:** Integrates with local traffic CCTVs. It downloads the live camera feed and uses **LLaVA or ** to physically "look" at the road and give you a one-sentence traffic report before you leave the house.
+*   **📰 Unbiased Global Intel:** Bypasses search engine SEO spam by connecting directly to configurable, high-quality RSS feeds (TechCrunch, The Hacker News) 
 *   👁️ **Vision AI (LLaVA / qwen3-vl:32b):** Fetches live public CCTV snapshots and translates visual traffic congestion into a text summary.
 *   👂 **Audio AI (Whisper):** Downloads the latest daily news podcast (.mp3) and transcribes the spoken audio into text locally.
 *   📱 **Secure Push Delivery:** Formats the final intelligence briefing into an elegant, mobile-friendly HTML message delivered via a private Telegram bot.
