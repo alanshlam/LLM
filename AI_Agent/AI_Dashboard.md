@@ -29,7 +29,7 @@ Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition
 *   🔒 **100% Local Privacy (Zero-Cloud Processing):** Your `.mbox` emails, `.csv` expenses, and `.md` daily schedules are parsed and reasoned over *strictly* on your local machine. No API keys to OpenAI, Anthropic, or Google are required for the AI logic. No data is sent to OpenAI, Google, or Anthropic.
 *   🧠 **Contextual Reasoning:** The AI doesn't just retrieve data; it *reasons* about it. (e.g., It will warn you to move an outdoor lunch indoors if the live weather API reports rain).
 *   **🧠 Intelligent Email Triage:** Instead of just summarizing, the agent uses **Gemma-4** to understand context. It can filter out marketing spam, recognize a casual lunch update, and instantly flag a critical message from your CEO or an expiring AWS certificate alert.
-*    **👀 Vision-Powered Traffic Intel:** Integrates with local traffic CCTVs. It downloads the live camera feed and uses **LLaVA or ** to physically "look" at the road and give you a one-sentence traffic report before you leave the house.
+*    **👀 Vision-Powered Traffic Intel:** Integrates with local traffic CCTVs. It downloads the live camera feed and uses **LLaVA or gemma4:e4b** to physically "look" at the road and give you a one-sentence traffic report before you leave the house.
 *   **📰 Unbiased Global Intel:** Bypasses search engine SEO spam by connecting directly to configurable, high-quality RSS feeds (TechCrunch, The Hacker News) 
 *   👁️ **Vision AI (LLaVA / qwen3-vl:32b):** Fetches live public CCTV snapshots and translates visual traffic congestion into a text summary.
 *   👂 **Audio AI (Whisper):** Downloads the latest daily news podcast (.mp3) and transcribes the spoken audio into text locally.
