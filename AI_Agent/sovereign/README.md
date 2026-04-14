@@ -27,11 +27,11 @@ Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition
 ## ✨ Key Features
 
 *   🔒 **100% Local Privacy (Zero-Cloud Processing):** Your `.mbox` emails, `.csv` expenses, and `.md` daily schedules are parsed and reasoned over *strictly* on your local machine. No API keys to OpenAI, Anthropic, or Google are required for the AI logic. No data is sent to OpenAI, Google, or Anthropic.
-*   🧠 **Contextual Reasoning:** The AI doesn't just retrieve data; it *reasons* about it. (e.g., It will warn you to move an outdoor lunch indoors if the live weather API reports rain).
+*   ai✨ **Contextual Reasoning:** The AI doesn't just retrieve data; it *reasons* about it. (e.g., It will warn you to move an outdoor lunch indoors if the live weather API reports rain).
 *   🧠 **Intelligent Email Triage:** Instead of just summarizing, the agent uses **Gemma-4** to understand context. It can filter out marketing spam, recognize a casual lunch update, and instantly flag a critical message from your CEO or an expiring AWS certificate alert.
 *   👀 **Vision-Powered Traffic Intel:** Integrates with local traffic CCTVs. It downloads the live camera feed and uses **LLaVA or gemma4:e4b** to physically "look" at the road and give you a one-sentence traffic report before you leave the house.
 *   📰 **Unbiased Global Intel:** Bypasses search engine SEO spam by connecting directly to configurable, high-quality RSS feeds (TechCrunch, The Hacker News) 
-*   👂 **Audio AI (Whisper):** Downloads the latest daily news podcast (.mp3) and transcribes the spoken audio into text locally.
+*   👂 **Audio AI (Whisper):** Downloads the latest daily‑news podcast (MP3) and locally transcribes its spoken audio into text, generating a concise summary and sparing you from having to listen to the lengthy audio to stay updated.
 *   📱 **Secure Push Delivery:** Formats the final intelligence briefing into an elegant, mobile-friendly HTML message delivered via a private Telegram bot.
 
 ### You can download the source code of the  [Sovereign Agent here](code/ai_agent.py)
@@ -39,29 +39,29 @@ Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition
 ## Below is a sample output on TG 
 
 <ul>  
-📱 THE SOVEREIGN AGENT
-Your Zero-Cloud Daily Dashboard
+📱 THE SOVEREIGN AGENT  
+Your Zero-Cloud Daily Dashboard  
 
 🌍 PUBLIC RADAR   
 💹 NVDA: $189.31 (📈 +0.56)   
 ☁️ New York: 17.7°C | London: 7.0°C | Hong Kong: 27.6°C   
 🚗 HK TM-CLK Tunnel TM-CLK Tunnel Southern Portal: Traffic flow is moderate, showing steady but uncongested movement across all visible lanes. [Cam](https://tdcctv.data.one.gov.hk/TC001F.JPG)   
 
-👤 PRIVATE BRIEFING
-🗓️ Your day is moderately paced and ends with a doctor's visit, with the 17.7°C weather being perfect for your outdoor lunch.   
+👤 PRIVATE BRIEFING  
+🗓️ Your day is moderately paced and ends with a doctor's visit, with the 17.7°C weather being perfect for your outdoor lunch.    
 ✅ Focus on fixing the CEO's roadmap slides and renewing the AWS certificates before midnight.   
 💸 You have kept your recent spending to a modest $185.49.  
 📧 Address the urgent CEO and Jira emails first, then update your network password.   
 
-✉️ LATEST EMAILS:
+✉️ LATEST EMAILS:  
 ▪️ Jira Notifications: [Jira] Overdue Task: Renew AWS Certificates   
 ▪️ David (CEO): URGENT: Q2 Roadmap Slides Missing Data!  
 ▪️ IT Helpdesk: ACTION REQUIRED: Password expiring in 2 days   
 ▪️ Sarah Jenks: Running late for lunch!  
-▪️ Tech Webinars: Master AI in 3 Days! Free Webinar  
+▪️ Tech Webinars: Master AI in 3 Days! Free Webinar   
 
-📰 GLOBAL INTEL
-📻 GLOBAL AUDIO FLASH
+📰 GLOBAL INTEL  
+📻 GLOBAL AUDIO FLASH  
 Source: [NPR News Now](https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/efdd9216-398f-43f2-b4de-63fefbd6e08c/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=efdd9216-398f-43f2-b4de-63fefbd6e08c&feed=O9WlY7a5&t=podcast&e=nx-s1-20260414-0200-long&p=500005&d=280&size=4480567)   
 • The US military is blockading Iranian ports to pressure Tehran into a peace deal after talks in Islamabad collapsed.   
 • US gas prices have surged 21% following attacks on Iran, prompting drivers to seek cheaper fuel at Native American reservation stations.   
