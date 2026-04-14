@@ -42,7 +42,7 @@ Below is a sample output on TG
 graph TD
     subgraph Public [🌍 Public Web Data]
         Weather[☁️ APIs & Stocks]
-        News[📰 DuckDuckGo Search]
+        News[📰 RSS feeds ]
         Podcast[📻 NPR Podcast .mp3]
         CCTV[🚗 Live Traffic CCTV .jpg]
     end
