@@ -243,7 +243,7 @@ TELEGRAM_CHAT_ID="123456789"
 ```
 
 ### 6. Environment Configuration
-Create a [.env](.env_sample) file in the directory:
+Create a [.env](code/.env_sample) file in the directory:
 
 ```env 
 # --- REQUIRED TELEGRAM SETTINGS ---
