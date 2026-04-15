@@ -109,11 +109,10 @@ whisper video.mp4 --model base --output_dir .
 The resulting `.txt` file is parsed; the agent aligns keywords with the frame timestamps.  
 
 ### 3️⃣ Sample of Video Analysis
-You can view some video analysis at [vanalysis folder](vanalysis)
+You can view some video analysis samples at [vanalysis folder](vanalysis)
+
 
 ### 4️⃣ Needle‑in‑a‑Haystack Search  
-
-
 
 When asked “Which video contains the image `unknown.jpg`?”, the agent performs:  
 
