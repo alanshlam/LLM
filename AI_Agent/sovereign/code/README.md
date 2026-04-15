@@ -1,6 +1,8 @@
 For code and sample data
 
-.env_sample  : .env sample file
+<ul>
+
+.env_sample  : .env sample file   
 
 AI_agent_infograph.jpg : Infographic of the Sovereign Agent Prediction
 
@@ -17,3 +19,4 @@ inbox.mbox  : mailbox sample file
 schedule.md : schedule sample file
 
 tasks.md  : task sample file
+</ul>
