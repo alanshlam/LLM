@@ -63,23 +63,45 @@ Stop leaking your sensitive data, source code, and security logs to the cloud. I
 ## 📂 Repository Layout  
 
 ```
-├─ README.md                ← You are here
-├─ sovereign/              ← The Sovereign Agent doc
-│   ├─code/
-
-├─ v_agent/                 ← Private AI Video Agent – Secure Video Analysis & Search
-├─ code/
-│   ├─ .env_sample
-│   ├─ AI_agent_infograhp.jpg
-│   ├─ README.md
-│   ├─ TC001F.JPG
-│   ├─ ai_agent.py
-│   ├─ expenses.csv
-│   ├─ inbox.mbox
-│   ├─ infographic2.md
-│   ├─ output_sample.jpg
-│   ├─ schedule.md
-│   ├─ tasks.md
+AI_Agent/
+├── README.md
+├── sovereign/
+│   ├── README.md
+│   └── code/
+│       ├── ai_agent_dds.py
+│       ├── AI_agent_infograph.jpg
+│       ├── ai_agent.py
+│       ├── .env_sample
+│       ├── expenses.csv
+│       ├── inbox.mbox
+│       ├── output_sample.jpg
+│       ├── README.md
+│       ├── schedule.md
+│       ├── tasks.md
+│       └── TC001F.JPG
+└── v_agent/
+    ├── README.md
+    ├── infograph/
+    │   ├── AI_vagent_infograph04.jpg
+    │   ├── ai_video_agent_case_study.jpg
+    │   ├── Gemma4_model_com2.png
+    │   └── README.md
+    ├── vanalysis/
+    │   ├── ch1_analysis.md
+    │   ├── frame_0003.jpg
+    │   ├── lena_analysis3.md
+    │   ├── lisa_analysis.md
+    │   ├── README.md
+    │   ├── scarf.md
+    │   └── video_analysis_prompt.txt
+    └── vsearch/
+        ├── frame_ch10_001.jpg
+        ├── frame_ch20_001.jpg
+        ├── frame_ch20_002.jpg
+        ├── README.md
+        ├── unknown.jpg
+        ├── Video_identification_process.md
+        └── video_search_walkthrough.txt
 
 ```
 Open an issue or email `alanlam28@gmail.com`.
