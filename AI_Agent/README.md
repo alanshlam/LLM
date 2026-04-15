@@ -4,21 +4,21 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 
 | 🤖 Agent | ✨ What it does | 🛠️ Tech stack | 🔐 Why it matters |
 |----------|----------------|---------------|-------------------|
-| [**Sovereign Agent**](AI_Dashboard.md) | Reads local `.mbox` emails, `.csv` finances, `.md` schedules, live weather, traffic‑camera snapshots, and a daily news podcast; compiles a concise briefing and pushes it to a private Telegram bot. | Python 3.8+, **Gemma‑4 31B** (Ollama), **LLaVA/qwen3‑vl** (vision), **Whisper** (audio). | **100 % local privacy** – no data ever leaves your computer. |
-| [**Private Video Agent**](AI_video.md)| Extracts frames, transcribes audio, and performs deterministic “needle‑in‑a‑haystack” searches across video files, all on‑premise. | **Gemma‑4 31B** (or Gemma‑431B) via Ollama, **Claude‑Code CLI**, **ffprobe/ffmpeg**, **Whisper**. | **Zero data leakage** – the model, video files, and tooling stay behind your firewall. |
+| [**Sovereign Agent**](sovereign) | Reads local `.mbox` emails, `.csv` finances, `.md` schedules, live weather, traffic‑camera snapshots, and a daily news podcast; compiles a concise briefing and pushes it to a private Telegram bot. | Python 3.8+, **Gemma‑4 31B** (Ollama), **LLaVA/qwen3‑vl** (vision), **Whisper** (audio). | **100 % local privacy** – no data ever leaves your computer. |
+| [**Private Video Agent**](v_agent)| Extracts frames, transcribes audio, and performs deterministic “needle‑in‑a‑haystack” searches across video files, all on‑premise. | **Gemma‑4 31B** (or Gemma‑431B) via Ollama, **Claude‑Code CLI**, **ffprobe/ffmpeg**, **Whisper**. | **Zero data leakage** – the model, video files, and tooling stay behind your firewall. |
 | [**Claude Code CLI + Ollama**](../cccli) [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/mKXO0ZvdW6E) | Routes Anthropic’s Claude Code CLI to a locally‑hosted LLM, allowing fully offline automation of system tasks, code debugging, web‑server setup, cybersecurity log analysis, and other sensitive operations. | Claude Code CLI, Ollama (e.g., `qwen3‑coder‑next:q8_0` or other recommended models), environment‑variable routing, standard OS tools (apache,nginx,lsof -Pi,ss -tulpn, etc.) | Delivers a **completely private, sandboxable AI assistant** that never contacts external APIs, protecting credentials and confidential data while still offering powerful tool‑use capabilities.|
 
 ## ✨ Key Features (at a glance)  
 **🔒 Local‑only processing** for all  agents.  
 
-### 🤖 [Sovereign Agent](AI_Dashboard.md) 
+### 🤖 [Sovereign Agent](sovereign) 
 🔒 **100 % Local Privacy** – processes .mbox, .csv, and .md files on‑device only.   
 🧠 **Contextual Reasoning** – (Gemma4) instead of simple retrieval, the LLM reasons about weather, finance, and schedule (e.g., suggests moving an outdoor lunch indoors if rain is forecast).     
 👁️ **Vision AI** (LLaVA/gemma4:e4b/qwen3‑vl:32) for analyzing live CCTV snapshots;  
 👂 **Audio AI** – Whisper transcribes daily news podcasts locally and summarize it.  
 📱 **Secure Push Delivery** – HTML‑styled briefing sent via a private Telegram bot. 
 
-### 🤖 [Private AI Video Agent](AI_video.md) 
+### 🤖 [Private AI Video Agent](v_agent) 
 📸 **Frame Extraction & Visual Analysis** – ffprobe/ffmpeg sample key frames, then image analysis by Gemma4:32b.   
 🔊 **Audio‑to‑Text** – Whisper transcribes video audio for multimodal sync.   
 🎞️ **Video analysis** - Video frame and transcript analysis by Gemma4:32b  
@@ -45,12 +45,12 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 
 ---
 
-# [🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard](AI_Dashboard.md)
+# [🤖 The Sovereign Agent | Zero-Cloud Personal AI Dashboard](sovereign)
 🚀📂✨ **The Sovereign Agent** – a privacy‑first, zero‑cloud personal AI dashboard that **🔒 processes your local 📧 .mbox emails, 📊 expenses.csv finances, 📅 schedule.md calendars, ☁️ live weather APIs, 🚦 traffic‑camera snapshots, and 🎙️ news podcasts** entirely on‑device, then compiles a concise, mobile‑friendly briefing and delivers it straight to your 📲 Telegram inbox — all while keeping your data 100 % local and never sending anything to external services.
 
 --- 
 
-# [🛡️ Private AI Agent – Secure Video Analysis & Search with Gemma‑4 31B & Claude Code CLI](AI_video.md)  
+# [🛡️ Private AI Agent – Secure Video Analysis & Search with Gemma‑4 31B & Claude Code CLI](v_agent)  
 This study demonstrates how to turn **Gemma‑4 31B** into a fully **air‑gapped, private AI agent** powered by the **Claude Code CLI** 🚀. By running the entire stack locally (via Ollama) you can analyze sensitive video and technical data with **zero data leakage** 🚫☁️, keeping everything behind your firewall 🏠. The agent leverages native tool‑use proficiency (ffprobe, ffmpeg, Whisper) 🛠️, deep “Thinking Mode” chain‑of‑thought verification 🧠, and a massive 256 K‑token context window 📚 to perform multimodal video reasoning and needle‑in‑a‑haystack searches 🕵️‍♀️—all at $0 API cost 💰.  
 
 ---
@@ -64,8 +64,10 @@ Stop leaking your sensitive data, source code, and security logs to the cloud. I
 
 ```
 ├─ README.md                ← You are here
-├─ AI_Dashboard.md          ← The Sovereign Agent doc
-├─ AI_video.md              ← Private AI Agent – Secure Video Analysis & Search
+├─ sovereign/              ← The Sovereign Agent doc
+│   ├─code/
+
+├─ v_agent/                 ← Private AI Video Agent – Secure Video Analysis & Search
 ├─ code/
 │   ├─ .env_sample
 │   ├─ AI_agent_infograhp.jpg
