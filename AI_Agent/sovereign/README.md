@@ -4,6 +4,8 @@
 [![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black.svg)](https://ollama.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
+[![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/McFIOla9jq4)
+
 Welcome to **The Sovereign Agent**—a fully autonomous, locally-hosted AI executive assistant. 
 
 In an era where every calendar event, financial transaction, and sensitive corporate email is routinely fed into third-party cloud APIs, this project asks a simple question: **What if your AI was completely yours?**
