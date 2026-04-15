@@ -86,7 +86,7 @@ Analyze the provided video using these steps:
 
 ---  
 
-## 🎞️ Case Studies and Example of Workflow 
+## 🎞️ Case Studies and Example Workflow 
 
 ### 1️⃣ Frame Extraction & Subject Identification  
 
