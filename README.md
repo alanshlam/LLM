@@ -2,14 +2,15 @@
 
 ## **Project Overview**
 The [*PersonalAIAgent* study folder](AI_Agent)  is a compact research hub that showcases three privacy‑first, zero‑cloud AI assistants: **SovereignAgent**, **PrivateVideoAgent**, and the **ClaudeCodeCLI + Ollama** workflow. Each project demonstrates how modern large‑language‑model (LLM) stacks can be run entirely on‑device, eliminating any need for external API calls and guaranteeing that personal data never leaves the user’s computer.
-* **SovereignAgent** aggregates a wide range of local information—email archives (`.mbox`), financial CSVs, markdown schedules, live weather data, traffic‑camera snapshots, and daily news podcasts—using Gemma‑431B for reasoning, LLaVA/qwen3‑VL for vision, and Whisper for audio transcription. The result is a concise, HTML‑styled briefing delivered securely via a private Telegram bot.  
-* **PrivateVideoAgent** extracts key video frames, transcribes audio with Whisper, and performs deterministic “needle‑in‑a‑haystack” searches across large video collections. Leveraging a 256 K‑token context window, it can keep an entire transcript plus visual cues in memory, enabling multimodal analysis and rapid video‑content discovery while staying air‑gapped.  
-* **ClaudeCodeCLI + Ollama** routes Anthropic’s ClaudeCode command‑line interface to a locally hosted LLM (e.g., `qwen3‑coder‑next:q8_0`). This enables offline automation of system tasks, code debugging, web‑server provisioning, cybersecurity log analysis, and more, all under a sandboxed, zero‑leak architecture.
+* [**SovereignAgent**](AI_Agent/sovereign) aggregates a wide range of local information—email archives (`.mbox`), financial CSVs, markdown schedules, live weather data, traffic‑camera snapshots, and daily news podcasts—using Gemma‑431B for reasoning, LLaVA/qwen3‑VL for vision, and Whisper for audio transcription. The result is a concise, HTML‑styled briefing delivered securely via a private Telegram bot.  
+* [**PrivateVideoAgent**](AI_Agent/v_agent) extracts key video frames, transcribes audio with Whisper, and performs deterministic “needle‑in‑a‑haystack” searches across large video collections. Leveraging a 256 K‑token context window, it can keep an entire transcript plus visual cues in memory, enabling multimodal analysis and rapid video‑content discovery while staying air‑gapped.  
+* [**ClaudeCodeCLI + Ollama**](cccli) routes Anthropic’s ClaudeCode command‑line interface to a locally hosted LLM (e.g., `qwen3‑coder‑next:q8_0`). This enables offline automation of system tasks, code debugging, web‑server provisioning, cybersecurity log analysis, and more, all under a sandboxed, zero‑leak architecture.
 
 **Impact on Future Daily Life**
 By proving that sophisticated AI capabilities can operate without any cloud dependency, these studies foreshadow a new era of **private AI assistants** that protect user privacy while delivering real‑time, context‑aware support. Imagine a personal dashboard that drafts your daily brief, organizes finances, and monitors home security—all without exposing data to third‑party services. In professional settings, developers and security analysts could rely on offline code‑review bots and threat‑intel tools that never risk credential leakage. As data‑privacy regulations tighten and awareness of digital surveillance grows, such fully local agents are poised to become the backbone of safe, autonomous digital assistants in homes, workplaces, and critical infrastructure.
 
-## Key Findings
+<details>
+<summary> Key Findings </summary>
 
 - **SovereignAgent**  
   - Processes local `.mbox` emails, `.csv` finances, `.md` schedules, live weather data, traffic‑camera snapshots, and a daily news podcast entirely on‑device.  
@@ -25,10 +26,14 @@ By proving that sophisticated AI capabilities can operate without any cloud depe
   - Routes Anthropic’s ClaudeCode CLI to a locally hosted LLM (e.g., `qwen3‑coder‑next:q8_0`) via Ollama, allowing fully offline automation of system tasks, code debugging, web‑server setup, and cybersecurity log analysis.  
   - Provides a sandboxable AI assistant that never contacts external APIs, protecting credentials and confidential data while still offering powerful tool‑use capabilities.
 
-## Study Scope
+</details> 
+
+<details>
+<summary>  Study Scope </summary>
 
 The scope of this study is to explore, build, and evaluate **privacy‑first, zero‑cloud personal AI agents** that operate entirely on‑device, guaranteeing that no user data ever leaves the local machine. It focuses on three representative agents: **SovereignAgent**, which aggregates local emails, financial CSVs, schedule markdowns, live weather, traffic‑camera images, and daily news podcasts into a concise, HTML‑styled briefing delivered via a private Telegram bot; **PrivateVideoAgent**, which extracts video frames, transcribes audio with Whisper, and performs deterministic “needle‑in‑a‑haystack” searches across video collections using a massive 256 K‑token context window; and **ClaudeCodeCLI + Ollama**, which routes Anthropic’s ClaudeCode CLI to a locally hosted LLM to automate system tasks, code debugging, web‑server provisioning, and cybersecurity analysis without any external API calls. Across all agents the study emphasizes **local‑only processing**, multimodal reasoning (text, vision, audio), and sandboxable execution to prevent data leakage and protect sensitive credentials.
 
+</details>
 
 --- 
 
