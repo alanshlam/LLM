@@ -141,7 +141,19 @@ graph TD
     style Output fill:#1e293b,stroke:#cbd5e1,stroke-width:2px,color:#fff
 
 ```  
+---  
+## 🛡️ Why Local LLMs? (The Data Leakage Problem)
 
+We are currently sending our most valuable, sensitive data to third-party cloud providers just to get a summary of our day. 
+
+*   *Want an AI to sort your emails?* You are handing over corporate secrets and password reset links.
+*   *Want an AI to budget for you?* You are uploading your bank statements to the cloud.
+
+**Gemma-4 changes the game.** By utilizing highly capable, open-weight models running locally via Ollama, we have crossed the threshold where we no longer need the cloud for elite-level reasoning. Gemma-4 is smart enough to understand that *"David needs the Q2 slides by EOD"* is an urgent priority, while *"Master AI in 3 Days Webinar"* is spam. 
+
+The Sovereign Agent brings the power of an elite executive assistant directly to your silicon, ensuring that your data is heavily guarded and never leaves your home network.
+
+---  
 
 ## 💡 Insight: The Era of the Local Personal Agent (Featuring Gemma)
 
@@ -154,6 +166,16 @@ By utilizing local Large Language Models like **Gemma** via Ollama, we can build
 When you ask an AI to prioritize your to-do list based on today's weather, or summarize an email from your boss, the AI is performing **contextual reasoning, not knowledge retrieval.** Gemma excels at this. It acts as a local "reasoning engine" that safely processes sensitive text locally, extracts the signal from the noise, and destroys the context window immediately after generation. 
 
 This architecture proves that elite-level AI automation and absolute data privacy are no longer mutually exclusive.
+
+---  
+## 🛠️ Tech Stack
+
+*   **Python 3.10+** (Core logic and orchestration)
+*   **Ollama** (Local LLM serving for Gemma-4 and LLaVA)
+*   **OpenAI Whisper** (Local offline audio transcription)
+*   **Telegram API** (Mobile push notifications)
+*   **Standard Python Libs:** `mailbox`, `xml.etree`, `csv` (No bloated frameworks)
+
 
 ---  
 
