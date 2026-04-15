@@ -11,7 +11,7 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 ## ✨ Key Features (at a glance)  
 **🔒 Local‑only processing** for all  agents.  
 
-### 🤖 [Sovereign Agent](sovereign) 
+### 🤖 [Sovereign Agent](sovereign) [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/McFIOla9jq4)
 🔒 **100 % Local Privacy** – processes .mbox, .csv, and .md files on‑device only.   
 🧠 **Contextual Reasoning** – (Gemma4) instead of simple retrieval, the LLM reasons about weather, finance, and schedule (e.g., suggests moving an outdoor lunch indoors if rain is forecast).     
 👁️ **Vision AI** (LLaVA/gemma4:e4b/qwen3‑vl:32) for analyzing live CCTV snapshots;  
