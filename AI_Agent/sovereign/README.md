@@ -19,7 +19,7 @@ Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition
 [🏗️ System Architecture](#%EF%B8%8F-system-architecture)  
 [💡 Insight: The Era of the Local Personal Agent (Featuring Gemma)](#-insight-the-era-of-the-local-personal-agent-featuring-gemma)  
 [🚀 Setup & Installation](#-setup--installation)  
-[🖼️Infographic of the Sovereign Agent Prediction](#%EF%B8%8Finfographic-of-the-sovereign-agent)
+[🖼️Infographic of the Sovereign Agent Prediction Features & The Future of Private AI](#%EF%B8%8Finfographic-of-the-sovereign-agent)
 
 
 ---
@@ -311,7 +311,7 @@ CYBER_FEED_URL="https://feeds.feedburner.com/TheHackersNews"
 0 8 * * * cd /path/to/your/script/folder && /usr/bin/python3 ai_agent.py >> ai_agent.log 2>&1
 ```
 --- 
-## 🖼️Infographic of the Sovereign Agent Prediction
+## 🖼️Infographic of the Sovereign Agent Features & The Future of Private AI 
 
 <div style="height: 200px; overflow-y: scroll;">
   <img src="code/AI_agent_infograph.jpg" width="100%"><br>
