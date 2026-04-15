@@ -36,6 +36,7 @@ Powered by local LLMs (like **Gemma-4** via Ollama) and local speech recognition
 
 ### You can download the source code of the  [Sovereign Agent here](code/ai_agent.py)
 
+---  
 ## Below is a sample output on TG 
 
 <ul>  
@@ -78,10 +79,10 @@ Source: [NPR News Now](https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/
 • CISA has added six newly discovered exploited vulnerabilities in Fortinet, Microsoft, and Adobe software to its known exploited list.  [Read](https://thehackernews.com/2026/04/cisa-adds-6-known-exploited-flaws-in.html)  
 • The FBI and Indonesian Police have dismantled the W3LL phishing network responsible for $20 million in attempted fraud.  [Read](https://thehackernews.com/2026/04/fbi-and-indonesian-police-dismantle.html)  
 
----   
 
 </ul>
 
+---   
 
 ## 🏗️ System Architecture
 
