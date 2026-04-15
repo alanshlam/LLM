@@ -128,8 +128,8 @@ ffmpeg -i [video_file] -vf "fps=1/5" frame_[video_id]_%03d.jpg
 
 **All steps and the underlying reasoning are documented in the case‑study**
 
-See [how the AI identify the video file](code/vsearch/Video_identification_process.md)  
-See [the complete AI walkthrough in video search](code/vsearch/video_search_walkthrough.txt)
+See [how the AI identify the video file](vsearch/Video_identification_process.md)  
+See [the complete AI walkthrough in video search](vsearch/video_search_walkthrough.txt)
 
 ---  
 
