@@ -305,7 +305,7 @@ CYBER_FEED_URL="https://feeds.feedburner.com/TheHackersNews"
 #
 
 ```
-### Run it daily in the morning
+### 7. Run it each morning so that your personal intel dashboard is sent to your mobile device via Telegram before you wake up.
 
 ```bash
 0 8 * * * cd /path/to/your/script/folder && /usr/bin/python3 ai_agent.py >> ai_agent.log 2>&1
