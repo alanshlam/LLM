@@ -186,9 +186,6 @@ The result is a **second brain** that is both *private* and *powerful*—ideal f
  
 </div>
 
-## 📞 Contact  
-
-For questions, issues, or collaboration proposals, please open an issue or contact the maintainer at `alanlam28@gmail.com`.  
 
 ---  
 
