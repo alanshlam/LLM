@@ -102,7 +102,7 @@ The Sovereign Agent is built on a simple, modular, and highly robust pipeline:
 ```mermaid
 graph TD
     subgraph Public [🌍 Public Web Data]
-        Weather[☁️ APIs & Stocks]
+        Weather[☁️ Weather & Stocks]
         News[📰 RSS feeds ]
         Podcast[📻 NPR Podcast .mp3]
         CCTV[🚗 Live Traffic CCTV .jpg]
