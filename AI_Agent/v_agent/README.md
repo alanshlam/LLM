@@ -31,7 +31,7 @@ The core use‑case is **multimodal video reasoning**: extract frames, sync them
 
 | Component | Role |
 |-----------|------|
-| **Gemma‑4 31B** (via Ollama) | Local reasoning engine, native tool‑use proficiency | 
+| **Gemma4:31B** (via Ollama) | Local reasoning engine, native tool‑use proficiency | 
 | **Claude Code CLI** | Agentic framework that can invoke shell commands and read files |
 | **ffprobe / ffmpeg** | Video metadata extraction, frame sampling, selective frame extraction |
 | **OpenAI Whisper (base)** | Audio‑to‑text transcription for multimodal sync | 
