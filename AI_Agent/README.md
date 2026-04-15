@@ -104,7 +104,11 @@ AI_Agent/
         └── video_search_walkthrough.txt
 
 ```
-Open an issue or email `alanlam28@gmail.com`.
+--- 
+## 📞 Contact  
+
+For questions, issues, or collaboration proposals, please open an issue or contact the maintainer at `alanlam28@gmail.com`.  
+
 
 ---
 
