@@ -112,6 +112,7 @@ The resulting `.txt` file is parsed; the agent aligns keywords with the frame ti
 ### 3️⃣ Sample of Video Analysis
 You can view some video analysis samples at [vanalysis folder](vanalysis)
 
+See [the complete AI walkthrough in video Analysis](vanalysis/video_analysis_walkthrough.txt)
 
 ### 4️⃣ Needle‑in‑a‑Haystack Search  
 
