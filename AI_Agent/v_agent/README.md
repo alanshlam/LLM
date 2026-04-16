@@ -112,13 +112,13 @@ The resulting `.txt` file is parsed; the agent aligns keywords with the frame ti
 ### 3️⃣ Sample of Video Analysis
 You can view some video analysis samples at [vanalysis folder](vanalysis)
 
-See [the complete AI walkthrough in video Analysis](vanalysis/video_analysis_walkthrough.txt)
+See [the complete AI walkthrough in video Analysis](vanalysis/video_analysis_walkthrough.txt) for [ch20.mp4](https://youtube.com/shorts/3GgwvXgxnKY)
 
 ### 4️⃣ Needle‑in‑a‑Haystack Search  
 
 When asked “Which video contains the image `unknown.jpg`?”, the agent performs:  
 
-1. **Directory mapping** – `ls -F` discovers candidate files (`ch10.mp4`, `ch20.mp4`).  
+1. **Directory mapping** – `ls -F` discovers candidate files (e.g. `ch10.mp4`, `ch20.mp4`).  
 2. **Exact‑frame extraction** – calculates the needed frame index and runs:  
 
 
