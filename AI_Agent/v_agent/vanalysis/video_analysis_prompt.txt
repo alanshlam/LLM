@@ -1,5 +1,5 @@
 Analyze the provided video using these steps:
-1. Transcribe the spoken dialogue in this video by whisper: /data/staff/shlam/.local/bin/whisper [vidoe file] --model base --language English --fp16 False
+1. Transcribe the spoken dialogue in this video by whisper: whisper [vidoe file] --model base --language English --fp16 False
 2. Extract 5 frames in the video by ffmpeg :
    - ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 [video_file]
    - ffmpeg -i [video_file] -vf "fps=5/[duration]" frame_%d.jpg
