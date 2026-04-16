@@ -1,0 +1,313 @@
+ please read instruction @video_analysis_prompt.txt to analyse the video file @ch20.mp4
+  ⎿  Read video_analysis_prompt.txt (19 lines)
+
+  Listed 1 directory (ctrl+o to expand)
+
+● Bash( whisper ch20.mp4 --model base --language English --fp16 False && \
+      DURATION=$(ffprobe -v error -show_entries format=duration -of de…)
+  ⎿  [00:00.000 --> 00:07.600]  Thank you. You didn't just save me tonight. You gave me back my future. I promise you. I won't waste it.
+     ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+       built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+     … +25 lines (ctrl+o to expand)
+
+  Read 5 files (ctrl+o to expand)
+
+● Based on the instructions in video_analysis_prompt.txt and the analysis of ch20.mp4, here is the detailed video analysis:
+
+  1. Transcription
+
+  Dialogue:
+  [00:00.000 --> 00:07.600] "Thank you. You didn't just save me tonight. You gave me back my future. I promise you. I won't waste it."
+
+     --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+       libavutil      56. 70.100 / 56. 70.100
+       libavcodec     58.134.100 / 58.134.100
+       libavformat    58. 76.100 / 58. 76.100
+       libavdevice    58. 13.100 / 58. 13.100
+       libavfilter     7.110.100 /  7.110.100
+       libswscale      5.  9.100 /  5.  9.100
+       libswresample   3.  9.100 /  3.  9.100
+       libpostproc    55.  9.100 / 55.  9.100
+     Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'ch20.mp4':
+       Metadata:
+         major_brand     : mp42
+         minor_version   : 0
+         compatible_brands: isommp42
+         creation_time   : 2026-03-25T08:39:29.000000Z
+         encoder         : Google
+       Duration: 00:00:08.17, start: 0.000000, bitrate: 468 kb/s
+       Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 360x640 [SAR 1:1 DAR 9:16], 423 kb/s, 30 fps, 30 tbr, 15360
+     tbn, 60 tbc (default)
+         Metadata:
+           creation_time   : 2026-03-25T08:39:29.000000Z
+           handler_name    : ISO Media file produced by Google Inc. Created on: 03/25/2026.
+           vendor_id       : [0][0][0][0]
+       Stream #0:1(und): Audio: aac (HE-AAC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 48 kb/s (default)
+         Metadata:
+           creation_time   : 2026-03-25T08:39:29.000000Z
+           handler_name    : ISO Media file produced by Google Inc. Created on: 03/25/2026.
+           vendor_id       : [0][0][0][0]
+     Stream mapping:
+       Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+     Press [q] to stop, [?] for help
+     [swscaler @ 0x55b25840bf80] deprecated pixel format used, make sure you did set range correctly
+     Output #0, image2, to 'frame_%d.jpg':
+       Metadata:
+         major_brand     : mp42
+         minor_version   : 0
+         compatible_brands: isommp42
+         encoder         : Lavf58.76.100
+       Stream #0:0(und): Video: mjpeg, yuvj420p(pc, bt709, progressive), 360x640 [SAR 1:1 DAR 9:16], q=2-31, 200 kb/s, 0.61 fps, 0.61 tbn
+     (default)
+         Metadata:
+           creation_time   : 2026-03-25T08:39:29.000000Z
+           handler_name    : ISO Media file produced by Google Inc. Created on: 03/25/2026.
+           vendor_id       : [0][0][0][0]
+           encoder         : Lavc58.134.100 mjpeg
+         Side data:
+           cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+     frame=    1 fps=0.0 q=6.6 size=N/A time=00:00:01.63 bitrate=N/A speed=62.6x
+     frame=    5 fps=0.0 q=1.6 Lsize=N/A time=00:00:08.17 bitrate=N/A speed=65.2x
+     video:157kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+
+● Read(frame_1.jpg)
+  ⎿  Read image (21.5KB)
+
+● Read(frame_2.jpg)
+  ⎿  Read image (25.8KB)
+
+● Read(frame_3.jpg)
+  ⎿  Read image (37KB)
+
+● Read(frame_4.jpg)
+  ⎿  Read image (36.9KB)
+
+● Read(frame_5.jpg)
+  ⎿  Read image (35.5KB)
+
+                                                                                                                           06:55 PM gemma4:31b
+● Based on the instructions in video_analysis_prompt.txt and the analysis of ch20.mp4, here is the detailed video analysis:
+
+  1. Transcription
+
+  Dialogue:
+  [00:00.000 --> 00:07.600] "Thank you. You didn't just save me tonight. You gave me back my future. I promise you. I won't waste it."
+
+  2. Frame Analysis
+
+  - Primary Subject: A woman in a tight close-up.
+  - Environment/Position Changes: The camera remains static in a close-up shot of the woman's face throughout the clip. There are no changes in
+  environment or subject position.
+  - Comparison (Final vs First): The first frame captures the beginning of her emotional address, while the final frame captures the resolution of her
+   solemn promise.
+
+  3. Action Breakdown
+
+  1. Initial Expression: The woman looks at the interlocutor with an expression of vulnerability and deep gratitude.
+  2. Delivery of Message: She speaks a continuous, heartfelt statement of thanks.
+  3. Solemn Promise: She concludes the clip by making a firm promise regarding her future.
+
+  4. Multimodal Analysis
+
+  - Visual-Audio Sync: The audio is a single, emotionally charged monologue that perfectly synchronizes with the close-up of the woman speaking.
+  - Temporal Reasoning:
+    - 0s - 2s: "Thank you. You didn't just save me tonight." $\rightarrow$ Matches Frames 1-2.
+    - 2s - 5s: "You gave me back my future." $\rightarrow$ Matches Frames 2-3.
+    - 5s - 7.6s: "I promise you. I won't waste it." $\rightarrow$ Matches Frames 4-5.
+  - Step-by-Step Breakdown:
+    - Step 1: The woman expresses immediate gratitude. (Visual: Emotional close-up; Audio: "Thank you. You didn't just save me tonight.")
+    - Step 2: She describes the significance of the act. (Visual: Intense facial expression; Audio: "You gave me back my future.")
+    - Step 3: She commits to a new path. (Visual: Resolved and grateful expression; Audio: "I promise you. I won't waste it.")
+  - Synthesis: The video captures a poignant moment of gratitude. The combination of the tight framing and the spoken words conveys that the rescue
+  was not merely physical, but existential, restoring the subject's hope and future.
+
+  5. Final Summary
+
+  The video is a character-driven emotional close-up of a woman expressing profound gratitude to someone who saved her. The key action is the delivery
+   of a heartfelt thank-you and a solemn vow to honor the second chance she has been given. There are no other notable objects in the frame, focusing
+  the viewer entirely on the subject's emotional state.
+
+✻ Worked for 2m 2s
+
+∴ Thinking…
+
+  I have the images and the transcription. Now I will perform the analysis as requested in video_analysis_prompt.txt.
+
+  Transcription:
+  [00:00.000 --> 00:07.600] Thank you. You didn't just save me tonight. You gave me back my future. I promise you. I won't waste it.
+
+  Frame Analysis:
+  - Frame 1: A close-up of a woman's face. She looks emotional, perhaps sad or grateful.
+  - Frame 2: Still a close-up of the woman, she is speaking.
+  - Frame 3: The woman is still in frame, her expression is intense.
+  - Frame 4: The woman is still in frame, she looks slightly more resolved.
+  - Frame 5: Close-up of the woman, she seems to be concluding her statement.
+
+  Primary Subject: A woman.
+
+  Changes in environment/subject position:
+  The camera stays in a tight close-up on the woman throughout the clip. There are no significant changes in the environment or her position.
+
+  Comparison (Final vs First):
+  The first frame shows her in a state of vulnerability/gratitude. The final frame shows her with a similar expression but having completed her
+  heartfelt statement.
+
+  Step-by-step breakdown of actions:
+  1. The woman looks directly (or slightly off-camera) at the person she is addressing.
+  2. She speaks the lines: "Thank you. You didn't just save me tonight. You gave me back my future. I promise you. I won't waste it."
+  3. Her facial expressions convey deep gratitude and a sense of renewal.
+
+  Multimodal Analysis:
+  - Visual-Audio Sync: The audio is a single continuous emotional statement that matches the steady close-up of the woman's face as she speaks.
+  - Temporal Reasoning:
+    - 0s - 2s: "Thank you. You didn't just save me tonight." (Frames 1-2)
+    - 2s - 5s: "You gave me back my future." (Frames 2-3)
+    - 5s - 7.6s: "I promise you. I won't waste it." (Frames 4-5)
+  - Chronological list:
+    - Step 1: Woman starts speaking with deep gratitude. Audio: "Thank you. You didn't just save me tonight." Visual: Close-up of face, emotional
+  expression.
+    - Step 2: She emphasizes the impact of the rescue. Audio: "You gave me back my future." Visual: Intense facial expression, speaking.
+    - Step 3: She makes a solemn promise. Audio: "I promise you. I won't waste it." Visual: Determined and grateful expression.
+  - Synthesis: The video is a highly emotional moment where a woman expresses profound gratitude to someone who saved her, viewing the act not just as
+   a physical rescue but as the restoration of her life/future.
+
+  Detailed Summary:
+  The video depicts a close-up of a woman delivering a heartfelt message of gratitude. She is the sole subject. The key action is the delivery of a
+  solemn promise to not waste the "future" she has been given back. Notable objects: none, as it is a tight headshot.
+
+  I will now format the final output.
+
+
+❯ please read instruction @video_analysis_prompt.txt to analyse the video file @ch20.mp4
+  ⎿  Read video_analysis_prompt.txt (19 lines)
+
+● Bash(ls -l ch20.mp4)
+  ⎿  lrwxrwxrwx 1 shlam ie_staff 11 Apr 16 18:52 ch20.mp4 -> ../ch20.mp4
+
+● Bash(/data/staff/shlam/.local/bin/whisper ch20.mp4 --model base --language English --fp16 False && \
+      DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 ch20.mp4) && \
+      ffmpeg -i ch20.mp4 -vf "fps=5/$DURATION" frame_%d.jpg)
+  ⎿  [00:00.000 --> 00:07.600]  Thank you. You didn't just save me tonight. You gave me back my future. I promise you. I won't waste it.
+     ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+       built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+       configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu
+     --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom
+     --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite
+      --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame
+     --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband
+     --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora
+     --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2
+     --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl
+      --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883
+     --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+       libavutil      56. 70.100 / 56. 70.100
+       libavcodec     58.134.100 / 58.134.100
+       libavformat    58. 76.100 / 58. 76.100
+       libavdevice    58. 13.100 / 58. 13.100
+       libavfilter     7.110.100 /  7.110.100
+       libswscale      5.  9.100 /  5.  9.100
+       libswresample   3.  9.100 /  3.  9.100
+       libpostproc    55.  9.100 / 55.  9.100
+     Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'ch20.mp4':
+       Metadata:
+         major_brand     : mp42
+         minor_version   : 0
+         compatible_brands: isommp42
+         creation_time   : 2026-03-25T08:39:29.000000Z
+         encoder         : Google
+       Duration: 00:00:08.17, start: 0.000000, bitrate: 468 kb/s
+       Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 360x640 [SAR 1:1 DAR 9:16], 423 kb/s, 30 fps, 30 tbr, 15360
+     tbn, 60 tbc (default)
+         Metadata:
+           creation_time   : 2026-03-25T08:39:29.000000Z
+           handler_name    : ISO Media file produced by Google Inc. Created on: 03/25/2026.
+           vendor_id       : [0][0][0][0]
+       Stream #0:1(und): Audio: aac (HE-AAC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 48 kb/s (default)
+         Metadata:
+           creation_time   : 2026-03-25T08:39:29.000000Z
+           handler_name    : ISO Media file produced by Google Inc. Created on: 03/25/2026.
+           vendor_id       : [0][0][0][0]
+     Stream mapping:
+       Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+     Press [q] to stop, [?] for help
+     [swscaler @ 0x55b25840bf80] deprecated pixel format used, make sure you did set range correctly
+     Output #0, image2, to 'frame_%d.jpg':
+       Metadata:
+         major_brand     : mp42
+         minor_version   : 0
+         compatible_brands: isommp42
+         encoder         : Lavf58.76.100
+       Stream #0:0(und): Video: mjpeg, yuvj420p(pc, bt709, progressive), 360x640 [SAR 1:1 DAR 9:16], q=2-31, 200 kb/s, 0.61 fps, 0.61 tbn
+     (default)
+         Metadata:
+           creation_time   : 2026-03-25T08:39:29.000000Z
+           handler_name    : ISO Media file produced by Google Inc. Created on: 03/25/2026.
+           vendor_id       : [0][0][0][0]
+           encoder         : Lavc58.134.100 mjpeg
+         Side data:
+           cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+     frame=    1 fps=0.0 q=6.6 size=N/A time=00:00:01.63 bitrate=N/A speed=62.6x
+     frame=    5 fps=0.0 q=1.6 Lsize=N/A time=00:00:08.17 bitrate=N/A speed=65.2x
+     video:157kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+
+● Read(frame_1.jpg)
+  ⎿  Read image (21.5KB)
+
+● Read(frame_2.jpg)
+  ⎿  Read image (25.8KB)
+
+● Read(frame_3.jpg)
+  ⎿  Read image (37KB)
+
+● Read(frame_4.jpg)
+  ⎿  Read image (36.9KB)
+
+● Read(frame_5.jpg)
+  ⎿  Read image (35.5KB)
+
+                                                                                                                           06:55 PM gemma4:31b
+● Based on the instructions in video_analysis_prompt.txt and the analysis of ch20.mp4, here is the detailed video analysis:
+
+  1. Transcription
+
+  Dialogue:
+  [00:00.000 --> 00:07.600] "Thank you. You didn't just save me tonight. You gave me back my future. I promise you. I won't waste it."
+
+  2. Frame Analysis
+
+  - Primary Subject: A woman in a tight close-up.
+  - Environment/Position Changes: The camera remains static in a close-up shot of the woman's face throughout the clip. There are no changes in
+  environment or subject position.
+  - Comparison (Final vs First): The first frame captures the beginning of her emotional address, while the final frame captures the resolution of her
+   solemn promise.
+
+  3. Action Breakdown
+
+  1. Initial Expression: The woman looks at the interlocutor with an expression of vulnerability and deep gratitude.
+  2. Delivery of Message: She speaks a continuous, heartfelt statement of thanks.
+  3. Solemn Promise: She concludes the clip by making a firm promise regarding her future.
+
+  4. Multimodal Analysis
+
+  - Visual-Audio Sync: The audio is a single, emotionally charged monologue that perfectly synchronizes with the close-up of the woman speaking.
+  - Temporal Reasoning:
+    - 0s - 2s: "Thank you. You didn't just save me tonight." $\rightarrow$ Matches Frames 1-2.
+    - 2s - 5s: "You gave me back my future." $\rightarrow$ Matches Frames 2-3.
+    - 5s - 7.6s: "I promise you. I won't waste it." $\rightarrow$ Matches Frames 4-5.
+  - Step-by-Step Breakdown:
+    - Step 1: The woman expresses immediate gratitude. (Visual: Emotional close-up; Audio: "Thank you. You didn't just save me tonight.")
+    - Step 2: She describes the significance of the act. (Visual: Intense facial expression; Audio: "You gave me back my future.")
+    - Step 3: She commits to a new path. (Visual: Resolved and grateful expression; Audio: "I promise you. I won't waste it.")
+  - Synthesis: The video captures a poignant moment of gratitude. The combination of the tight framing and the spoken words conveys that the rescue
+  was not merely physical, but existential, restoring the subject's hope and future.
+
+  5. Final Summary
+
+  The video is a character-driven emotional close-up of a woman expressing profound gratitude to someone who saved her. The key action is the delivery
+   of a heartfelt thank-you and a solemn vow to honor the second chance she has been given. There are no other notable objects in the frame, focusing
+  the viewer entirely on the subject's emotional state.
+
+✻ Worked for 2m 2s
+
+────────────────────────────────────────────────────────────────────────
+
