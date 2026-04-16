@@ -65,21 +65,22 @@ claude  "list files in the current directory"
 
 ```
 Analyze the provided video using these steps:
-1. Extract 5 frames in the video by ffmpeg : 
+1. Transcribe the spoken dialogue in this video by whisper: whisper [vidoe file] --model base --language English --fp16 False
+2. Extract 5 frames in the video by ffmpeg :
    - ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 [video_file]
    - ffmpeg -i [video_file] -vf "fps=5/[duration]" frame_%d.jpg
-2. Analyze the extracted frames. Identify the primary subject in these 5 frames.
-3. Track any changes in the environment or subject position between the middle and end of the clip.
-4. Compare the visual state of the final frame to the first frame.
-5. Output a step-by-step breakdown of the actions performed.
-6. Transcribe the spoken dialogue in this video by whisper: whisper [vidoe file]  --model base --output_dir .
+3. Analyze the extracted frames one by one. Identify the primary subject in these 5 frames.
+4. Track any changes in the environment or subject position between the middle and end of the clip.
+5. Compare the visual state of the final frame to the first frame.
+6. Output a step-by-step breakdown of the actions performed.
 7. Perform a step-by-step multimodal analysis of this video clip:
    - Visual-Audio Sync: Match the spoken dialogue to the specific actions in the frames.
-   - Temporal Reasoning: Identify the exact frame number where the "intake valve" mentioned in the transcript becomes the focus of the shot.
+   - Temporal Reasoning: Identify the exact frame number with the  spoken dialogue
    - Step-by-Step Breakdown: Create a chronological list of actions. For each step, describe what is happening visually and what information is being conveyed in the audio.
-   - Synthesis: Based on both the visual changes and the technical explanation in the transcript, explain the final outcome of the demonstration.
+   - Synthesis: Based on both the visual changes and the dialogue in the transcript, explain the final outcome of the video description.
    - Output your analysis as a structured list.
 8. Identify what is happening in this video. Provide a detailed summary of the key actions and identify any notable objects
+
 
 ```
 
