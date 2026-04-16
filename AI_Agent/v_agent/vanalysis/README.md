@@ -11,5 +11,6 @@ For sample video analysis in the project
 |[lisa_analysis.md](lisa_analysis.md) | Video analysis of video lisa.mp4|
 |[scarf.md](scarf.md) | Video analysis of video scarf.mp4|
 |[video_analysis_prompt.txt](video_analysis_prompt.txt) | Video prompt for video analysis|
+|[video_analysis_walkthrough.txt](video_analysis_walkthrough.txt)| Video analysis walkthrough log |
 
 </ul>
