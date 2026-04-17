@@ -143,7 +143,7 @@ See [the complete AI walkthrough in video search](vsearch/video_search_walkthrou
 |--------|-------------|
 | **Tool‑Use Accuracy** | Gemma‑4 formats ffmpeg and Whisper CLI flags correctly on the first try (no retries) | 
 | **Logical Verification** | The model double‑checks command syntax in “Thinking Mode” before execution | 
-| **Multimodal Alignment** | Successfully matched the spoken term “intake valve” to the exact frame where it appears | 
+| **Multimodal Alignment** | Successfully matched the spoken term to the exact frame where it appears | 
 | **Search Success Rate** | 100 % accurate identification of the correct video in the needle‑in‑haystack test | 
 | **Resource Efficiency** | By extracting only critical frames, the agent conserves context‑window space and reduces compute time | 
 
