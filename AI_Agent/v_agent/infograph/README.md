@@ -1,1 +1,1 @@
-Inforgraph of this study
+Inforgraphic of this study
