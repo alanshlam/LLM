@@ -42,7 +42,8 @@ The core use‑case is **multimodal video reasoning**: extract frames, sync them
 ## 🚀 Quick Setup  
 
 ```bash
-# 1️⃣ Install Ollama (https://ollama.com) and pull Gemma‑4 31B and gemma4:e4b 
+# 1️⃣ Install Ollama (https://ollama.com) and pull Gemma‑4 31B and gemma4:e4b
+curl -fsSL https://ollama.com/install.sh | sh
 ollama pull gemma4:31b
 ollama pull gemma4:e4b 
 
@@ -50,11 +51,17 @@ ollama pull gemma4:e4b
 ollama serve &
 
 # 3️⃣ Install Claude Code CLI (follow Anthropic’s docs)
-#    Set the endpoint to your local Ollama server
+curl -fsSL https://claude.ai/install.sh | bash
+# Verify installation
+claude --version
+# Update Claude
+claude update
+
+# 4️⃣   Set the endpoint to your local Ollama server
 export CLAUDE_API_BASE="http://127.0.0.1:11434/v1"
 export CLAUDE_MODEL="gemma4:31b"
 
-# 4️⃣ Verify the agent can run a simple command
+# 5️⃣ Verify the agent can run a simple command
 claude  "list files in the current directory"
 ```
 
