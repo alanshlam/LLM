@@ -1,5 +1,12 @@
 # 🛡️ **Private AI Video Agent – Secure Video Analysis & Search with Gemma4:31B & Claude Code CLI**  
 
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black.svg)](https://ollama.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+[![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/eXZuwvE-lDI)
+
+
 **🚀 A fully‑air‑gapped, locally‑hosted AI agent that can 📸 extract frames, 🔊 transcribe audio, and 🕵️‍♀️ autonomously locate visual “needles” in a haystack of video files – all without a single byte leaving your firewall** 🏠🔒.
 ---  
 
