@@ -184,7 +184,7 @@ The result is a **second brain** that is both *private* and *powerful*—ideal f
 ### 💼 Private AI Video Agent Features  
 
 <div style="height: 200px; overflow-y: scroll;">
-  <img src="infograph/AI_vagent_infograph04.jpg" width="100%"><br>
+  <img src="infograph/AI_vagent_infograph.png" width="100%"><br>
  
 </div>
 
