@@ -19,7 +19,7 @@ This folder is a **study hub for personal AI agents** – a place to explore, bu
 👂 **Audio AI** – Whisper transcribes daily news podcasts locally and summarize it.  
 📱 **Secure Push Delivery** – HTML‑styled briefing sent via a private Telegram bot. 
 
-### 🤖 [Private AI Video Agent](v_agent) 
+### 🤖 [Private AI Video Agent](v_agent) [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://youtu.be/eXZuwvE-lDI)
 📸 **Frame Extraction & Visual Analysis** – ffprobe/ffmpeg sample key frames, then image analysis by Gemma4:32b.   
 🔊 **Audio‑to‑Text** – Whisper transcribes video audio for multimodal sync.   
 🎞️ **Video analysis** - Video frame and transcript analysis by Gemma4:32b  
