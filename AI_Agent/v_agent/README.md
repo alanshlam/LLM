@@ -103,7 +103,13 @@ Analyze the provided video using these steps:
 
 ## 🎞️ Case Studies and Example Workflow 
 
-### 1️⃣ Frame Extraction & Subject Identification  
+### 1️⃣ Road CCTV Image Identification of the Highest Traffic.
+```bash
+❯ Please analyze the image files in the @traffic/ directory and identify the one with the highest traffic.
+```
+View the AI walkthrough [here](isearch). [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=235s)
+
+### 2️⃣ Frame Extraction & Subject Identification  
 
 ```bash
 # Get video duration (seconds)
@@ -115,7 +121,7 @@ ffmpeg -i video.mp4 -vf "fps=5/$duration" frame_%d.jpg
 
 The agent then **loads the five JPEGs**, runs a quick visual scan (via an internal vision plugin or external tool) and reports the primary subject (e.g., “intake valve”).  
 
-### 2️⃣ Audio Transcription  
+### 3️⃣  Audio Transcription  
 
 ```bash
 whisper video.mp4 --model base --output_dir .
@@ -123,12 +129,12 @@ whisper video.mp4 --model base --output_dir .
 
 The resulting `.txt` file is parsed; the agent aligns keywords with the frame timestamps.  
 
-### 3️⃣ Sample of Video Analysis
+### 4️⃣ Sample of Video Analysis
 You can view some video analysis samples at [vanalysis folder](vanalysis)
 
 See [the complete AI walkthrough in video Analysis](vanalysis/video_analysis_walkthrough.txt) for [ch20.mp4](https://youtube.com/shorts/3GgwvXgxnKY)
 
-### 4️⃣ Needle‑in‑a‑Haystack Search  [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=580s)
+### 5️⃣ Needle‑in‑a‑Haystack Search  [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=580s)
 
 When asked “Which video contains the image `unknown.jpg`?”, the agent performs:  
 
@@ -149,7 +155,7 @@ ffmpeg -i [video_file] -vf "fps=1/5" frame_[video_id]_%03d.jpg
 See [how the AI identify the video file](vsearch/Video_identification_process.md)  
 See [the complete AI walkthrough in video search](vsearch/video_search_walkthrough.txt)
 
-You can also view how the AI agent identifies the image with the highest traffic [here](isearch). [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=235s)
+
 
 ---  
 
