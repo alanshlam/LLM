@@ -1,4 +1,9 @@
-## Sample traffic image:
+
+## Prompt for identification
+❯ Please analyze the image files in the `@traffic/` directory and identify the one with the highest traffic.
+
+
+## Sample traffic image files in @traffic directory:
 - AID01111.jpg
 - AID01211.jpg
 - CK001F.jpg
