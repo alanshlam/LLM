@@ -9,4 +9,4 @@
 - <img src=CK001F.jpg width="100">  CK001F.jpg 
   
 ## Image analysis and Identification Walkthrough
-- id_walkthrough.txt
+- [id_walkthrough.txt](id_walkthrough.txt)
