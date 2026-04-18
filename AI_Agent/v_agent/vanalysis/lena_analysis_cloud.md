@@ -1,4 +1,4 @@
-# **Video Analysis: [lena.mp4](https://youtube.com/shorts/3GgwvXgxnKY)** (from Gemini Cloud)
+# **Video Analysis: [lena.mp4](https://youtube.com/shorts/3GgwvXgxnKY)** (from Google Gemini )
 
 ## **Overview**
 
