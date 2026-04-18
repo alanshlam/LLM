@@ -103,13 +103,13 @@ Analyze the provided video using these steps:
 
 ## 🎞️ Case Studies and Example Workflow 
 
-### 1️⃣ Road CCTV Image Identification of the Highest Traffic.
+### 1️⃣ Road CCTV Image Identification of the Highest Traffic.  [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=235s)
 ```bash
 ❯ Please analyze the image files in the @traffic/ directory and identify the one with the highest traffic.
 ```
-View the AI walkthrough [here](isearch). [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=235s)
+View the AI walkthrough [here](isearch).
 
-### 2️⃣ Frame Extraction & Subject Identification  
+### 2️⃣ Video analysis: Frame Extraction & Subject Identification   [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=302s)
 
 ```bash
 # Get video duration (seconds)
