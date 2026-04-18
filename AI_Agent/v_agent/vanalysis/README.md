@@ -13,5 +13,6 @@ For sample video analysis in the project
 |[scarf.md](scarf.md) | Video analysis of video scarf.mp4|
 |[video_analysis_prompt.txt](video_analysis_prompt.txt) | Video prompt for video analysis|
 |[video_analysis_walkthrough.txt](video_analysis_walkthrough.txt)| Video analysis walkthrough log |
+|[qwen3-vl_walkthrought.txt](qwen3-vl_walkthrought.txt)|Video analysis walkthrough by qwen3-vl:32b |
 
 </ul>
