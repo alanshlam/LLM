@@ -128,7 +128,7 @@ You can view some video analysis samples at [vanalysis folder](vanalysis)
 
 See [the complete AI walkthrough in video Analysis](vanalysis/video_analysis_walkthrough.txt) for [ch20.mp4](https://youtube.com/shorts/3GgwvXgxnKY)
 
-### 4️⃣ Needle‑in‑a‑Haystack Search  
+### 4️⃣ Needle‑in‑a‑Haystack Search  [![Watch the tutorial on YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=eXZuwvE-lDI&t=580s)
 
 When asked “Which video contains the image `unknown.jpg`?”, the agent performs:  
 
