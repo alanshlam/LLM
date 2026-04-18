@@ -7,4 +7,4 @@
 <img src=AID01111.jpg width="100"> AID01111.jpg  <img src=AID01211.jpg width="100"> AID01211.jpg  <img src=CK001F.jpg width="100">  CK001F.jpg 
   
 ## Image analysis and Identification Walkthrough
-- [id_walkthrough.txt](id_walkthrough.txt)
+[id_walkthrough.txt](id_walkthrough.txt)
