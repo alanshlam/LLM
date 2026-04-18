@@ -1,5 +1,5 @@
 
-## Prompt for identification
+## Prompt for identifying the image with the highest traffic
 ❯ Please analyze the image files in the `@traffic/` directory and identify the one with the highest traffic.
 
 
