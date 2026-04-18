@@ -149,6 +149,8 @@ ffmpeg -i [video_file] -vf "fps=1/5" frame_[video_id]_%03d.jpg
 See [how the AI identify the video file](vsearch/Video_identification_process.md)  
 See [the complete AI walkthrough in video search](vsearch/video_search_walkthrough.txt)
 
+You can also view how the AI agent identifies the image with the highest traffic [here](isearch).
+
 ---  
 
 ## 📊 Key Findings  
