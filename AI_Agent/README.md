@@ -106,6 +106,16 @@ AI_Agent/
 
 ```
 --- 
+
+Infographic : Privacy-First AI Agents: Zero-Cloud Study
+<div style="height: 200px; overflow-y: scroll;">
+  <img src="../screenshot/private_AI.png" width="100%"><br>
+ 
+</div>
+
+
+---
+
 ## 📞 Contact  
 
 For questions, issues, or collaboration proposals, please open an issue or contact the maintainer at `alanlam28@gmail.com`.  
