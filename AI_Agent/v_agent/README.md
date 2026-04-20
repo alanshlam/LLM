@@ -65,8 +65,12 @@ claude --version
 claude update
 
 # 4️⃣   Set the endpoint to your local Ollama server
-export CLAUDE_API_BASE="http://127.0.0.1:11434/v1"
+export ANTHROPIC_BASE_URL="http://127.0.0.1:11434"
+export ANTHROPIC_AUTH_TOKEN="ollama"
 export CLAUDE_MODEL="gemma4:31b"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="gemma4:31b"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="gemma4:31b"
+
 
 # 5️⃣ Verify the agent can run a simple command
 claude  "list files in the current directory"
